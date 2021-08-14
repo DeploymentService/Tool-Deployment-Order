@@ -3,7 +3,7 @@
   <SmartDesignUpdate>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/LoginWindow.exe?raw=true</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/LoginWindow.exe?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\LoginWindow.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Login Window Update</description>
@@ -11,7 +11,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Smart%20Design%20Plug-in%20Updates.dll?raw=true</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Smart%20Design%20Plug-in%20Updates.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Smart Design Plug-in Updates.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Main Code Update</description>
@@ -19,7 +19,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/SmartImageForm_v1.exe?raw=true</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/SmartImageForm_v1.exe?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\SmartImageForm_v1.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Image Updater Modifications</description>
@@ -27,17 +27,234 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/WpfApp1.exe?raw=true</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/WpfApp1.exe?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\WpfApp1.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Synchronization Modification</description>
       <launchArgs></launchArgs>
     </update>
+    
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Costura.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Costura.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Costura.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Costura.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/FMData.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\FMData.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/FMData.Rest.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\FMData.Rest.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/FMData.Rest.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\FMData.Rest.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/FMData.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\FMData.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/FMdotNet__DataAPI.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\FMdotNet__DataAPI.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/FMdotNet__DataAPI.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\FMdotNet__DataAPI.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/IntfIFCAPI.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\IntfIFCAPI.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/LoginWindow.exe?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\LoginWindow.exe</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/LoginWindow.exe.config?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\LoginWindow.exe.config</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/LoginWindow.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\LoginWindow.pdb</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Newtonsoft.Json.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Newtonsoft.Json.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Newtonsoft.Json.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Newtonsoft.Json.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/RestSharp.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\RestSharp.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/RestSharp.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\RestSharp.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/RevitAPIIFC.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\RevitAPIIFC.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/RevitAPIIFC.xml?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\RevitAPIIFC.xml</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Smart Design Plug-in Updates.addin?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Smart Design Plug-in Updates.addin</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Smart Design Plug-in Updates.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Smart Design Plug-in Updates.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Smart Design Plug-in Updates.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Smart Design Plug-in Updates.pdb</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/SmartImageForm_v1.exe?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\SmartImageForm_v1.exe</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/SmartImageForm_v1.exe.config?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\SmartImageForm_v1.exe.config</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/SmartImageForm_v1.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\SmartImageForm_v1.pdb</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/WpfApp1.exe?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\WpfApp1.exe</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/WpfApp1.exe.config?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\WpfApp1.exe.config</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/WpfApp1.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\WpfApp1.pdb</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Existing Files</description>
+      <launchArgs></launchArgs>
+    </Exist>
   </SmartDesignUpdate>
   <DeployerTool>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Tool-Deployment-Order/blob/main/Deployer%20Tool/Deployer.exe?raw=true</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Deployer%20Tool/Deployer.exe?raw=true</url>
       <filePath>%LocalAppData%\Programs\Deployer Tool\Deployer.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Deployer Program update added</description>
@@ -45,7 +262,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Tool-Deployment-Order/blob/main/Deployer%20Tool/Updater.dll?raw=true</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Deployer%20Tool/Updater.dll?raw=true</url>
       <filePath>%LocalAppData%\Programs\Deployer Tool\Updater.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>sharp update</description>
@@ -53,7 +270,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/Omararafa/Deployment-Tool/blob/master/TestApp/bin/Debug/LoginWindow.exe?raw=true</url>
+      <url>https://github.com/DeploymentService/Deployment-Tool/blob/master/TestApp/bin/Debug/LoginWindow.exe?raw=true</url>
       <filePath>%LocalAppData%\Programs\Deployer Tool\LoginWindow.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>login window update</description>
