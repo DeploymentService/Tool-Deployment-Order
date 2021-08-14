@@ -1,0 +1,691 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FMData.Rest</name>
+    </assembly>
+    <members>
+        <member name="T:FMData.Rest.FileMakerRestClient">
+            <summary>
+            FileMaker Data API Client Implementation.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient._createFactory``1">
+            <summary>
+            Factory to get a new Create Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient._editFactory``1">
+            <summary>
+            Factory to get a new Edit Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient._findFactory``1">
+            <summary>
+            Factory to get a new Find Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient._deleteFactory">
+            <summary>
+            Factory to get a new Delete Request of the correct type.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.FileMakerRestClient.IsAuthenticated">
+            <summary>
+            Indicates that the client is authenticated and has a token within the refresh window.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Create a FileMakerRestClient with a new instance of HttpClient.
+            </summary>
+            <param name="fmsUri">FileMaker Server HTTP Uri Endpoint.</param>
+            <param name="file">Name of the FileMaker Database to connect to.</param>
+            <param name="user">Account to connect with.</param>
+            <param name="pass">Account to connect with.</param>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.#ctor(System.Net.Http.HttpClient,FMData.ConnectionInfo)">
+            <summary>
+            FM Data Constructor with HttpClient and ConnectionInfo. Useful for Dependency Injection situations.
+            </summary>
+            <param name="client">The HttpClient instance to use.</param>
+            <param name="conn">The connection information for FMS.</param>
+        </member>
+        <member name="P:FMData.Rest.FileMakerRestClient._baseEndPoint">
+            <summary>
+            Note we assume _fmsUri has no trailing slash as its cut off in the constructor.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.AuthEndpoint">
+            <summary>
+            Generate the appropriate Authentication endpoint uri for this instance of the data client.
+            </summary>
+            <returns>The FileMaker Data API Endpoint for Authentication Requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.FindEndpoint(System.String)">
+            <summary>
+            Generate the appropriate Find endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <returns>The FileMaker Data API Endpoint for Find requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.CreateEndpoint(System.String)">
+            <summary>
+            Generate the appropriate Create endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <returns>The FileMaker Data API Endpoint for Create requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetRecordEndpoint(System.String,System.Int32)">
+            <summary>
+            Generate the appropriate Get Records endpoint.
+            </summary>
+            <param name="layout">The layout to use as the context for the response.</param>
+            <param name="recordId">The FileMaker record Id for this request.</param>
+            <returns>The FileMaker Data API Endpoint for Get Records requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetRecordsEndpoint(System.String,System.Int32,System.Int32)">
+            <summary>
+            Generate the appropriate Get Records endpoint.
+            </summary>
+            <param name="layout">The layout to use as the context for the response.</param>
+            <param name="limit">The number of records to return.</param>
+            <param name="offset">The offset number of records to skip before starting to return records.</param>
+            <returns>The FileMaker Data API Endpoint for Get Records requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.UpdateEndpoint(System.String,System.Object)">
+            <summary>
+            Generate the appropriate Edit/Update endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <param name="recordId">The record ID of the record to edit.</param>
+            <returns>The FileMaker Data API Endpoint for Update/Edit requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.DeleteEndpoint(System.String,System.Object)">
+            <summary>
+            Generate the appropriate Delete endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <param name="recordId">The record ID of the record to edit.</param>
+            <returns>The FileMaker Data API Endpoint for Delete requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ContainerEndpoint(System.String,System.Object,System.String,System.Int32)">
+            <summary>
+            Generate the appropriate Container field endpoint.
+            </summary>
+            <param name="layout">The layout to use.</param>
+            <param name="recordId">the record ID of the record to edit.</param>
+            <param name="fieldName">The name of the container field.</param>
+            <param name="repetition">Field repetition number.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.RefreshTokenAsync(System.String,System.String)">
+            <summary>
+            Refreshes the internally stored authentication token from filemaker server.
+            </summary>
+            <param name="username">Username of the account to authenticate.</param>
+            <param name="password">Password of the account to authenticate.</param>
+            <returns>An AuthResponse from deserialized from FileMaker Server json response.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.LogoutAsync">
+            <summary>
+            Logs the user out and nullifies the token.
+            </summary>
+            <returns>FileMaker Response</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.FindAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            General purpose Find Request method. Supports additional syntaxes like the { "omit" : "true" } operation.
+            This method returns a strongly typed <see cref="T:System.Collections.Generic.IEnumerable`1"/> but accepts a the more flexible <see cref="T:System.Collections.Generic.Dictionary`2"/> request parameters.
+            </summary>
+            <typeparam name="T">the type of response objects to return.</typeparam>
+            <param name="layout">The layout to perform the find request on.</param>
+            <param name="req">The find request dictionary.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> matching the request parameters.</returns>
+            <remarks>Can't be a relay method, since we have to process the data specially to get our output</remarks>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.SendAsync(FMData.IFindRequest{System.Collections.Generic.Dictionary{System.String,System.String}})">
+            <summary>
+            General purpose Find Request method. Supports additional syntaxes like the { "omit" : "true" } operation.
+            </summary>
+            <param name="req">The find request field/value dictionary to pass into FileMaker server.</param>
+            <returns>A <see cref="T:System.Collections.Generic.Dictionary`2"/> wrapped in a FindResponse containing both record data and portal data.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetByFileMakerIdAsync``1(System.String,System.Int32,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="layout">The layout to execute the request on.</param>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <param name="modId">The function to use to map the ModId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns> 
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.SendAsync``1(FMData.ICreateRequest{``0})">
+            <summary>
+            Create a record in the database using the CreateRequest object.
+            </summary>
+            <typeparam name="T">The underlying type of record being created.</typeparam>
+            <param name="req">The request object containing the data to be sent.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.SendAsync``1(FMData.IEditRequest{``0})">
+            <summary>
+            Edit a record utilizing a generic parameter type to house the fields to be edited.
+            </summary>
+            <typeparam name="T">Type parameter for this edit.</typeparam>
+            <param name="req">The edit request object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.SendAsync(FMData.IDeleteRequest)">
+            <summary>
+            Delete a record.
+            </summary>
+            <param name="req">The delete record request.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.SendAsync``1(FMData.IFindRequest{``0},System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Strongly typed find request.
+            </summary>
+            <typeparam name="T">The type of response objects to return.</typeparam>
+            <param name="req">The find request parameters.</param>
+            <param name="fmId">Function to assign the FileMaker RecordId to each instance of {T}.</param>
+            <param name="modId">Function to assign the FileMaker ModId to each instance of {T}.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> matching the request parameters.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.RunScriptAsync(System.String,System.String,System.String)">
+            <summary>
+            Runs a script with the specified layout context and with an optional (null/empty OK) paramater.
+            </summary>
+            <param name="layout">The layout to use for the context of the script.</param>
+            <param name="script">The name of the script to run.</param>
+            <param name="scriptParameter">The parameter to pass to the script. Null or Empty is OK.</param>
+            <returns>The script result when OK, or the error code if not OK.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ExecuteRequestAsync(System.Net.Http.HttpMethod,System.String,FMData.IFileMakerRequest)">
+            <summary>
+            Executes a FileMaker Request to a JSON string.
+            </summary>
+            <param name="method">The http method to use for the request.</param>
+            <param name="requestUri"></param>
+            <param name="req">The request to execute.</param>
+            <returns>The JSON string returned from FMS.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ExecuteRequestAsync``1(FMData.ICreateRequest{``0})">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ExecuteRequestAsync``1(FMData.IEditRequest{``0})">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ExecuteRequestAsync``1(FMData.IFindRequest{``0})">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ExecuteRequestAsync(FMData.IDeleteRequest)">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.SetGlobalFieldAsync(System.String,System.String,System.String)">
+            <summary>
+            Set the value of global fields.
+            // https://fmhelp.filemaker.com/docs/17/en/dataapi/#set-global-fields
+            </summary>
+            <param name="baseTable">The base table on which this global field is defined.</param>
+            <param name="fieldName">The name of the global field to set.</param>
+            <param name="targetValue">The target value for this global field.</param>
+            <returns>FileMaker Response</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetProductInformationAsync">
+            <summary>
+            Get FileMaker Server Product Information.
+            </summary>
+            <returns>An instance of the FileMaker Product Info.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetDatabasesAsync">
+            <summary>
+            Get the databases the current instance is authorized to access.
+            </summary>
+            <returns>The names of the databases the current user is able to connect.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetLayoutsAsync">
+            <summary>
+            Gets all the layouts within a database
+            </summary>
+            <param name="database">The database to query.</param>
+            <returns>The names of the layouts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetScriptsAsync">
+            <summary>
+            Gets all the scripts within the database.
+            </summary>
+            <returns>The names of the scripts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetLayoutAsync(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Gets the metadata for a layout object.
+            </summary>
+            <param name="layout">The layout to get data about.</param>
+            <param name="recordId">Optional RecordId, for getting layout data specific to a record. ValueLists, etc.</param>
+            <returns>An instance of the LayoutMetadata class for the specified layout.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.UpdateContainerAsync(System.String,System.Int32,System.String,System.String,System.Int32,System.Byte[])">
+            <summary>
+            Puts the contents of the byte array into the specified container field.
+            </summary>
+            <param name="layout">The layout to perform this operation on.</param>
+            <param name="recordId">The FileMaker RecordID of the record we want to update the container on.</param>
+            <param name="fieldName">Name of the Container Field.</param>
+            <param name="fileName">The name of the file being inserted into the container field.</param>
+            <param name="repetition">Field repetition number.</param>
+            <param name="content">The content to be inserted into the container field.</param>
+            <returns>The FileMaker Server Response from this operation.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.GetContainerOnClient(System.String)">
+            <summary>
+            Utility method that must be overridden in implementations. Takes a containerfield url and populates a byte array utilizing the instance's http client.
+            </summary>
+            <param name="containerEndPoint">The container field to load.</param>
+            <returns>An array of bytes with the data from the container field.</returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.ConvertJTokenToInstance``1(System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object},Newtonsoft.Json.Linq.JToken)">
+            <summary>
+            Converts a JToken instance and maps it to the generic type.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fmId">FileMaker Record Id map function.</param>
+            <param name="modId">Modification Id map function.</param>
+            <param name="input">JSON.NET JToken instance from Data Api Response.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.FileMakerRestClient.Dispose">
+            <summary>
+            Dispose resources opened for this instance of the data client.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.FormatNumbersAsTextConverter">
+            <summary>
+            Ensure that numbers are written out to the json object as strings for FileMaker Data API compatibility.
+            </summary>
+            <remarks>Source: https://stackoverflow.com/a/39526179/86860</remarks>
+        </member>
+        <member name="T:FMData.Rest.IFileMakerRestClient">
+            <summary>
+            FileMaker REST Client methods. Mostly for internal use.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.RefreshTokenAsync(System.String,System.String)">
+            <summary>
+            Refreshes the internally stored authentication token from filemaker server.
+            </summary>
+            <param name="username">Username of the account to authenticate.</param>
+            <param name="password">Password of the account to authenticate.</param>
+            <returns>An AuthResponse from deserialized from FileMaker Server json response.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.LogoutAsync">
+            <summary>
+            Logs the user out and nullifies the token.
+            </summary>
+            <returns>FileMaker Response</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.AuthEndpoint">
+            <summary>
+            Generate the appropriate Authentication endpoint uri for this instance of the data client.
+            </summary>
+            <returns>The FileMaker Data API Endpoint for Authentication Requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.FindEndpoint(System.String)">
+            <summary>
+            Generate the appropriate Find endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <returns>The FileMaker Data API Endpoint for Find requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.GetRecordEndpoint(System.String,System.Int32)">
+            <summary>
+            Generate the appropriate Get Records endpoint.
+            </summary>
+            <param name="layout">The layout to use as the context for the response.</param>
+            <param name="recordId">The FileMaker record Id for this request.</param>
+            <returns>The FileMaker Data API Endpoint for Get Records requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.GetRecordsEndpoint(System.String,System.Int32,System.Int32)">
+            <summary>
+            Generate the appropriate Get Records endpoint.
+            </summary>
+            <param name="layout">The layout to use as the context for the response.</param>
+            <param name="range">The number of records to return.</param>
+            <param name="offset">The offset number of records to skip before starting to return records.</param>
+            <returns>The FileMaker Data API Endpoint for Get Records requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.CreateEndpoint(System.String)">
+            <summary>
+            Generate the appropriate Create endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <returns>The FileMaker Data API Endpoint for Create requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.UpdateEndpoint(System.String,System.Object)">
+            <summary>
+            Generate the appropriate Edit/Update endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <param name="recordId">The record ID of the record to edit.</param>
+            <returns>The FileMaker Data API Endpoint for Update/Edit requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.DeleteEndpoint(System.String,System.Object)">
+            <summary>
+            Generate the appropriate Delete endpoint uri for this instance of the data client.
+            </summary>
+            <param name="layout">The name of the layout to use as the context for creating the record.</param>
+            <param name="recordId">The record ID of the record to edit.</param>
+            <returns>The FileMaker Data API Endpoint for Delete requests.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.ContainerEndpoint(System.String,System.Object,System.String,System.Int32)">
+            <summary>
+            Generate the appropriate Container field endpoint.
+            </summary>
+            <param name="layout">The layout to use.</param>
+            <param name="recordId">the record ID of the record to edit.</param>
+            <param name="fieldName">The name of the container field.</param>
+            <param name="repetitionNumber">Field repetition number; default value is 1 (one).</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.ExecuteRequestAsync(System.Net.Http.HttpMethod,System.String,FMData.IFileMakerRequest)">
+            <summary>
+            Utility method for exposing the raw request data from FMS.
+            </summary>
+            <param name="method">The http method to execute for this request (GET, POST, PATCH, DELETE).</param>
+            <param name="requestUri">The Endpoint to execute the request at.</param>
+            <param name="req">The request object to send to FMS.</param>
+            <returns>An HttpResponseMessage from executing the request.</returns>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.ExecuteRequestAsync``1(FMData.ICreateRequest{``0})">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.ExecuteRequestAsync``1(FMData.IEditRequest{``0})">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.ExecuteRequestAsync``1(FMData.IFindRequest{``0})">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.IFileMakerRestClient.ExecuteRequestAsync(FMData.IDeleteRequest)">
+            <summary>
+            Helper For Getting Raw Responses from Data API.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.IFileMakerRestClient.IsAuthenticated">
+            <summary>
+            Indicates if the client is authenticated or not.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.NullJsonWriter">
+            <summary>
+            When including nulls, we write null as empty string (thanks FileMaker Data API.)
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.RequestQueryInstanceConverter`1">
+            <summary>
+            JSON Convert Class that is used to combine the query object with the omit attribute that FileMaker Server expects to see.
+            </summary>
+            <typeparam name="T">Generic Type Instance of the Request to be converted.</typeparam>
+        </member>
+        <member name="T:FMData.Rest.Requests.CreateRequest`1">
+            <summary>
+            Create Request Wrapper
+            </summary>
+            <typeparam name="T">The type to create.</typeparam>
+        </member>
+        <member name="P:FMData.Rest.Requests.CreateRequest`1.Data">
+            <summary>
+            The field data for the create request.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Requests.DeleteRequest">
+            <summary>
+            Delete Record Request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.DeleteRequest.RecordId">
+            <summary>
+            The FileMaker record id to delete.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Requests.EditRequest`1">
+            <summary>
+            Edit Request Wrapper
+            </summary>
+            <typeparam name="T">The type to edit.</typeparam>
+        </member>
+        <member name="P:FMData.Rest.Requests.EditRequest`1.Data">
+            <summary>
+            Edit request data. The values from this object are what will be passed to FileMaker's API.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.EditRequest`1.RecordId">
+            <summary>
+            The FileMaker RecordID of the record to be edited.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.EditRequest`1.ModId">
+            <summary>
+            Optional -- FileMaker Modification ID to ensure no update was made from the time the data was read to updated.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Requests.FindRequest`1">
+            <summary>
+            The object that contains the parameters to serialize for a find request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.FindRequest`1.Query">
+            <summary>
+            The find request dictionary.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.FindRequest`1.Limit">
+            <summary>
+            Maximum number of records to return for this request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.FindRequest`1.Offset">
+            <summary>
+            The number of records to skip before returning records for this request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.FindRequest`1.Sort">
+            <summary>
+            The sort fields and directions for this request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.FindRequest`1.LoadContainerData">
+            <summary>
+            Determines if container data attributes are processed and loaded.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.Requests.FindRequest`1.FromJson``1(System.String)">
+            <summary>
+            Create a find request from Json
+            </summary>
+            <param name="json">The incoming Json data to deserialize.</param>
+            <returns>An instance of the FindRequest object from the provided Json string.</returns>
+        </member>
+        <member name="M:FMData.Rest.Requests.FindRequest`1.SerializeRequest">
+            <summary>
+            JSON Convert the current object to a string for passing out to the API.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.Rest.Requests.FindRequest`1.AddQuery(`0,System.Boolean)">
+            <summary>
+            Add an instance to the query collection.
+            </summary>
+            <param name="query">The object to add to the query.</param>
+            <param name="omit">Flag indicating if this instance represents a find or an omit.</param>
+        </member>
+        <member name="T:FMData.Rest.Requests.Sort">
+            <summary>
+            Data Class For Sort
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.Sort.FieldName">
+            <summary>
+            The name of the sort field.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Requests.Sort.SortOrder">
+            <summary>
+            Sort direction (ascend/descend).
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.RequestBase">
+            <summary>
+            Base Request Implementation
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.Layout">
+            <summary>
+            Name of the layout FileMaker should be on when processing this request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.ResponseLayout">
+            <summary>
+            The layout the response should take place on (useful for projecting different data than the request).
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.Script">
+            <summary>
+            Request Script. Occurs post request, and post sort.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.ScriptParameter">
+            <summary>
+            Request Script Parameter.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.PreRequestScript">
+            <summary>
+            Pre-request script. Runs after going to the layout in the request, but before the API request takes place.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.PreRequestScriptParameter">
+            <summary>
+            Pre-request script parameter.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.PreSortScript">
+            <summary>
+            Pre-sort request. Occurs after the pre-request and the api request but before the sort has occurred.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.PreSortScriptParameter">
+            <summary>
+            Pre-sort script parameter.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.IncludeNullValuesInSerializedOutput">
+            <summary>
+            When set to true, serialization will include null values.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.RequestBase.IncludeDefaultValuesInSerializedOutput">
+            <summary>
+            When set to true, serialization will include null values.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.RequestBase.SerializeRequest">
+            <summary>
+            JSON Convert the current object to a string for passing out to the API.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Responses.AuthResponse">
+            <summary>
+            Authentication Response
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Responses.AuthResponse.Response">
+            <summary>
+            Wrapper for the Response object from FileMaker API.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Responses.AuthResponseResult">
+            <summary>
+            Response result containing the token.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Responses.AuthResponseResult.Token">
+            <summary>
+            The token provided as a result of the authentication request.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Responses.BaseResponse">
+            <summary>
+            Base Response Class For Other Response Types to Inherit.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.Responses.BaseResponse.#ctor">
+            <summary>
+            Constructor that news up the list of messages.
+            </summary>
+        </member>
+        <member name="M:FMData.Rest.Responses.BaseResponse.#ctor(System.String,System.String)">
+            <summary>
+            Constructor helper for quickly throwing a code/message into the list for testing.
+            </summary>
+            <param name="code"></param>
+            <param name="message"></param>
+        </member>
+        <member name="P:FMData.Rest.Responses.BaseResponse.Messages">
+            <summary>
+            The messages that are part of this response.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Responses.CreateResponse">
+            <summary>
+            Create response instance
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Responses.CreateResponse.Response">
+            <summary>
+            The response object from the create request.
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Responses.CreateResponse.Messages">
+            <summary>
+            The messages from this response.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Responses.EditResponse">
+            <summary>
+            Edit response instance
+            </summary>
+        </member>
+        <member name="P:FMData.Rest.Responses.EditResponse.Response">
+            <summary>
+            The response object from the create request.
+            </summary>
+        </member>
+        <member name="T:FMData.Rest.Responses.FindResponse`1">
+            <summary>
+            Find Response
+            </summary>
+            <typeparam name="TResponseType">The type found from response layout.</typeparam>
+        </member>
+        <member name="P:FMData.Rest.Responses.FindResponse`1.Response">
+            <summary>
+            Response Object
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1759 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FMData</name>
+    </assembly>
+    <members>
+        <member name="T:FMData.ConnectionInfo">
+            <summary>
+            Represents the connection information for FMS.
+            </summary>
+        </member>
+        <member name="P:FMData.ConnectionInfo.FmsUri">
+            <summary>
+            HTTPS based uri to connect to FileMaker Server.
+            </summary>
+        </member>
+        <member name="P:FMData.ConnectionInfo.Database">
+            <summary>
+            The name of the database to make connections with.
+            </summary>
+        </member>
+        <member name="P:FMData.ConnectionInfo.Username">
+            <summary>
+            Username to use when making the connection.
+            </summary>
+        </member>
+        <member name="P:FMData.ConnectionInfo.Password">
+            <summary>
+            Password to use when making the connection.
+            </summary>
+        </member>
+        <member name="T:FMData.ContainerDataForAttribute">
+            <summary>
+            FileMaker record with Dictionary as field data and portal data.
+            </summary>
+        </member>
+        <member name="P:FMData.ContainerDataForAttribute.ContainerField">
+            <summary>
+            The name of the container field to load data from.
+            </summary>
+        </member>
+        <member name="M:FMData.ContainerDataForAttribute.#ctor(System.String)">
+            <summary>
+            Constructor for Attribute
+            </summary>
+            <param name="containerField">The name of the container field to load data from.</param>
+        </member>
+        <member name="T:FMData.FieldMetadata">
+            <summary>
+            FIeld Metadata Instance
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.Name">
+            <summary>
+            Field Name
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.Type">
+            <summary>
+            Field Type.
+            </summary>
+            <example>normal</example>
+        </member>
+        <member name="P:FMData.FieldMetadata.DisplayType">
+            <summary>
+            Field Display Type.
+            </summary>
+            <example>editText</example>
+        </member>
+        <member name="P:FMData.FieldMetadata.ValueList">
+            <summary>
+            Field Value List.
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.Global">
+            <summary>
+            Is Field Global?
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.AutoEnter">
+            <summary>
+            Is Field AutoEnter.
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.FourDigitYear">
+            <summary>
+            Is Field Four Digit Year?
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.MaxRepeat">
+            <summary>
+            Field Maximum Repeat.
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.MaxCharacters">
+            <summary>
+            Field Maximum Length (characters).
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.NotEmpty">
+            <summary>
+            Field NotEmpty
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.Numeric">
+            <summary>
+            Is Numeric
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.TimeOfDay">
+            <summary>
+            Time Of day
+            </summary>
+            <value></value>
+        </member>
+        <member name="P:FMData.FieldMetadata.RepetitionStart">
+            <summary>
+            Repetition Start
+            </summary>
+        </member>
+        <member name="P:FMData.FieldMetadata.RepetitionEnd">
+            <summary>
+            Repetition End
+            </summary>
+        </member>
+        <member name="T:FMData.FileMakerApiClientBase">
+            <summary>
+            Base for implementations to inherit from.
+            Provides some wrapper and passthrough functionality to expand the API surface without requiring each fo those methods be re-implemented.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateCreateRequest``1">
+            <summary>
+            Make a new instance of the Create Request class for Type T.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateCreateRequest``1(``0)">
+            <summary>
+            Generates a new create request for the input data.
+            </summary>
+            <param name="data">The initial find request data.</param>
+            <typeparam name="T">The type used for the create request.</typeparam>
+            <returns>An IFindRequest{T} instance setup per the initial query paramater.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase._createFactory``1">
+            <summary>
+            Factory to get a new Create Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateEditRequest``1(``0)">
+            <summary>
+            Generates a new edit request for the input object.
+            </summary>
+            <param name="data">The initial edit data request.</param>
+            <typeparam name="T">The type used for the edit request.</typeparam>
+            <returns>An IEditRequest{T} instance setup per the initial query paramater.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateEditRequest``1">
+            <summary>
+            Make a new instance of the Edit Request class for Type T.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase._editFactory``1">
+            <summary>
+            Factory to get a new Edit Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateFindRequest``1(``0)">
+            <summary>
+            Generates a new find request with an initial find query instance, specifying the layout via the model's DataContract attribute.
+            </summary>
+            <param name="initialQuery">The initial find request data.</param>
+            <typeparam name="T">The type used for the find request.</typeparam>
+            <returns>An IFindRequest{T} instance setup per the initial query paramater.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateFindRequest``1">
+            <summary>
+            Make a new instance of the Find Request for Type T.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase._findFactory``1">
+            <summary>
+            Factory to get a new Find Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GenerateDeleteRequest">
+            <summary>
+            Make a new instance of the Delete Request.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase._deleteFactory">
+            <summary>
+            Factory to get a new Delete Request of the correct type.
+            </summary>
+        </member>
+        <member name="F:FMData.FileMakerApiClientBase._client">
+            <summary>
+            HttpClient for connecting to FMS. Injected or newed up for each instance of the client.
+            </summary>
+        </member>
+        <member name="F:FMData.FileMakerApiClientBase._fmsUri">
+            <summary>
+            Uri to FileMaker Server
+            </summary>
+        </member>
+        <member name="F:FMData.FileMakerApiClientBase._fileName">
+            <summary>
+            Database/FileMaker File we're connected/ing to.
+            </summary>
+        </member>
+        <member name="F:FMData.FileMakerApiClientBase._userName">
+            <summary>
+            Username for connections.
+            </summary>
+        </member>
+        <member name="F:FMData.FileMakerApiClientBase._password">
+            <summary>
+            Password for connections.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.#ctor(System.Net.Http.HttpClient,FMData.ConnectionInfo)">
+            <summary>
+            FM Data Constructor with HttpClient and ConnectionInfo. Useful for Dependency Injection situations
+            </summary>
+            <param name="client">The HttpClient instance to use.</param>
+            <param name="conn">The connection information for FMS.</param>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.RunScriptAsync(System.String,System.String,System.String)">
+            <summary>
+            Runs a script with the specified layout context and with an optional (null/empty OK) paramater.
+            </summary>
+            <param name="layout">The layout to use for the context of the script.</param>
+            <param name="script">The name of the script to run.</param>
+            <param name="scriptParameter">The parameter to pass to the script. Null or Empty is OK.</param>
+            <returns>The script result when OK, or the error code if not OK.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.CreateAsync``1(``0)">
+            <summary>
+            Create a record in the database utilizing the DataContract to target the layout.
+            </summary>
+            <typeparam name="T">The type parameter to be created.</typeparam>
+            <param name="input">Object containing the data to be on the newly created record.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.CreateAsync``1(``0,System.Boolean,System.Boolean)">
+            <summary>
+            Create a record in the database utilizing the DataContract attribute to target the layout.
+            </summary>
+            <typeparam name="T">The type parameter to be created.</typeparam>
+            <param name="input">Object containing the data to be on the newly created record.</param>
+            <param name="includeNullValues">Dictates the serialization behavior regarding null values.</param>
+            <param name="includeDefaultValues">Dictates the serialization behavior regarding default values.</param>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.CreateAsync``1(System.String,``0)">
+            <summary>
+            Create a record in the file via explicit layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="layout">The layout to use for the context of the request.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns>The newly created RecordId and/or an error response code.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.CreateAsync``1(``0,System.String,System.String)">
+            <summary>
+            Create a record in the file, attempt to use the [TableAttribute] to determine the layout and perform a script with parameter.
+            </summary>
+            <typeparam name="T">The type to create</typeparam>
+            <param name="input">The input record to create.</param>
+            <param name="script">The name of a FileMaker script to run.</param>
+            <param name="scriptParameter">The parameter to pass to the script.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.CreateAsync``1(``0,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Creates a record matching the input data. All possible scripts available.
+            Empty script names will be ignored.
+            </summary>
+            <typeparam name="T">The type of record to be created.</typeparam>
+            <param name="input">The data to put in the record.</param>
+            <param name="script">Name of the script to run at request completion.</param>
+            <param name="scriptParameter">Parameter for script.</param>
+            <param name="preRequestScript">Script to run before the request. See FMS documentation for more details.</param>
+            <param name="preRequestScriptParameter">Parameter for script.</param>
+            <param name="preSortScript">Script to run after the request, but before the sort. See FMS documentation for more details.</param>
+            <param name="preSortScriptParameter">Parameter for script.</param>
+            <returns>A response indicating the results of the call to the FileMaker Server Data API.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetProductInformationAsync">
+            <summary>
+            Get FileMaker Server Product Information.
+            </summary>
+            <returns>An instance of the FileMaker Product Info.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetDatabasesAsync">
+            <summary>
+            Get the databases the current instance is authorized to access.
+            </summary>
+            <returns>The names of the databases the current user is able to connect.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetLayoutsAsync(System.String)">
+            <summary>
+            Gets all the layouts within a database
+            </summary>
+            <param name="database">The database to query.</param>
+            <returns>The names of the layouts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetLayoutsAsync">
+            <summary>
+            Gets all the layouts within a database
+            </summary>
+            <returns>The names of the layouts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetScriptsAsync(System.String)">
+            <summary>
+            Gets all the scripts within a database.
+            </summary>
+            <param name="database">The database to query.</param>
+            <returns>The names of the scripts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetScriptsAsync">
+            <summary>
+            Gets all the scripts within the database.
+            </summary>
+            <returns>The names of the scripts in the database.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetLayoutAsync(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Gets the metadata for a layout object.
+            </summary>
+            <param name="database">The name of the database the layout is in.</param>
+            <param name="layout">The layout to get data about.</param>
+            <param name="recordId">Optional RecordId, for getting layout data specific to a record. ValueLists, etc.</param>
+            <returns>An instance of the LayoutMetadata class for the specified layout.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetLayoutAsync(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Gets the metadata for a layout object.
+            </summary>
+            <param name="layout">The layout to get data about.</param>
+            <param name="recordId">Optional RecordId, for getting layout data specific to a record. ValueLists, etc.</param>
+            <returns>An instance of the LayoutMetadata class for the specified layout.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0)">
+            <summary>
+            Find a record with utilizing a class instance to define the find request field values.
+            </summary>
+            <typeparam name="T">The type of response objects to return.</typeparam>
+            <param name="request">The object with properties to map to the find request.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> matching the request parameters.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0,System.Int32,System.Int32)">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Find a record with utilizing a class instance to define the find request field values.
+            </summary>
+            <typeparam name="T">The type of response objects to return.</typeparam>
+            <param name="request">The object with properties to map to the find request.</param>
+            <param name="fmIdFunc">Function to map a the FileMaker RecordId to each instance T.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> matching the request parameters.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0,System.Int32,System.Int32,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0,System.String,System.String,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="script">Script to run after the request is completed.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0,System.Int32,System.Int32,System.String,System.String,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <param name="script">Script to run after the request is completed.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(``0,System.Int32,System.Int32,System.String,System.String,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <param name="script">Script to run after the request is completed.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <param name="fmModIdFunc">Function to map hte FileMaker ModId to each instance of T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(System.String,``0)">
+            <summary>
+            Strongly typed find request.
+            </summary>
+            <typeparam name="T">The type of response objects to return.</typeparam>
+            <param name="layout">The name of the layout to run this request on.</param>
+            <param name="request">The object with properties to map to the find request.</param>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerable`1"/> matching the request parameters.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.EditAsync``1(System.Int32,``0)">
+            <summary>
+            Edit a record by FileMaker RecordId.
+            </summary>
+            <typeparam name="T">The type to pull the [Table] attribute from for context layout.</typeparam>
+            <param name="recordId">The FileMaker RecordId of the record to be edited.</param>
+            <param name="input">Object containing the values the record should reflect after the edit.</param>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.EditAsync``1(System.Int32,``0,System.Boolean,System.Boolean)">
+            <summary>
+            Edit a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="recordId">The internal FileMaker RecordId of the record to edit.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <param name="includeNullValues">Dictates the serialization behavior regarding null values.</param>
+            <param name="includeDefaultValues">Dictates the serialization behavior regarding default values.</param>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.EditAsync``1(System.Int32,System.String,System.String,``0)">
+            <summary>
+            Edit a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="recordId">The internal FileMaker RecordId of the record to edit.</param>
+            <param name="script">script to run after the request.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.EditAsync``1(System.String,System.Int32,``0)">
+            <summary>
+            Edit a record.
+            </summary>
+            <typeparam name="T">Type parameter for this edit.</typeparam>
+            <param name="layout">Explicitly define the layout to use.</param>
+            <param name="recordId">The internal FileMaker RecordId of the record to be edited.</param>
+            <param name="input">Object with the updated values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.EditAsync(System.Int32,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Edit a record.
+            </summary>
+            <param name="layout">Explicitly define the layout to use.</param>
+            <param name="recordId">The internal FileMaker RecordId of the record to be edited.</param>
+            <param name="editValues">Object with the updated values.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.DeleteAsync``1(System.Int32)">
+            <summary>
+            Delete a record utilizing a generic type with the [Table] attribute specifying the layout and the FileMaker RecordId.
+            </summary>
+            <typeparam name="T">Class with the [Table] attribute specifying the layout to use.</typeparam>
+            <param name="recId">The FileMaker RecordId of the record to delete.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.DeleteAsync(System.Int32,System.String)">
+            <summary>
+            Delete a record by id and layout.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync``1(FMData.ICreateRequest{``0})">
+            <summary>
+            Send a Create Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync(FMData.IDeleteRequest)">
+            <summary>
+            Send a Delete Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync``1(FMData.IEditRequest{``0})">
+            <summary>
+            Send an Edit Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync(FMData.IFindRequest{System.Collections.Generic.Dictionary{System.String,System.String}})">
+            <summary>
+            Send a Find Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync``1(FMData.IFindRequest{``0})">
+            <summary>
+            Send a Find Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync``1(FMData.IFindRequest{``0},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Send a Find Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SendAsync``1(FMData.IFindRequest{``0},System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Send a Find Record request to the FileMaker API.
+            </summary>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.FindAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Find a record with utilizing a class instance to define the find request field values.
+            </summary>
+            <typeparam name="T">The response type to extract and return.</typeparam>
+            <param name="layout">The layout to perform the request on.</param>
+            <param name="req">The dictionary of key/value pairs to find against.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetByFileMakerIdAsync``1(System.Int32,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetByFileMakerIdAsync``1(System.Int32,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <param name="fmMod">The function to use to map the FileMaker ModId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetByFileMakerIdAsync``1(System.String,System.Int32,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="layout">the layout to execute the request on.</param>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetByFileMakerIdAsync``1(System.String,System.Int32,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="layout">The layout to execute the request against.</param>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <param name="fmMod">The function to use to map the FileMaker ModId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.SetGlobalFieldAsync(System.String,System.String,System.String)">
+            <summary>
+            Set the value of global fields.
+            // https://fmhelp.filemaker.com/docs/17/en/dataapi/#set-global-fields
+            </summary>
+            <param name="baseTable">The base table on which this global field is defined.</param>
+            <param name="fieldName">The name of the global field to set.</param>
+            <param name="targetValue">The target value for this global field.</param>
+            <returns>FileMaker Response</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.ProcessContainer``1(``0)">
+            <summary>
+            Load the contents of the container data into the attributed property of the model.
+            </summary>
+            <typeparam name="T">The type of object to populate.</typeparam>
+            <param name="instance">Instance of the object that has container data with the ContainerDataForAttribute.</param>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetContainerOnClient(System.String)">
+            <summary>
+            Utility method that must be overridden in implementations. Takes a containerfield url and populates a byte array utilizing the instance's http client.
+            </summary>
+            <param name="containerEndPoint">The container field to load.</param>
+            <returns>An array of bytes with the data from the container field.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.ProcessContainers``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Load the contents of the container data into the attributed property of the models.
+            </summary>
+            <typeparam name="T">The type of object to populate.</typeparam>
+            <param name="instances">Collection of objects that have container data with the ContainerDataForAttribute.</param>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.UpdateContainerAsync(System.String,System.Int32,System.String,System.String,System.Byte[])">
+            <summary>
+            Puts the contents of the byte array into the specified container field.
+            </summary>
+            <param name="layout">The layout to perform this operation on.</param>
+            <param name="recordId">The FileMaker RecordID of the record we want to update the container on.</param>
+            <param name="fieldName">Name of the Container Field.</param>
+            <param name="fileName">The name of the file being inserted into the container field.</param>
+            <param name="content">The content to be inserted into the container field.</param>
+            <returns>The FileMaker Server Response from this operation.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.UpdateContainerAsync(System.String,System.Int32,System.String,System.String,System.Int32,System.Byte[])">
+            <summary>
+            Puts the contents of the byte array into the specified container field.
+            </summary>
+            <param name="layout">The layout to perform this operation on.</param>
+            <param name="recordId">The FileMaker RecordID of the record we want to update the container on.</param>
+            <param name="fieldName">Name of the Container Field.</param>
+            <param name="fileName">The name of the file being inserted into the container field.</param>
+            <param name="repetition">Field repetition number.</param>
+            <param name="content">The content to be inserted into the container field.</param>
+            <returns>The FileMaker Server Response from this operation.</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.GetLayoutName``1(``0)">
+            <summary>
+            Utility method to get the TableAttribute name to be used for the layout option in the request.
+            </summary>
+            <param name="instance"></param>
+            <returns>The specified in the Table Attribute</returns>
+        </member>
+        <member name="M:FMData.FileMakerApiClientBase.Dispose">
+            <summary>
+            IDisposable
+            </summary>
+        </member>
+        <member name="T:FMData.IFileMakerApiClient">
+            <summary>
+            FileMaker API Client
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateCreateRequest``1">
+            <summary>
+            Get a new Create Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateCreateRequest``1(``0)">
+            <summary>
+            Generates a new create request for the input data.
+            </summary>
+            <param name="data">The initial find request data.</param>
+            <typeparam name="T">The type used for the create request.</typeparam>
+            <returns>An IFindRequest{T} instance setup per the initial query paramater.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateEditRequest``1">
+            <summary>
+            Get a new Edit Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateEditRequest``1(``0)">
+            <summary>
+            Generates a new edit request for the input object.
+            </summary>
+            <param name="data">The initial edit data request.</param>
+            <typeparam name="T">The type used for the edit request.</typeparam>
+            <returns>An IEditRequest{T} instance setup per the initial query paramater.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateFindRequest``1">
+            <summary>
+            Get a new Find Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateFindRequest``1(``0)">
+            <summary>
+            Generates a new find request with an initial find query instance, specifying the layout via the model's DataContract attribute.
+            </summary>
+            <param name="initialQuery">The initial find request data.</param>
+            <typeparam name="T">The type used for the find request.</typeparam>
+            <returns>An IFindRequest{T} instance setup per the initial query paramater.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GenerateDeleteRequest">
+            <summary>
+            Get a new Delete Request of the correct type.
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.RunScriptAsync(System.String,System.String,System.String)">
+            <summary>
+            Runs a script with the specified layout context and with an optional (null/empty OK) paramater.
+            </summary>
+            <param name="layout">The layout to use for the context of the script.</param>
+            <param name="script">The name of the script to run.</param>
+            <param name="scriptParameter">The parameter to pass to the script. Null or Empty is OK.</param>
+            <returns>The script result when OK, or the error code if not OK.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.CreateAsync``1(``0)">
+            <summary>
+            Create a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns>The newly created RecordId and/or an error response code.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.CreateAsync``1(``0,System.Boolean,System.Boolean)">
+            <summary>
+            Create a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <param name="includeNullValues">Dictates the serialization behavior regarding null values.</param>
+            <param name="includeDefaultValues">Dictates the serialization behavior regarding default values.</param>
+            <returns>The newly created RecordId and/or an error response code.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.CreateAsync``1(``0,System.String,System.String)">
+            <summary>
+            <see cref="M:FMData.FileMakerApiClientBase.CreateAsync``1(``0,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.CreateAsync``1(``0,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            <see cref="M:FMData.FileMakerApiClientBase.CreateAsync``1(``0,System.String,System.String,System.String,System.String,System.String,System.String)"/>
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.CreateAsync``1(System.String,``0)">
+            <summary>
+            Create a record in the file via explicit layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="layout">The layout to use for the context of the request.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns>The newly created RecordId and/or an error response code.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetByFileMakerIdAsync``1(System.Int32,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetByFileMakerIdAsync``1(System.Int32,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <param name="fmMod">The function to use to map the FileMaker ModId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetByFileMakerIdAsync``1(System.String,System.Int32,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="layout">The layout to execute the request against.</param>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <param name="fmMod">The function to use to map the FileMaker ModId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetByFileMakerIdAsync``1(System.String,System.Int32,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Get a single record by FileMaker RecordId
+            </summary>
+            <typeparam name="T">The type to load the data into.</typeparam>
+            <param name="layout">The layout to execute the request against.</param>
+            <param name="fileMakerId">The FileMaker RecordId of the record to load.</param>
+            <param name="fmId">The function to use to map the FileMakerId to the return object.</param>
+            <returns>A single record matching the FileMaker Record Id.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetProductInformationAsync">
+            <summary>
+            Get FileMaker Server Product Information.
+            </summary>
+            <returns>An instance of the FileMaker Product Info.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetDatabasesAsync">
+            <summary>
+            Get the databases the current instance is authorized to access.
+            </summary>
+            <returns>The names of the databases the current user is able to connect.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetLayoutsAsync(System.String)">
+            <summary>
+            Gets all the layouts within a database
+            </summary>
+            <param name="database">The database to query.</param>
+            <returns>The names of the layouts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetLayoutsAsync">
+            <summary>
+            Gets all the layouts within the database.
+            </summary>
+            <returns>The names of the layouts in the database.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetLayoutAsync(System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Gets the metadata for a layout object.
+            </summary>
+            <param name="database">The name of the database the layout is in.</param>
+            <param name="layout">The layout to get data about.</param>
+            <param name="recordId">Optional RecordId, for getting layout data specific to a record. ValueLists, etc.</param>
+            <returns>An instance of the LayoutMetadata class for the specified layout.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetLayoutAsync(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Gets the metadata for a layout object.
+            </summary>
+            <param name="layout">The layout to get data about.</param>
+            <param name="recordId">Optional RecordId, for getting layout data specific to a record. ValueLists, etc.</param>
+            <returns>An instance of the LayoutMetadata class for the specified layout.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetScriptsAsync(System.String)">
+            <summary>
+            Gets all the scripts within a database.
+            </summary>
+            <param name="database">The database to query.</param>
+            <returns>The names of the scripts in the specified database.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.GetScriptsAsync">
+            <summary>
+            Gets all the scripts within the database.
+            </summary>
+            <returns>The names of the scripts in the database.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0)">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0,System.Int32,System.Int32)">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0,System.Int32,System.Int32,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0,System.String,System.String,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="script">Script to run after the request is completed.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0,System.Int32,System.Int32,System.String,System.String,System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <param name="script">Script to run after the request is completed.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(``0,System.Int32,System.Int32,System.String,System.String,System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <param name="skip">Number of records to skip.</param>
+            <param name="take">Number of records to return.</param>
+            <param name="script">Script to run after the request is completed.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="fmIdFunc">Function to map the FileMaker RecordId to each instance T.</param>
+            <param name="fmModIdFunc">Function to map hte FileMaker ModId to each instance of T.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(System.String,``0)">
+            <summary>
+            Finds a record or records matching the properties of the input request object.
+            </summary>
+            <param name="layout">Overrides the TableAttribute for the name of the layout to run this request on.</param>
+            <param name="request">The object to utilize for the find request parameters.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.FindAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Finds a record or records matching the properties of the input request.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="layout"></param>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.EditAsync``1(System.Int32,``0)">
+            <summary>
+            Edit a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="recordId">The internal FileMaker RecordId of the record to edit.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.EditAsync``1(System.Int32,``0,System.Boolean,System.Boolean)">
+            <summary>
+            Edit a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="recordId">The internal FileMaker RecordId of the record to edit.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <param name="includeNullValues">Dictates the serialization behavior regarding null values.</param>
+            <param name="includeDefaultValues">Dictates the serialization behavior regarding default values.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.EditAsync``1(System.Int32,System.String,System.String,``0)">
+            <summary>
+            Edit a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="recordId">The internal FileMaker RecordId of the record to edit.</param>
+            <param name="script">script to run after the request.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.EditAsync``1(System.String,System.Int32,``0)">
+            <summary>
+            Edit a record in the file, attempt to use the [TableAttribute] to determine the layout.
+            </summary>
+            <typeparam name="T">Properties of this generic type should match fields on target layout.</typeparam>
+            <param name="layout"></param>
+            <param name="recordId">The internal FileMaker RecordId of the record to edit.</param>
+            <param name="input">The object containing the data to be sent across the wire to FileMaker.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.EditAsync(System.Int32,System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Edit a record based on RecordId, layout, and a collection of key/value pairs for the fields to be updated.
+            </summary>
+            <param name="recordId">FileMaker RecordId</param>
+            <param name="layout">The layout to use for context.</param>
+            <param name="editValues">The field and value pairs to send for edit.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.DeleteAsync``1(System.Int32)">
+            <summary>
+            Delete a record by FileMaker RecordId. 
+            </summary>
+            <param name="recId">The filemaker RecordId to delete.</param>
+            <typeparam name="T">Used to pull the [TableAttribute] value to determine the layout to use.</typeparam>
+            <returns></returns>
+            <remarks>Use the other delete overload if the class does not use the [Table] attribute.</remarks>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.DeleteAsync(System.Int32,System.String)">
+            <summary>
+            Delete a record.
+            </summary>
+            <param name="recId">The FileMaker RecordId to delete.</param>
+            <param name="layout">The layout to use for the delete.</param>
+            <returns></returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SetGlobalFieldAsync(System.String,System.String,System.String)">
+            <summary>
+            Set the value of global fields.
+            // https://fmhelp.filemaker.com/docs/17/en/dataapi/#set-global-fields
+            </summary>
+            <param name="baseTable">The base table on which this global field is defined.</param>
+            <param name="fieldName">The name of the global field to set.</param>
+            <param name="targetValue">The target value for this global field.</param>
+            <returns>FileMaker Response</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.UpdateContainerAsync(System.String,System.Int32,System.String,System.String,System.Int32,System.Byte[])">
+            <summary>
+            Puts the contents of the byte array into the specified container field.
+            </summary>
+            <param name="layout">The layout to perform this operation on.</param>
+            <param name="recordId">The FileMaker RecordID of the record we want to update the container on.</param>
+            <param name="fieldName">Name of the Container Field.</param>
+            <param name="fileName">The name of the file being inserted into the container field.</param>
+            <param name="repetition">Field repetition number.</param>
+            <param name="content">The content to be inserted into the container field.</param>
+            <returns>The FileMaker Server Response from this operation.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.UpdateContainerAsync(System.String,System.Int32,System.String,System.String,System.Byte[])">
+            <summary>
+            Puts the contents of the byte array into the specified container field.
+            </summary>
+            <param name="layout">The layout to perform this operation on.</param>
+            <param name="recordId">The FileMaker RecordID of the record we want to update the container on.</param>
+            <param name="fieldName">Name of the Container Field.</param>
+            <param name="fileName">The name of the file being inserted into the container field.</param>
+            <param name="content">The content to be inserted into the container field.</param>
+            <returns>The FileMaker Server Response from this operation.</returns>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.ProcessContainer``1(``0)">
+            <summary>
+            Load the contents of the container data into the attributed property of the model.
+            </summary>
+            <typeparam name="T">The type of object to populate.</typeparam>
+            <param name="instance">Instance of the object that has container data with the ContainerDataForAttribute.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.ProcessContainers``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Load the contents of the container data into the attributed property of the models.
+            </summary>
+            <typeparam name="T">The type of object to populate.</typeparam>
+            <param name="instances">Collection of objects that have container data with the ContainerDataForAttribute.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync``1(FMData.ICreateRequest{``0})">
+            <summary>
+            Creates a new record.
+            </summary>
+            <param name="req">New record request.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync(FMData.IFindRequest{System.Collections.Generic.Dictionary{System.String,System.String}})">
+            <summary>
+            Find a record or records matching the request.
+            </summary>
+            <param name="req">Find request.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync``1(FMData.IFindRequest{``0})">
+            <summary>
+            Find a record or records matching the request.
+            </summary>
+            <param name="req">Find request.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync``1(FMData.IFindRequest{``0},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Find a record or records matching the request.
+            </summary>
+            <param name="req">Find request.</param>
+            <param name="fmId">Function to map the FileMaker Id to the model.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync``1(FMData.IFindRequest{``0},System.Func{``0,System.Int32,System.Object},System.Func{``0,System.Int32,System.Object})">
+            <summary>
+            Find a record or records matching the request.
+            </summary>
+            <param name="req">Find request.</param>
+            <param name="fmId">Function to map the FileMaker Id to the model.</param>
+            <param name="modId">Function to map the FileMaker Mod Id to the model.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync``1(FMData.IEditRequest{``0})">
+            <summary>
+            Edit record.
+            </summary>
+            <param name="req">Edit record request.</param>
+        </member>
+        <member name="M:FMData.IFileMakerApiClient.SendAsync(FMData.IDeleteRequest)">
+            <summary>
+            Delete record
+            </summary>
+            <param name="req">Delete record request.</param>
+        </member>
+        <member name="T:FMData.LayoutListItem">
+            <summary>
+            Class used to track nested items
+            </summary>
+        </member>
+        <member name="P:FMData.LayoutListItem.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:FMData.LayoutListItem.IsFolder">
+            <summary>
+            Is Folder
+            </summary>
+        </member>
+        <member name="P:FMData.LayoutListItem.FolderLayoutNames">
+            <summary>
+            Items
+            </summary>
+        </member>
+        <member name="T:FMData.LayoutMetadata">
+            <summary>
+            Layout Metadata
+            </summary>
+        </member>
+        <member name="P:FMData.LayoutMetadata.Name">
+            <summary>
+            Name of layout
+            </summary>
+        </member>
+        <member name="P:FMData.LayoutMetadata.FieldMetaData">
+            <summary>
+            A collection of FieldMetadata instances for the fields on the layout.
+            </summary>
+        </member>
+        <member name="P:FMData.LayoutMetadata.ValueLists">
+            <summary>
+            A collection of Value Lists available on this layout.
+            </summary>
+        </member>
+        <member name="T:FMData.PortalDataAttribute">
+            <summary>
+            Used to help map portal instances to properties on a model.
+            </summary>
+        </member>
+        <member name="P:FMData.PortalDataAttribute.NamedPortalInstance">
+            <summary>
+            The name of the container field to load data from.
+            </summary>
+        </member>
+        <member name="P:FMData.PortalDataAttribute.TablePrefixFieldNames">
+            <summary>
+            Used to assist in mapping fields in this portal to the native model.
+            Prevents needed to have separate models to map a table from a portal or call it directly via layout.
+            </summary>
+        </member>
+        <member name="M:FMData.PortalDataAttribute.#ctor(System.String)">
+            <summary>
+            Constructor for Attribute
+            </summary>
+            <param name="namedPortal">The name of the portal on the layout.</param>
+        </member>
+        <member name="T:FMData.ProductInformation">
+            <summary>
+            Information about the FileMaker Server
+            </summary>
+        </member>
+        <member name="P:FMData.ProductInformation.Name">
+            <summary>
+            Product Name
+            </summary>
+        </member>
+        <member name="P:FMData.ProductInformation.BuildDate">
+            <summary>
+            Date of Build
+            </summary>
+        </member>
+        <member name="P:FMData.ProductInformation.Version">
+            <summary>
+            FileMaker Server Version
+            </summary>
+        </member>
+        <member name="P:FMData.ProductInformation.DateFormat">
+            <summary>
+            Date Format String
+            </summary>
+        </member>
+        <member name="P:FMData.ProductInformation.TimeFormat">
+            <summary>
+            Time Format String
+            </summary>
+        </member>
+        <member name="P:FMData.ProductInformation.TimeStampFormat">
+            <summary>
+            FileMaker TimeStamp (aka DateTime, NOT SQL Timestamp) Format
+            </summary>
+        </member>
+        <member name="T:FMData.Record">
+            <summary>
+            FileMaker record with Dictionary as field data and portal data.
+            </summary>
+        </member>
+        <member name="T:FMData.RecordBase`2">
+            <summary>
+            Record Base
+            </summary>
+            <typeparam name="TypeFD">Type of Field Data</typeparam>
+            <typeparam name="TypePD">Type of Portal Data</typeparam>
+        </member>
+        <member name="P:FMData.RecordBase`2.FieldData">
+            <summary>
+            Field Data
+            </summary>
+        </member>
+        <member name="P:FMData.RecordBase`2.PortalData">
+            <summary>
+            Portal Data
+            </summary>
+        </member>
+        <member name="P:FMData.RecordBase`2.RecordId">
+            <summary>
+            FileMaker RecordId
+            </summary>
+        </member>
+        <member name="P:FMData.RecordBase`2.ModId">
+            <summary>
+            FileMaker Modification id
+            </summary>
+        </member>
+        <member name="T:FMData.CreateRequestExtensions">
+            <summary>
+            Extension (utility and helper) methods for ICreateRequest.
+            </summary>
+        </member>
+        <member name="M:FMData.CreateRequestExtensions.SetData``1(FMData.ICreateRequest{``0},``0)">
+            <summary>
+            Set the data for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="data">Object containing the data for this find request record.</param>
+            <typeparam name="T">The type used for the create request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.CreateRequestExtensions.UseLayout``1(FMData.ICreateRequest{``0},System.String)">
+            <summary>
+            Specify a layout to use for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="layout">Name of the layout to use</param>
+            <typeparam name="T">The type used for the create request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.CreateRequestExtensions.UseLayout``1(FMData.ICreateRequest{``0},``0)">
+            <summary>
+            Specify a layout to use for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="instance">Object to pull the layout from using its DataContract attribute.</param>
+            <typeparam name="T">The type used for the create request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.CreateRequestExtensions.SetPreRequestScript``1(FMData.ICreateRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a pre request script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.CreateRequestExtensions.SetPreSortScript``1(FMData.ICreateRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a pre sort script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.CreateRequestExtensions.SetScript``1(FMData.ICreateRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="T:FMData.EditRequestExtensions">
+            <summary>
+            Extension (utility and helper) methods for IEditRequest.
+            </summary>
+        </member>
+        <member name="M:FMData.EditRequestExtensions.SetData``1(FMData.IEditRequest{``0},``0)">
+            <summary>
+            Set the data for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="data">Object containing the data for this find request record.</param>
+            <typeparam name="T">The type used for the edit request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.EditRequestExtensions.UseLayout``1(FMData.IEditRequest{``0},System.String)">
+            <summary>
+            Specify a layout to use for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="layout">Name of the layout to use</param>
+            <typeparam name="T">The type used for the edit request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.EditRequestExtensions.UseLayout``1(FMData.IEditRequest{``0},``0)">
+            <summary>
+            Specify a layout to use for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="instance">Object to pull the layout from using its DataContract attribute.</param>
+            <typeparam name="T">The type used for the edit request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.EditRequestExtensions.SetPreRequestScript``1(FMData.IEditRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a pre request script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.EditRequestExtensions.SetPreSortScript``1(FMData.IEditRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a pre sort script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.EditRequestExtensions.SetScript``1(FMData.IEditRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="T:FMData.FindRequestExtensions">
+            <summary>
+            Extension (utility and helper) methods for IFindRequest.
+            </summary>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.AddCriteria``1(FMData.IFindRequest{``0},``0,System.Boolean)">
+            <summary>
+            Adds a new find criteria to the find request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="criteria">Object containing the data for this find request record.</param>
+            <param name="omit">Use this criteria for omit(int matching records) or not.</param>
+            <typeparam name="T">The type used for the find request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.SetLimit``1(FMData.IFindRequest{``0},System.Int32)">
+            <summary>
+            Specify the limit of records to be returned.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="limit">The maximum number of records to be returned as part of this request.</param>
+            <typeparam name="T">The type used for the find request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.SetOffset``1(FMData.IFindRequest{``0},System.Int32)">
+            <summary>
+            Specify the number to offset (skip) before returning records.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="offset">The offset to use before returning records.</param>
+            <typeparam name="T">The type used for the find request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.UseLayout``1(FMData.IFindRequest{``0},System.String)">
+            <summary>
+            Specify a layout to use for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="layout">Name of the layout to use</param>
+            <typeparam name="T">The type used for the find request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.UseLayout``1(FMData.IFindRequest{``0},``0)">
+            <summary>
+            Specify a layout to use for this request.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="instance">Object to pull the layout from using its DataContract attribute.</param>
+            <typeparam name="T">The type used for the find request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.LoadContainers``1(FMData.IFindRequest{``0})">
+            <summary>
+            Indicate that container data should be processed.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <typeparam name="T">The type used for the find request/response.</typeparam>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.SetPreRequestScript``1(FMData.IFindRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a pre request script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.SetPreSortScript``1(FMData.IFindRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a pre sort script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.FindRequestExtensions.SetScript``1(FMData.IFindRequest{``0},System.String,System.String)">
+            <summary>
+            Adds a script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="T:FMData.ICreateRequest`1">
+            <summary>
+            Create Record Request
+            </summary>
+            <typeparam name="T">The type of record to be created.</typeparam>
+        </member>
+        <member name="P:FMData.ICreateRequest`1.Data">
+            <summary>
+            The data to put in the new record.
+            </summary>
+        </member>
+        <member name="T:FMData.IDeleteRequest">
+            <summary>
+            Delete Request Interface
+            </summary>
+        </member>
+        <member name="P:FMData.IDeleteRequest.RecordId">
+            <summary>
+            FileMaker record id to be deleted.
+            </summary>
+        </member>
+        <member name="T:FMData.IEditRequest`1">
+            <summary>
+            Edit Request Interface
+            </summary>
+            <typeparam name="T">The type of object being edited.</typeparam>
+        </member>
+        <member name="P:FMData.IEditRequest`1.Data">
+            <summary>
+            The data representing this record.
+            </summary>
+        </member>
+        <member name="P:FMData.IEditRequest`1.ModId">
+            <summary>
+            FileMaker Modification Id to provide with the request.
+            </summary>
+        </member>
+        <member name="P:FMData.IEditRequest`1.RecordId">
+            <summary>
+            FileMaker record Id to be edited.
+            </summary>
+        </member>
+        <member name="T:FMData.IFileMakerRequest">
+            <summary>
+            Methods and Properties all requests must implement.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.Layout">
+            <summary>
+            The layout to run the request against.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.ResponseLayout">
+            <summary>
+            The layout to respond with. 
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.Script">
+            <summary>
+            Name of the script to run after the request has completed.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.ScriptParameter">
+            <summary>
+            Request Script Parameter.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.PreRequestScript">
+            <summary>
+            Pre-request script. Runs after going to the layout in the request, but before the API request takes place.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.PreRequestScriptParameter">
+            <summary>
+            Pre-request script parameter.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.PreSortScript">
+            <summary>
+            /// Pre-sort request. Occurs after the pre-request and the api request but before the sort has occurred.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.PreSortScriptParameter">
+            <summary>
+            Pre-sort script parameter.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.IncludeNullValuesInSerializedOutput">
+            <summary>
+            When set to true, serialization will include null values.
+            </summary>
+        </member>
+        <member name="P:FMData.IFileMakerRequest.IncludeDefaultValuesInSerializedOutput">
+            <summary>
+            When set to true, serialization will include null values.
+            </summary>
+        </member>
+        <member name="M:FMData.IFileMakerRequest.SerializeRequest">
+            <summary>
+            Serializes the request to the required format.
+            </summary>
+            <returns>A serialized string represneting the current request.</returns>
+        </member>
+        <member name="T:FMData.IFindRequest`1">
+            <summary>
+            Find Request Interface
+            </summary>
+            <typeparam name="TRequestType">The type of object to find.</typeparam>
+        </member>
+        <member name="P:FMData.IFindRequest`1.Offset">
+            <summary>
+            The Offset (number of records to skip)
+            </summary>
+        </member>
+        <member name="P:FMData.IFindRequest`1.Limit">
+            <summary>
+            The Limit (number of records to return)
+            </summary>
+        </member>
+        <member name="P:FMData.IFindRequest`1.Query">
+            <summary>
+            The object to use as query parameters.
+            </summary>
+        </member>
+        <member name="P:FMData.IFindRequest`1.Sort">
+            <summary>
+            The sort options for this request.
+            </summary>
+        </member>
+        <member name="P:FMData.IFindRequest`1.LoadContainerData">
+            <summary>
+            Determines if container data attributes are processed and loaded.
+            </summary>
+        </member>
+        <member name="M:FMData.IFindRequest`1.AddQuery(`0,System.Boolean)">
+            <summary>
+            Add query data to the find request.
+            </summary>
+        </member>
+        <member name="T:FMData.ISort">
+            <summary>
+            Sort Interface
+            </summary>
+        </member>
+        <member name="P:FMData.ISort.FieldName">
+            <summary>
+            Sort Field
+            </summary>
+        </member>
+        <member name="P:FMData.ISort.SortOrder">
+            <summary>
+            Sort Order (ascend/descend)
+            </summary>
+        </member>
+        <member name="T:FMData.RequestExtensions">
+            <summary>
+            Extension (utility and helper) methods for IFileMakerRequest.
+            </summary>
+        </member>
+        <member name="M:FMData.RequestExtensions.SetPreRequestScript(FMData.IFileMakerRequest,System.String,System.String)">
+            <summary>
+            Adds a pre request script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.RequestExtensions.SetPreSortScript(FMData.IFileMakerRequest,System.String,System.String)">
+            <summary>
+            Adds a pre sort script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="M:FMData.RequestExtensions.SetScript(FMData.IFileMakerRequest,System.String,System.String)">
+            <summary>
+            Adds a script to the request, with a parameter.
+            </summary>
+            <param name="request">The request. This is the 'this' parameter.</param>
+            <param name="scriptName">Name of the script to be called.</param>
+            <param name="scriptParameter">Script parameter.</param>
+            <returns>The request instanced that was implicitly passed in which is useful for method chaining.</returns>
+        </member>
+        <member name="T:FMData.RequestQueryInstance`1">
+            <summary>
+            Middle layer class used for custom JsonConvert. This class helps generate the necessary JSON for the Find request.
+            </summary>
+            <typeparam name="TRequestType"></typeparam>
+        </member>
+        <member name="M:FMData.RequestQueryInstance`1.#ctor(`0,System.Boolean)">
+            <summary>
+            new instance 
+            </summary>
+            <param name="query">The underlying object containing query parameters.</param>
+            <param name="omit">Flag indicating omit or not.</param>
+        </member>
+        <member name="P:FMData.RequestQueryInstance`1.QueryInstance">
+            <summary>
+            The query object containing the query parameters.
+            </summary>
+        </member>
+        <member name="P:FMData.RequestQueryInstance`1.Omit">
+            <summary>
+            Boolean flag indicating if this instance should be entered as a find request FIND or OMIT.
+            </summary>
+        </member>
+        <member name="T:FMData.ActionResponse">
+            <summary>
+            Type holder for the nested 'Response' Type
+            </summary>
+        </member>
+        <member name="P:FMData.ActionResponse.RecordId">
+            <summary>
+            Record Id that was created.
+            </summary>
+        </member>
+        <member name="P:FMData.ActionResponse.ModId">
+            <summary>
+            Modification Id of the record.
+            </summary>
+        </member>
+        <member name="P:FMData.ActionResponse.ScriptError">
+            <summary>
+            Script Error (if any)
+            </summary>
+        </member>
+        <member name="P:FMData.ActionResponse.ScriptResult">
+            <summary>
+            Result of the script that was run as part of this action.
+            </summary>
+        </member>
+        <member name="T:FMData.ICreateResponse">
+            <summary>
+            Create Response interface
+            </summary>
+        </member>
+        <member name="P:FMData.ICreateResponse.Response">
+            <summary>
+            The response object
+            </summary>
+        </member>
+        <member name="T:FMData.IEditResponse">
+            <summary>
+            Create Response interface
+            </summary>
+        </member>
+        <member name="P:FMData.IEditResponse.Response">
+            <summary>
+            The response object
+            </summary>
+        </member>
+        <member name="T:FMData.IFindResponse`1">
+            <summary>
+            Find Response Interface
+            </summary>
+            <typeparam name="TResponseType"></typeparam>
+        </member>
+        <member name="P:FMData.IFindResponse`1.Response">
+            <summary>
+            The Response main response
+            </summary>
+        </member>
+        <member name="T:FMData.FindResultType`1">
+            <summary>
+            Find Result Response Type
+            Needed to wrap the response in a 'Response' object.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:FMData.FindResultType`1.Data">
+            <summary>
+            The data contained in the response.
+            </summary>
+        </member>
+        <member name="T:FMData.IResponse">
+            <summary>
+            General Response from FileMaker Server API
+            </summary>
+        </member>
+        <member name="P:FMData.IResponse.Messages">
+            <summary>
+            The messages returned by the request.
+            </summary>
+        </member>
+        <member name="T:FMData.ResponseMessage">
+            <summary>
+            Response Message Wrapper (required by response format for serialization reasons)
+            </summary>
+        </member>
+        <member name="P:FMData.ResponseMessage.Code">
+            <summary>
+            The Message Code (typically an error, zero for OK)
+            </summary>
+        </member>
+        <member name="P:FMData.ResponseMessage.Message">
+            <summary>
+            The Message's message
+            </summary>
+        </member>
+        <member name="T:FMData.ScriptListItem">
+            <summary>
+            Class used to track nested items
+            </summary>
+        </member>
+        <member name="P:FMData.ScriptListItem.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:FMData.ScriptListItem.IsFolder">
+            <summary>
+            Is Folder
+            </summary>
+        </member>
+        <member name="P:FMData.ScriptListItem.FolderScriptNames">
+            <summary>
+            Items
+            </summary>
+        </member>
+        <member name="T:FMData.ValueList">
+            <summary>
+            Value List
+            </summary>
+        </member>
+        <member name="P:FMData.ValueList.Name">
+            <summary>
+            Value List Name
+            </summary>
+        </member>
+        <member name="P:FMData.ValueList.Type">
+            <summary>
+            Value List Type
+            </summary>
+        </member>
+        <member name="P:FMData.ValueList.Values">
+            <summary>
+            Value List Items
+            </summary>
+        </member>
+        <member name="T:FMData.ValueListItem">
+            <summary>
+            A Value List Item
+            </summary>
+        </member>
+        <member name="P:FMData.ValueListItem.DisplayValue">
+            <summary>
+            Value to Display
+            </summary>
+        </member>
+        <member name="P:FMData.ValueListItem.Value">
+            <summary>
+            Value to be saved in field.
+            </summary>
+        </member>
+    </members>
+</doc>
