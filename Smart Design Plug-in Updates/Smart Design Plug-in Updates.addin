@@ -2,7 +2,7 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>Application Smart Design Plug-in Updates</Name>
-    <Assembly>Smart Design Plug-in Updates.dll</Assembly>
+    <Assembly>Smart Design Plug-in Updates/Smart Design Plug-in Updates.dll</Assembly>
     <FullClassName>Smart_Design_Plug_in_Updates.App</FullClassName>
     <ClientId>7882768E-5B39-4F32-9A97-68D25723E5EA</ClientId>
     <VendorId>Smart Design Plug-in </VendorId>
