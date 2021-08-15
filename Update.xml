@@ -2,35 +2,11 @@
 <Updates>
   <SmartDesignUpdate>
     <update>
-      <version>1.0.0.1</version>
+      <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/LoginWindow.exe?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\LoginWindow.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Login Window Update</description>
-      <launchArgs></launchArgs>
-    </update>
-    <update>
-      <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Smart%20Design%20Plug-in%20Updates.dll?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Smart Design Plug-in Updates.dll</filePath>
-      <md5>5857188A507EAFC9414E6062180C8682</md5>
-      <description>Main Code Update</description>
-      <launchArgs></launchArgs>
-    </update>
-    <update>
-      <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/SmartImageForm_v1.exe?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\SmartImageForm_v1.exe</filePath>
-      <md5>5857188A507EAFC9414E6062180C8682</md5>
-      <description>Image Updater Modifications</description>
-      <launchArgs></launchArgs>
-    </update>
-    <update>
-      <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/WpfApp1.exe?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\WpfApp1.exe</filePath>
-      <md5>5857188A507EAFC9414E6062180C8682</md5>
-      <description>Synchronization Modification</description>
       <launchArgs></launchArgs>
     </update>
     
