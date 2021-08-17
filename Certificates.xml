@@ -7,7 +7,7 @@
     <Programs>
       <Program>SmartDesignUpdate</Program>
       <Program>DeployerTool</Program>
-      <Program>DeployerToolTest</Program>
+      <Program>TemplatePlugin</Program>
     </Programs>
   </User>
   <User>
