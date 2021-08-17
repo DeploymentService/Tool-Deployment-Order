@@ -12,6 +12,23 @@
     
     <Exist>
       <version>1.0.0.0</version>
+      <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Template/Template.addin</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2018\Template.addin</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Addin File</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2018\Template\Template.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Template Plugin</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    
+    <Exist>
+      <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Smart%20Design%20Plug-in%20Updates/Costura.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2019\Smart Design Plug-in Updates\Costura.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
