@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application Template</Name>
+    <Assembly>Template.dll</Assembly>
+    <FullClassName>Template.App</FullClassName>
+    <ClientId>5fb49f3a-a46d-4de2-a126-a2286d518c9d</ClientId>
+    <VendorId>--</VendorId>
+    <VendorDescription>--</VendorDescription>
+  </AddIn>
+</RevitAddIns>
