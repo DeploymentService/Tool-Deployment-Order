@@ -6,6 +6,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>SmartDesignUpdate</Program>
     </Programs>
   </User>
   <User>
