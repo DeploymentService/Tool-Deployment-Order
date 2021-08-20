@@ -86,8 +86,8 @@
   </User>
   <User>
     <Mail>ricardo.salas@ra.house</Mail>
-    <Password>1234</Password>
-    <FirstTime>true</FirstTime>
+    <Password>CielRS2107</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
     </Programs>
