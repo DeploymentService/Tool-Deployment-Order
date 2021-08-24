@@ -271,16 +271,18 @@
       <launchArgs></launchArgs>
     </update>
   </DeployerTool>
+
   <CPSAutomation>
      <update>
       <version>1.0.0.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/tree/main/Smart%20Design%20Plug-in%20Updates/ConstructionAndPermitSetAutomation.extension</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/tree/main/ConstructionAndPermitSetAutomation.extension</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\ConstructionAndPermitSetAutomation.extension\</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Construction and Permit Set Automation</description>
       <launchArgs></launchArgs>
     </update>
   </CPSAutomation>
+
   <TestFitLayout>
     <update>
       <version>1.0.0.1</version>
