@@ -271,22 +271,20 @@
       <launchArgs></launchArgs>
     </update>
   </DeployerTool>
-
   <CPSAutomation>
      <update>
       <version>1.0.0.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/tree/main/ConstructionAndPermitSetAutomation.extension</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/tree/main/Smart%20Design%20Plug-in%20Updates/ConstructionAndPermitSetAutomation.extension</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\ConstructionAndPermitSetAutomation.extension\</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Construction and Permit Set Automation</description>
       <launchArgs></launchArgs>
     </update>
   </CPSAutomation>
-
   <TestFitLayout>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/01_Zoning.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/01_Zoning.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\01_Zoning.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Zonning Dynamo Script Analysis</description>
@@ -294,7 +292,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/01a_Zonning%20Multiple.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/01a_Zonning%20Multiple.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\01a_Zonning Multiple.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Multiple Zoning with Dynamo Script Analysis</description>
@@ -302,7 +300,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/02_ResizeofElements.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/02_ResizeofElements.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\02_ResizeofElements.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Changes thee Size of Elements</description>
@@ -310,7 +308,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/03_BlendComonSpaces.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/03_BlendComonSpaces.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\03_BlendComonSpaces.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Blends Common Created Spaces</description>
@@ -318,7 +316,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/04_Circulations.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/04_Circulations.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\04_Circulations.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Create a Circulation Family to Be Created</description>
@@ -326,7 +324,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/05_Subdivision.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/05_Subdivision.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\05_Subdivision.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Sets Subdivision on Macros</description>
@@ -334,7 +332,7 @@
     </update> 
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/06_WallsWinDoors.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/06_WallsWinDoors.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\06_WallsWinDoors.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Create a Wall and Window Allocation</description>
@@ -342,7 +340,7 @@
     </update> 
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/07_Place%20Furniture.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/07_Place%20Furniture.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\07_Place Furniture.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Place Furniture Elements depending on Macro</description>
@@ -350,7 +348,7 @@
     </update>   
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/0806_RA.mp4</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/0806_RA.mp4</url>
       <filePath>%LocalAppData%\Programs\RA\0806_RA.mp4</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Video Explanation</description>
@@ -358,7 +356,7 @@
     </update> 
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/08_Allocations.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/08_Allocations.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\08_Allocations.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Allocation of Furniture on a selected Space</description>
@@ -366,7 +364,7 @@
     </update> 
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/09_DoorandWindowPlacement.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/09_DoorandWindowPlacement.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\09_DoorandWindowPlacement.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Create Doors and Windows on Proper Location</description>
@@ -374,7 +372,7 @@
     </update>  
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/10_RemoveDW.dyn</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/10_RemoveDW.dyn</url>
       <filePath>%LocalAppData%\Programs\RA\10_RemoveDW.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Remove DW blocks</description>
@@ -382,7 +380,7 @@
     </update> 
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/TL_Template.rte</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/TL_Template.rte</url>
       <filePath>%LocalAppData%\Programs\RA\TL_Template.rte</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Set the File Template</description>
@@ -390,7 +388,7 @@
     </update> 
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/setbacks.xlsx</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/setbacks.xlsx</url>
       <filePath>%LocalAppData%\Programs\RA\setbacks.xlsx</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>setbacks for elements</description>
@@ -398,7 +396,7 @@
     </update>
         <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/BIMRA/LayFit.py</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/BIMRA/LayFit.py</url>
       <filePath>%LocalAppData%\Programs\RA\BIMRA\LayFit.py</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Wave Collapse Function</description>
@@ -406,7 +404,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/BIMRA/ModClass.py</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/BIMRA/ModClass.py</url>
       <filePath>%LocalAppData%\Programs\RA\BIMRA\ModClass.py</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Module Creation</description>
@@ -414,7 +412,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/BIMRA/RAForms.py</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/BIMRA/RAForms.py</url>
       <filePath>%LocalAppData%\Programs\RA\BIMRA\RAForms.py</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Ra Basic Forms</description>
@@ -422,7 +420,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/BIMRA/SurfacePads.py</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/BIMRA/SurfacePads.py</url>
       <filePath>%LocalAppData%\Programs\RA\BIMRA\SurfacePads.py</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Surface Functions</description>
@@ -430,7 +428,7 @@
     </update>
     <update>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/16ef0f08edc865b249996071e6a59f408faf93fc/Smart%20Design%20Plug-in%20Updates/RA/BIMRA/Unifing%20Macros.py</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/BIMRA/Unifing%20Macros.py</url>
       <filePath>%LocalAppData%\Programs\RA\BIMRA\Unifing Macros.py</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Macro Creation of Elements</description>
