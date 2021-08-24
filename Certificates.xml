@@ -91,6 +91,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>CPSAutomation</Program>
     </Programs>
   </User>
   <User>
