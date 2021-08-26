@@ -105,8 +105,8 @@
   </User>
   <User>
     <Mail>safak@ra.house</Mail>
-    <Password>1234</Password>
-    <FirstTime>true</FirstTime>
+    <Password>Kaido47BNC</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
     </Programs>
