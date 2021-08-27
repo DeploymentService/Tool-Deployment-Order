@@ -1,8 +1,9 @@
-#!/usr/bin/env python
+#! python3
 import os
 import sys
-extensionFolder = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
-workingCodeFolder = os.path.abspath(os.path.join(extensionFolder, "code"))
+currentPath = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+currentPath = os.path.abspath(os.path.join(currentPath, "Export to GSheets.pushbutton"))
+workingCodeFolder = os.path.abspath(os.path.join(currentPath, "resources"))
 sys.path.append(workingCodeFolder)
 
 # Importing CLR and adding references
@@ -18,11 +19,12 @@ import System.IO
 import System.Windows.Forms
 
 # Importing local project libraries
-from libraries.forms import *
+from forms import *
 
 def main():
 
-    winFormApp.Run(smartAutoDetailForm)
+    Application.Run(costEstimationForm)
+    costEstimationForm.Dispose()
 
     return 0
 
