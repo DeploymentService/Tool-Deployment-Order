@@ -48,6 +48,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.http import MediaFileUpload
+from googleapiclient.errors import HttpError
 
 # Accessing current Revit Document
 doc = __revit__.ActiveUIDocument.Document
@@ -673,21 +674,24 @@ def costEstimationApp(sheetName):
         ]
     }
 
-    # Writing row
-    # Data
-    sheet.values().update(spreadsheetId=revitScheduleId, 
-                              range="A{}:AZ{}".format(lastRow, lastRow + 1), 
-                              valueInputOption="USER_ENTERED", 
-                              body={"values":totalValues}
-                              ).execute()
+    try:
+        # Writing row
+        # Data
+        sheet.values().update(spreadsheetId=revitScheduleId, 
+                                range="A{}:AZ{}".format(lastRow, lastRow + 1), 
+                                valueInputOption="USER_ENTERED", 
+                                body={"values":totalValues}
+                                ).execute()
 
-    # Style
-    sheet.batchUpdate(
-                      spreadsheetId=revitScheduleId,
-                      body=formatRequests
-                      ).execute()
+        # Style
+        sheet.batchUpdate(
+                        spreadsheetId=revitScheduleId,
+                        body=formatRequests
+                        ).execute()
 
-    # TODO
-    # UI to name sheet to be exported
+    except HttpError as error:
+        if error.resp.status in [429]:
+            print("The limits of requests (uploads and downloads to Google Drive was exceeded,\
+                   this can happen when you are working with large sets of data. If this error appeared please contact the programmer in charge to solve it")
 
     return generalTable

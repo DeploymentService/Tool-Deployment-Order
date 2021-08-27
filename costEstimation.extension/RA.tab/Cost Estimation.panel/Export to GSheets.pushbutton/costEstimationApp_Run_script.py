@@ -23,9 +23,13 @@ from forms import *
 
 def main():
 
-    Application.Run(costEstimationForm)
-    costEstimationForm.Dispose()
-
+    try:
+        costEstimationForm.run()
+    except System.ObjectDisposedException as e:
+        print("At this moment due to technical limitation the Cost Estimation script can be run once per Revit session, \
+              to use it again close Revit and open it again.\n\n \
+              Remember to synchronize before closing.")
+    
     return 0
 
 main()

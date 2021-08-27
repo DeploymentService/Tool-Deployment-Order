@@ -125,7 +125,6 @@ class BaseForm(Form):
     def onCancelButtonClick(self, sender, args):
         self.Hide()
         self.Close()
-        self.Dispose()
 
     def run(self):
 
@@ -137,12 +136,9 @@ class BaseForm(Form):
         Application.Run(self)
 
     def dispose(self):
-        """
-            Dispose of form object and components container
-        """
 
-        self.componentsContainer.Dispose()
-        Form.Dispose(self)
+        # self.componentsContainer.Dispose(True)
+        self.Close()
 
 # User Forms
 class CostEstimationForm(BaseForm):
@@ -192,7 +188,6 @@ class CostEstimationForm(BaseForm):
         self.Hide()
         costEstimationApp(self.exportedSheetName.Text)
         self.Close()
-        self.Dispose()
 
 # --- Custom Control Classes ---
 class CommonGroup(GroupBox):

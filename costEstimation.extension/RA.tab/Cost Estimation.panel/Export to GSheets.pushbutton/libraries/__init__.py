@@ -54,17 +54,18 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from googleapiclient.http import MediaFileUpload
+from googleapiclient.errors import HttpError
 
 # Getting the local base folder path
 # Checking if the GoogleAPI base folder exists
-if os.path.exists("{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath)):
-    googleBaseFolder = "{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath)
+# if os.path.exists("{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath)):
+#     credentialsFolder = "{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath)
 
-else:
-    os.mkdir("{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath))
-    googleBaseFolder = "{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath)
+# else:
+#     os.mkdir("{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath))
+#     credentialsFolder = "{}//Autodesk//Revit//Addins//GoogleAPI".format(appDataPath)
 
-
+credentialsFolder = "{}//credentials".format(os.path.dirname(currentPath))
 
 # If modifying these scopes, delete the file token.json located at the GoogleAPI folder in your local Dynamo folders.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets', 
@@ -74,8 +75,8 @@ creds = None
 # The file token.json stores the user's access and refresh tokens, and is
 # created automatically when the authorization flow completes for the first
 # time.
-if os.path.exists('{}//token.json'.format(googleBaseFolder)):
-    creds = Credentials.from_authorized_user_file('{}//token.json'.format(googleBaseFolder), SCOPES)
+if os.path.exists('{}//token.json'.format(credentialsFolder)):
+    creds = Credentials.from_authorized_user_file('{}//token.json'.format(credentialsFolder), SCOPES)
 
 # If there are no (valid) credentials available, let the user log in.
 if not creds or not creds.valid:
@@ -83,10 +84,10 @@ if not creds or not creds.valid:
         creds.refresh(Request())
     else:
         flow = InstalledAppFlow.from_client_secrets_file(
-            '{}//credentials.json'.format(googleBaseFolder), SCOPES)
+            '{}//credentials.json'.format(credentialsFolder), SCOPES)
         creds = flow.run_local_server(port=0)
     # Save the credentials for the next run
-    with open('{}//token.json'.format(googleBaseFolder), 'w') as token:
+    with open('{}//token.json'.format(credentialsFolder), 'w') as token:
         token.write(creds.to_json())
 
 # Accessing the APIs
@@ -129,6 +130,23 @@ def assignUnitType(importedCategory):
         if importedCategory.find(key) != -1:
             return dimensionCategories[key]
 
+# DECORATORS
+def checkForHttpError429(originalFunction):
+
+    # Handles the error when the quota limit is exceeded
+    def wrapperFunction(*args, **kwargs):
+        try:
+            return originalFunction(*args, **kwargs)
+        except HttpError as error:
+            if error.resp.status in [429]:
+                print("The limits of requests (uploads and downloads to Google Drive was exceeded,\
+                      this can happen when you are working with large sets of data. If this error appeared please contact the programmer in charge to solve it")
+
+                pass
+
+    return wrapperFunction
+
+# FUNCTIONS
 def consolidateImages(list, imagesInDrive):
     # Transposing the schedule to sobstitute the image fields in an easier way
     transposedList = transpose(list)
@@ -562,6 +580,7 @@ def getFileInDriveByQuery(query, driveID):
 def transpose(object1):
     return list(map(list, zip(*object1)))
 
+@checkForHttpError429
 def uploadImagesToDrive(UPLOADED_IMAGES_FOLDERID):
 
     # Getting all the loaded images in the Revit document and putting them in a dictionary "ImageName: Bitmap"
@@ -623,7 +642,6 @@ def uploadImagesToDrive(UPLOADED_IMAGES_FOLDERID):
     
     return imagesInDrive
 
-
 ### ---CLASSES---
 class CategoryRowGroup:
 
@@ -638,7 +656,8 @@ class CategoryRowGroup:
     def appendRow(self, inputRow):
         self.data.append(inputRow)
         self.totalCost += inputRow[17] * inputRow[7]
-
+    
+    @checkForHttpError429
     def create(self):
         amountOfColumns = len(CBCTemplate['headers'])
 
@@ -728,6 +747,7 @@ class CategoryRowGroup:
                                 spreadsheetId=self.revitScheduleId,
                                 body=requests
                                 ).execute()
+
 
         if len(self.data) > 1:
             # Batch of requests
