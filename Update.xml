@@ -271,7 +271,7 @@
       <launchArgs></launchArgs>
     </update>
   </DeployerTool>
-  <CPSAutomation>
+  <CostEstimation>
      <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/tree/main/Smart%20Design%20Plug-in%20Updates/ConstructionAndPermitSetAutomation.extension/RA.tab/Cost%Estimation.panel/icon.png</url>
@@ -368,7 +368,7 @@
       <description>Construction and Permit Set Automation</description>
       <launchArgs></launchArgs>
     </Exist>
-  </CPSAutomation> 
+  </CostEstimation> 
   <TestFitLayout>
     <Exist>
       <version>1.0.0.1</version>

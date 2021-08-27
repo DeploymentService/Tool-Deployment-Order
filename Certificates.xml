@@ -93,7 +93,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
-      <Program>CPSAutomation</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
