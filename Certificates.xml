@@ -84,6 +84,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -93,6 +94,7 @@
     <Programs>
       <Program>DeployerTool</Program>
       <Program>CPSAutomation</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -109,6 +111,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>

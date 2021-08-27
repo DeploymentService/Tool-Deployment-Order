@@ -285,7 +285,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/01_Zoning.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\01_Zoning.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\01_Zoning.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Zonning Dynamo Script Analysis</description>
       <launchArgs></launchArgs>
@@ -293,7 +293,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/01a_Zonning%20Multiple.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\01a_Zonning Multiple.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\01a_Zonning Multiple.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Multiple Zoning with Dynamo Script Analysis</description>
       <launchArgs></launchArgs>
@@ -301,7 +301,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/02_ResizeofElements.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\02_ResizeofElements.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\02_ResizeofElements.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Changes thee Size of Elements</description>
       <launchArgs></launchArgs>
@@ -309,7 +309,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/03_BlendComonSpaces.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\03_BlendComonSpaces.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\03_BlendComonSpaces.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Blends Common Created Spaces</description>
       <launchArgs></launchArgs>
@@ -317,7 +317,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/04_Circulations.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\04_Circulations.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\04_Circulations.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Create a Circulation Family to Be Created</description>
       <launchArgs></launchArgs>
@@ -325,7 +325,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/05_Subdivision.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\05_Subdivision.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\05_Subdivision.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Sets Subdivision on Macros</description>
       <launchArgs></launchArgs>
@@ -333,7 +333,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/06_WallsWinDoors.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\06_WallsWinDoors.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\06_WallsWinDoors.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Create a Wall and Window Allocation</description>
       <launchArgs></launchArgs>
@@ -341,7 +341,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/07_Place%20Furniture.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\07_Place Furniture.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\07_Place Furniture.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Place Furniture Elements depending on Macro</description>
       <launchArgs></launchArgs>
@@ -349,7 +349,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/0806_RA.mp4</url>
-      <filePath>%LocalAppData%\Programs\RA\0806_RA.mp4</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\0806_RA.mp4</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Video Explanation</description>
       <launchArgs></launchArgs>
@@ -357,7 +357,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/08_Allocations.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\08_Allocations.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\08_Allocations.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Allocation of Furniture on a selected Space</description>
       <launchArgs></launchArgs>
@@ -365,7 +365,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/09_DoorandWindowPlacement.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\09_DoorandWindowPlacement.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\09_DoorandWindowPlacement.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Create Doors and Windows on Proper Location</description>
       <launchArgs></launchArgs>
@@ -373,7 +373,7 @@
     <Exist>
       <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/9ef48204cf85b179a0c2cfbb25ae46f9c2ef3aed/TesfitLayout/10_RemoveDW.dyn</url>
-      <filePath>%LocalAppData%\Programs\RA\10_RemoveDW.dyn</filePath>
+      <filePath>%PROGRAMFILES%\Dynamo\RA\10_RemoveDW.dyn</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Remove DW blocks</description>
       <launchArgs></launchArgs>
