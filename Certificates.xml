@@ -36,6 +36,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -44,6 +45,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -53,6 +55,7 @@
     <Programs>
       <Program>DeployerTool</Program>
       <Program>CostEstimation</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -61,6 +64,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -69,6 +73,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -77,6 +82,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -105,6 +111,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
   <User>
@@ -122,6 +129,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>TestFitLayout</Program>
     </Programs>
   </User>
 </Certificates>
