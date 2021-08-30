@@ -49,7 +49,7 @@ class BaseForm(Form):
         self.StartPosition = FormStartPosition.CenterScreen
         
         # Define the caption text
-        self.Text = "Create Projects"
+        self.Text = "Cost Estimation App"
 
         # Icon
         self.Icon = Icon("{0}\RAIcon.ico".format(resourcesPath))

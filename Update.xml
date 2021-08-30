@@ -273,91 +273,91 @@
   </DeployerTool>
   <CostEstimation>
      <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/icon.png?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\icon.png</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/costEstimationApp.py?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\costEstimationApp.py</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/costEstimationApp_Run_script.py?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\costEstimationApp_Run_script.py</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/forms.py?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\forms.py</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/icon.png?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\icon.png</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/credentials/credentials.json?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\credentials\credentials.json</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/libraries/__init__.py?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\libraries\__init__.py</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/libraries/CBCEstimatesTemplate.py?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\libraries\CBCEstimatesTemplate.py</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/resources/RAIcon.ico?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\resources\RAIcon.ico</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/resources/RATitleIcon.ico?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\resources\RATitleIcon.ico</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.2.0</version>
+      <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/resources/RATitleIcon_old.ico?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\resources\RATitleIcon_old.ico</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
-      <description>Construction and Permit Set Automation</description>
+      <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
   </CostEstimation> 

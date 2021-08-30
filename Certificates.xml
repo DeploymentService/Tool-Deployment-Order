@@ -52,6 +52,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>CostEstimation</Program>
     </Programs>
   </User>
   <User>
@@ -84,6 +85,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>

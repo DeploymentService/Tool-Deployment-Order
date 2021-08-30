@@ -508,12 +508,30 @@ def getParametersList(target):
 
     return listParameters
 
+def getTotalQuantitiesPerItem(generalTable):
+
+    for item in generalTable[1:]:
+
+        if item[16] == "UNIT":
+
+            item[23] = item[7]
+
+        elif item[16] == "SQF":
+
+            item[23] = item[7] * item[14]
+
+        elif item[16] == "FT":
+
+            item[23] = item[7] * item[8]
+                
+    return generalTable 
+
 def getTotalCostsPerItem(generalTable):
     
     try:
         for item in generalTable[1:]:
 
-                item[23] = item[7] * item[17]
+                item[24] = item[17] * item[23]
                 
     except TypeError:
         pass

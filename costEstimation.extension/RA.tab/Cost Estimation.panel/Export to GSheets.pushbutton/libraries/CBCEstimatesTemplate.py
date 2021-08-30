@@ -22,7 +22,7 @@ CBCTemplate = {
                             'SHIPPING ($)' : 0, 
                             'OTHER COSTS ($)' : 0, 
                             'DESCRIPTION OF OTHER COSTS' : 0,
-                            # 'TOTAL COUNT (per row, based on specified UNIT)' : 0,
+                            'TOTAL COUNT (per row, based on specified UNIT)' : 0,
                             'TOTAL COST ($)' : 0, 
                             'CURRENCY' : 0,
                             'TOTAL ($) USD' : 0,
