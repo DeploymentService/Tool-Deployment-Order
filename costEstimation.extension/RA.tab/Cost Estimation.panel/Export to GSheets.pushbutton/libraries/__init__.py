@@ -508,6 +508,18 @@ def getParametersList(target):
 
     return listParameters
 
+def getTotalCostsPerItem(generalTable):
+    
+    try:
+        for item in generalTable[1:]:
+
+                item[23] = item[7] * item[17]
+                
+    except TypeError:
+        pass
+
+    return generalTable 
+
 def checkAndReturnParameter(parameter, *args):
 
     storageType = parameter.StorageType

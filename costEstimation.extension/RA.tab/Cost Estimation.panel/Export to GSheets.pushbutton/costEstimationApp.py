@@ -27,7 +27,7 @@ from collections import OrderedDict
 import System
 
 # The __init__ file with all the initialization procedures is __init__.py in the 'libraries' folder
-from libraries import gSheets, gDrive, uploadImagesToDrive, getExportedCSVAsList, formatHeader, getFileInDriveByQuery, getParameterValueByName, consolidateImages, countAndCollapseRepeatedItems, CategoryRowGroup, CBCTemplate, convertUnits, assignUnitType
+from libraries import gSheets, gDrive, uploadImagesToDrive, getExportedCSVAsList, formatHeader, getFileInDriveByQuery, getParameterValueByName, consolidateImages, countAndCollapseRepeatedItems, CategoryRowGroup, CBCTemplate, convertUnits, assignUnitType, getTotalCostsPerItem
 
 # Revit API imports
 clr.AddReference("System.Drawing")
@@ -549,9 +549,6 @@ def costEstimationApp(sheetName):
             elementRow[unitPosition] = assignUnitType(category.lower())
         else:
             pass
-
-        # Defining total cost for this row
-        elementRow[24] = elementRow[7] * elementRow[17]
         
         # Adding finished row to generalTable
         generalTable.append(elementRow)
@@ -561,6 +558,9 @@ def costEstimationApp(sheetName):
 
     # Collapses and counts any adjacent and repeated elements
     generalTable = countAndCollapseRepeatedItems(generalTable)
+
+    # Defining total cost for each item in the table
+    generalTable = getTotalCostsPerItem(generalTable)
 
     # Consolidating the images in the imported spreadsheet
     generalTable = consolidateImages(generalTable, imagesInDrive)
