@@ -237,7 +237,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nSS = IN[0]\r\nWALLS=IN[1]\r\nBS=[]\r\nfor a in SS:\r\n\tSOL=Solid.ByUnion(a)\r\n\tP1=Plane.ByOriginNormal(Point.ByCoordinates(0,0,12),Vector.ByCoordinates(0,0,1))\r\n\tSUR=SOL.Intersect(P1)[0]\r\n\tBS.append(SUR)\r\nALLVER=[]\r\nfor a in BS:\r\n\tVR=a.Vertices\r\n\tfor b in VR:\r\n\t\tALLVER.append(b.PointGeometry)\t\r\nSETS=[]\t\t\r\nfor a in BS:\r\n\tPC=a.Edges\r\n\tLNS=[]\r\n\tfor b in PC:\r\n\t\tPTS=[]\r\n\t\tfor c in ALLVER:\r\n\t\t\tif c.DoesIntersect(b.CurveGeometry):\r\n\t\t\t\tPTS.append(c)\r\n\t\tif len(PTS)>0:\r\n\t\t\tLA=b.CurveGeometry.SplitByPoints(PTS)\r\n\t\t\tfor d in LA:\r\n\t\t\t\tLNS.append(d)\r\n\t\telse:\r\n\t\t\tLNS.append(b.CurveGeometry)\r\n\tSETS.append(LNS)\r\n\t\t\r\nALLNW=[]\r\nfor a in SETS:\r\n#\tALLNW.append(PC)\r\n\tINDEXWALLS=[]\r\n\tfor b in range(len(a)):\r\n\t\tfor c in WALLS:\r\n\t\t\tif shortlines(a[b]).DoesIntersect(c):\r\n\t\t\t\tINDEXWALLS.append(b)\r\n\tfor c,d in zip(a,range(len(a))):\r\n\t\tif not d in INDEXWALLS:\r\n\t\t\tALLNW.append(c)\r\nLENLIN=[]\r\nx=0.001\r\nfor a,b in zip(ALLNW,range(len(ALLNW))):\r\n\tLENLIN.append(float(round(a.Length,3))+x)\r\n\tx+=0.001\r\nLENLIN2=list(LENLIN)\t\r\nLENLIN2.sort()\r\nLENLIN2.reverse()\r\nNWSET=[]\r\nfor a in LENLIN2:\r\n\tNWSET.append(ALLNW[LENLIN.index(a)])\r\n\r\nRESLINES=[]\r\nNO=[]\r\nfor a,b in zip(NWSET,range(len(NWSET))):\r\n\tINCLA=[]\r\n\tif b not in NO:\r\n\t\tfor c,d in zip(NWSET,range(len(NWSET))):\r\n\t\t\tif not b==d:\r\n\t\t\t\tif shortlines(a).DoesIntersect(shortlines(c)):\r\n\t\t\t\t\tNO.append(d)\r\n\t\tRESLINES.append(a)\t\r\n\t\t\r\nML=[]\r\nMA=[]\r\nLEN=[]\r\nfor a in RESLINES:\r\n\tif a.Length<4:\r\n\t\tML.append(TOLs(a).PointAtParameter(0.5))\r\n\t\tMA.append(TOLs(a).Direction)\r\n\t\tLEN.append(a.Length)\r\n\telse:\r\n\t\tDIVLEN=a.Length/4\r\n\t\tPOIS=[]\r\n\t\tfor b in range(int(DIVLEN)+1):\r\n\t\t\tPOIS.append(a.PointAtSegmentLength(b*4))\r\n\t\tLINESS=a.SplitByPoints(POIS)\r\n\t\tfor c in LINESS:\r\n\t\t\tif c.Length>1:\r\n\t\t\t\tML.append(TOLs(c).PointAtParameter(0.5))\r\n\t\t\t\tMA.append(TOLs(c).Direction)\r\n\t\t\t\tLEN.append(round(c.Length))\t\r\n\t\r\n# Assign your output to the OUT variable.\r\nOUT = ML,MA,LEN,RESLINES",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nSS = IN[0]\r\nWALLS=IN[1]\r\nBS=[]\r\nfor a in SS:\r\n\tSOL=Solid.ByUnion(a)\r\n\tP1=Plane.ByOriginNormal(Point.ByCoordinates(0,0,12),Vector.ByCoordinates(0,0,1))\r\n\tSUR=SOL.Intersect(P1)[0]\r\n\tBS.append(SUR)\r\nALLVER=[]\r\nfor a in BS:\r\n\tVR=a.Vertices\r\n\tfor b in VR:\r\n\t\tALLVER.append(b.PointGeometry)\t\r\nSETS=[]\t\t\r\nfor a in BS:\r\n\tPC=a.Edges\r\n\tLNS=[]\r\n\tfor b in PC:\r\n\t\tPTS=[]\r\n\t\tfor c in ALLVER:\r\n\t\t\tif c.DoesIntersect(b.CurveGeometry):\r\n\t\t\t\tPTS.append(c)\r\n\t\tif len(PTS)>0:\r\n\t\t\tLA=b.CurveGeometry.SplitByPoints(PTS)\r\n\t\t\tfor d in LA:\r\n\t\t\t\tLNS.append(d)\r\n\t\telse:\r\n\t\t\tLNS.append(b.CurveGeometry)\r\n\tSETS.append(LNS)\r\n\t\t\r\nALLNW=[]\r\nfor a in SETS:\r\n#\tALLNW.append(PC)\r\n\tINDEXWALLS=[]\r\n\tfor b in range(len(a)):\r\n\t\tfor c in WALLS:\r\n\t\t\tif shortlines(a[b]).DoesIntersect(c):\r\n\t\t\t\tINDEXWALLS.append(b)\r\n\tfor c,d in zip(a,range(len(a))):\r\n\t\tif not d in INDEXWALLS:\r\n\t\t\tALLNW.append(c)\r\nLENLIN=[]\r\nx=0.001\r\nfor a,b in zip(ALLNW,range(len(ALLNW))):\r\n\tLENLIN.append(float(round(a.Length,3))+x)\r\n\tx+=0.001\r\nLENLIN2=list(LENLIN)\t\r\nLENLIN2.sort()\r\nLENLIN2.reverse()\r\nNWSET=[]\r\nfor a in LENLIN2:\r\n\tNWSET.append(ALLNW[LENLIN.index(a)])\r\n\r\nRESLINES=[]\r\nNO=[]\r\nfor a,b in zip(NWSET,range(len(NWSET))):\r\n\tINCLA=[]\r\n\tif b not in NO:\r\n\t\tfor c,d in zip(NWSET,range(len(NWSET))):\r\n\t\t\tif not b==d:\r\n\t\t\t\tif shortlines(a).DoesIntersect(shortlines(c)):\r\n\t\t\t\t\tNO.append(d)\r\n\t\tRESLINES.append(a)\t\r\n\t\t\r\nML=[]\r\nMA=[]\r\nLEN=[]\r\nfor a in RESLINES:\r\n\tif a.Length<4:\r\n\t\tML.append(TOLs(a).PointAtParameter(0.5))\r\n\t\tMA.append(TOLs(a).Direction)\r\n\t\tLEN.append(a.Length)\r\n\telse:\r\n\t\tDIVLEN=a.Length/4\r\n\t\tPOIS=[]\r\n\t\tfor b in range(int(DIVLEN)+1):\r\n\t\t\tPOIS.append(a.PointAtSegmentLength(b*4))\r\n\t\tLINESS=a.SplitByPoints(POIS)\r\n\t\tfor c in LINESS:\r\n\t\t\tif c.Length>1:\r\n\t\t\t\tML.append(TOLs(c).PointAtParameter(0.5))\r\n\t\t\t\tMA.append(TOLs(c).Direction)\r\n\t\t\t\tLEN.append(round(c.Length))\t\r\n\t\r\n# Assign your output to the OUT variable.\r\nOUT = ML,MA,LEN,RESLINES",
       "VariableInputPorts": true,
       "Id": "70d0275d47c64484893d1c97729d7889",
       "Inputs": [
@@ -365,7 +365,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 506,
+      "SelectedIndex": 466,
       "SelectedString": "OST_SpecialityEquipment",
       "NodeType": "ExtensionNode",
       "Id": "6494e2bb27ad4466bcdae81ecfc42d3d",
@@ -653,7 +653,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nName=IN[0]\r\nPoint=IN[1]\r\nWidth=IN[2]\r\nLength=IN[3] \r\nHeigth=IN[4]\r\nMACROS=[]\r\n\r\nfor a,b,c,d,e,f in zip(Name,Point,Length,Width,Heigth,range(len(Name))):\r\n\tMACROS.append(selfmacro(a,b,c,d,e,f))\r\n\t \r\nSOLS=[]\t\r\nfor a in MACROS:\r\n\tSOLS.append(a.SOL)\r\n# Assign your output to the OUT variable.\r\nOUT = MACROS\r\n",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nName=IN[0]\r\nPoint=IN[1]\r\nWidth=IN[2]\r\nLength=IN[3] \r\nHeigth=IN[4]\r\nMACROS=[]\r\n\r\nfor a,b,c,d,e,f in zip(Name,Point,Length,Width,Heigth,range(len(Name))):\r\n\tMACROS.append(selfmacro(a,b,c,d,e,f))\r\n\t \r\nSOLS=[]\t\r\nfor a in MACROS:\r\n\tSOLS.append(a.SOL)\r\n# Assign your output to the OUT variable.\r\nOUT = MACROS\r\n",
       "VariableInputPorts": true,
       "Id": "c8d88fa3129a4df0ae66c40b14794bd3",
       "Inputs": [
@@ -1393,7 +1393,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.WallTypes, DSRevitNodesUI",
-      "SelectedIndex": 20,
+      "SelectedIndex": 19,
       "SelectedString": "Interior - 135mm Partition (2-hr)",
       "NodeType": "ExtensionNode",
       "Id": "87097bab0aaa40b9af655744c5a4c7d2",
@@ -1513,7 +1513,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMACROS=IN[0]\r\n \r\nLOWERMODS=[]  \r\nUPPERMODS=[]\r\nROOFMODS=[] \r\nZVALUES=[] \r\n#Get the Upper Floor Rooms\r\nfor a in MACROS:\r\n\tif round(a.ORI.Z,0)==12:\r\n\t\tif a.NAM!=\"BALCONY\":\r\n\t\t\tROOFMODS.append(a)\r\n\t\t\tif a.NAM!=\"VOID\":\r\n\t\t\t\tUPPERMODS.append(a)\r\n\telse:\r\n\t\tif a.NAM!=\"TERRACE\":\r\n\t\t\tLOWERMODS.append(a)\t\r\n\t\t\t\t \r\n# Assign your output to the OUT variable.\r\nOUT = ROOFMODS,UPPERMODS,LOWERMODS\r\n",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMACROS=IN[0]\r\n \r\nLOWERMODS=[]  \r\nUPPERMODS=[]\r\nROOFMODS=[] \r\nZVALUES=[] \r\n#Get the Upper Floor Rooms\r\nfor a in MACROS:\r\n\tif round(a.ORI.Z,0)==12:\r\n\t\tif a.NAM!=\"BALCONY\":\r\n\t\t\tROOFMODS.append(a)\r\n\t\t\tif a.NAM!=\"VOID\":\r\n\t\t\t\tUPPERMODS.append(a)\r\n\telse:\r\n\t\tif a.NAM!=\"TERRACE\":\r\n\t\t\tLOWERMODS.append(a)\t\r\n\t\t\t\t \r\n# Assign your output to the OUT variable.\r\nOUT = ROOFMODS,UPPERMODS,LOWERMODS\r\n",
       "VariableInputPorts": true,
       "Id": "5772d62e2614497a82f47003ea3f5f72",
       "Inputs": [
@@ -1544,7 +1544,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys\r\nsys.path.append(r\"C:\\BIM\\RA\")\r\nfrom ModClass import *\r\nfrom CielForms import *\r\nimport clr\r\nimport System.Collections.Generic\r\nfrom System.Collections.Generic import List\r\nfrom System.Collections.Generic import Dictionary\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nMODULES = IN[0]\r\nNAMES = IN[1]\r\nWALLS = IN[2]\r\nCORRIDOR = IN[3]\r\nMOD=2\r\n\r\nSOLIDSS=[]\r\nfor a in MODULES:\r\n\tSOLIDSS.append(Solid.ByUnion(a))\r\nCORRID=Solid.ByUnion(CORRIDOR) \r\n\r\nSURFS=[]\r\nfor a in SOLIDSS:\r\n\tP1=Plane.ByOriginNormal(Point.ByCoordinates(0,0,12),Vector.ByCoordinates(0,0,1))\r\n\tSUR=a.Intersect(P1)[0]\r\n\tSURFS.append(SUR)\r\n        \r\nCURSS=[]    \r\nfor a in SURFS:\r\n\tCUR=a.Edges\r\n\tCURS=[]\r\n\tfor a in CUR:\r\n\t\tCURS.append(TOL(a.CurveGeometry))\r\n\tCURSS.append(CURS)\r\n\t\r\nSURFS=[]\r\nfor a in CURSS:\r\n\tPOL=PolyCurve.ByJoinedCurves(a)\r\n\tSURFS.append(Surface.ByPatch(POL))  \r\n \r\nCABSS=[]\r\nORDSS=[]\r\nfor a,b in zip(SURFS,CURSS):\r\n\tREC=createmodulesfromsurf(a,MOD) \r\n\tORDC=b\r\n\tORDSS.append(ORDC)\r\n\tWALLS=LinestoWalls(b)\r\n\tCLRECS=flattenlst3(REC)\r\n\tLV=LINESANDVECS(ORDC,CLRECS)\r\n\tLV2=SPV(ORDC,LV[0],LV[1])\r\n\tCABS=[]\r\n\tM=0\r\n\tfor a,b in zip(LV2[0],LV2[1]):\r\n\t\tmodulate(a,b,2,1,2,0,0.5,1,M,CABS)\r\n\t\tM=M+(len(a))\r\n\tCABSS.append(CABS)     \r\n\t   \r\n   \r\n \r\n\t\t \r\n  \r\n \r\n \r\n# Assign your output to the OUT variable.\r\nOUT = CABSS,ORDSS,CORRID,NAMES",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport System.Collections.Generic\r\nfrom System.Collections.Generic import List\r\nfrom System.Collections.Generic import Dictionary\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nMODULES = IN[0]\r\nNAMES = IN[1]\r\nWALLS = IN[2]\r\nCORRIDOR = IN[3]\r\nMOD=2\r\n\r\nSOLIDSS=[]\r\nfor a in MODULES:\r\n\tSOLIDSS.append(Solid.ByUnion(a))\r\nCORRID=Solid.ByUnion(CORRIDOR) \r\n\r\nSURFS=[]\r\nfor a in SOLIDSS:\r\n\tP1=Plane.ByOriginNormal(Point.ByCoordinates(0,0,12),Vector.ByCoordinates(0,0,1))\r\n\tSUR=a.Intersect(P1)[0]\r\n\tSURFS.append(SUR)\r\n        \r\nCURSS=[]    \r\nfor a in SURFS:\r\n\tCUR=a.Edges\r\n\tCURS=[]\r\n\tfor a in CUR:\r\n\t\tCURS.append(TOL(a.CurveGeometry))\r\n\tCURSS.append(CURS)\r\n\t\r\nSURFS=[]\r\nfor a in CURSS:\r\n\tPOL=PolyCurve.ByJoinedCurves(a)\r\n\tSURFS.append(Surface.ByPatch(POL))  \r\n \r\nCABSS=[]\r\nORDSS=[]\r\nfor a,b in zip(SURFS,CURSS):\r\n\tREC=createmodulesfromsurf(a,MOD) \r\n\tORDC=b\r\n\tORDSS.append(ORDC)\r\n\tWALLS=LinestoWalls(b)\r\n\tCLRECS=flattenlst3(REC)\r\n\tLV=LINESANDVECS(ORDC,CLRECS)\r\n\tLV2=SPV(ORDC,LV[0],LV[1])\r\n\tCABS=[]\r\n\tM=0\r\n\tfor a,b in zip(LV2[0],LV2[1]):\r\n\t\tmodulate(a,b,2,1,2,0,0.5,1,M,CABS)\r\n\t\tM=M+(len(a))\r\n\tCABSS.append(CABS)     \r\n\t   \r\n   \r\n \r\n\t\t \r\n  \r\n \r\n \r\n# Assign your output to the OUT variable.\r\nOUT = CABSS,ORDSS,CORRID,NAMES",
       "VariableInputPorts": true,
       "Id": "e60ddd7fde6f414596d3abca3c3314a1",
       "Inputs": [
@@ -1662,7 +1662,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES=IN[0]\r\nSOLWIN=IN[1] \r\nSOLDOR=IN[2]\r\nNAMES=IN[3]\r\nRESULTS=[]\r\n#for a in MODULES:\r\nfor a,b in zip(MODULES,NAMES):\r\n\tRESULTS.append(LAYINGOUTC(a,SOLWIN,SOLDOR,b))\r\n  \r\nPDOORS=[]\r\nPWINS=[]\r\n\r\nfor a in RESULTS:\r\n\tPDOORS.append(a[3])\r\n\tPWINS.append(a[4])\r\n\r\nOUT = PDOORS,PWINS",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES=IN[0]\r\nSOLWIN=IN[1] \r\nSOLDOR=IN[2]\r\nNAMES=IN[3]\r\nRESULTS=[]\r\n#for a in MODULES:\r\nfor a,b in zip(MODULES,NAMES):\r\n\tRESULTS.append(LAYINGOUTC(a,SOLWIN,SOLDOR,b))\r\n  \r\nPDOORS=[]\r\nPWINS=[]\r\n\r\nfor a in RESULTS:\r\n\tPDOORS.append(a[3])\r\n\tPWINS.append(a[4])\r\n\r\nOUT = PDOORS,PWINS",
       "VariableInputPorts": true,
       "Id": "38a50cba26e2497fb7b58aa8502c2380",
       "Inputs": [
@@ -1781,7 +1781,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport System.Collections.Generic\r\nfrom System.Collections.Generic import List\r\nfrom System.Collections.Generic import Dictionary\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nMODULES = IN[0]\r\nNAMES = IN[1]\r\nWALLS = IN[2]\r\nCORRIDOR = IN[3]\r\nMOD=2\r\n\r\nSOLIDSS=[]\r\nfor a in MODULES:\r\n\ttry:\r\n\t\tSOLIDSS.append(Solid.ByUnion(a))\r\n\texcept:\r\n\t\tpass\r\nCORRID=Solid.ByUnion(CORRIDOR)\r\n\r\nSURFS=[]\r\nfor a in SOLIDSS:\r\n\tP1=Plane.ByOriginNormal(Point.ByCoordinates(0,0,0),Vector.ByCoordinates(0,0,1))\r\n\tSUR=a.Intersect(P1)[0]\r\n\tSURFS.append(SUR)\r\n        \r\nCURSS=[]    \r\nfor a in SURFS:\r\n\tCUR=a.Edges\r\n\tCURS=[]\r\n\tfor a in CUR:\r\n\t\tCURS.append(TOL(a.CurveGeometry))\r\n\tCURSS.append(CURS)\r\n\t\r\nSURFS=[]\r\nfor a in CURSS:\r\n\tPOL=PolyCurve.ByJoinedCurves(a)\r\n\tSURFS.append(Surface.ByPatch(POL))  \r\n \r\nCABSS=[]\r\nORDSS=[]\r\nfor a,b in zip(SURFS,CURSS):\r\n\tREC=createmodulesfromsurf(a,MOD) \r\n\tORDC=b\r\n\tORDSS.append(ORDC)\r\n\tWALLS=LinestoWalls(b)\r\n\tCLRECS=flattenlst3(REC)\r\n\tLV=LINESANDVECS(ORDC,CLRECS)\r\n\tLV2=SPV(ORDC,LV[0],LV[1])\r\n\tCABS=[]\r\n\tM=0\r\n\tfor a,b in zip(LV2[0],LV2[1]):\r\n\t\tmodulate(a,b,2,1,2,0,0.5,1,M,CABS)\r\n\t\tM=M+(len(a))\r\n\tCABSS.append(CABS)     \r\n\t   \r\n   \r\n \r\n\t\t \r\n  \r\n \r\n \r\n# Assign your output to the OUT variable.\r\nOUT = CABSS,ORDSS,CORRID,NAMES",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport System.Collections.Generic\r\nfrom System.Collections.Generic import List\r\nfrom System.Collections.Generic import Dictionary\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nMODULES = IN[0]\r\nNAMES = IN[1]\r\nWALLS = IN[2]\r\nCORRIDOR = IN[3]\r\nMOD=2\r\n\r\nSOLIDSS=[]\r\nfor a in MODULES:\r\n\ttry:\r\n\t\tSOLIDSS.append(Solid.ByUnion(a))\r\n\texcept:\r\n\t\tpass\r\nCORRID=Solid.ByUnion(CORRIDOR)\r\n\r\nSURFS=[]\r\nfor a in SOLIDSS:\r\n\tP1=Plane.ByOriginNormal(Point.ByCoordinates(0,0,0),Vector.ByCoordinates(0,0,1))\r\n\tSUR=a.Intersect(P1)[0]\r\n\tSURFS.append(SUR)\r\n        \r\nCURSS=[]    \r\nfor a in SURFS:\r\n\tCUR=a.Edges\r\n\tCURS=[]\r\n\tfor a in CUR:\r\n\t\tCURS.append(TOL(a.CurveGeometry))\r\n\tCURSS.append(CURS)\r\n\t\r\nSURFS=[]\r\nfor a in CURSS:\r\n\tPOL=PolyCurve.ByJoinedCurves(a)\r\n\tSURFS.append(Surface.ByPatch(POL))  \r\n \r\nCABSS=[]\r\nORDSS=[]\r\nfor a,b in zip(SURFS,CURSS):\r\n\tREC=createmodulesfromsurf(a,MOD) \r\n\tORDC=b\r\n\tORDSS.append(ORDC)\r\n\tWALLS=LinestoWalls(b)\r\n\tCLRECS=flattenlst3(REC)\r\n\tLV=LINESANDVECS(ORDC,CLRECS)\r\n\tLV2=SPV(ORDC,LV[0],LV[1])\r\n\tCABS=[]\r\n\tM=0\r\n\tfor a,b in zip(LV2[0],LV2[1]):\r\n\t\tmodulate(a,b,2,1,2,0,0.5,1,M,CABS)\r\n\t\tM=M+(len(a))\r\n\tCABSS.append(CABS)     \r\n\t   \r\n   \r\n \r\n\t\t \r\n  \r\n \r\n \r\n# Assign your output to the OUT variable.\r\nOUT = CABSS,ORDSS,CORRID,NAMES",
       "VariableInputPorts": true,
       "Id": "df276d20b76b4c5abe0a309e1c219fc4",
       "Inputs": [
@@ -1899,7 +1899,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES=IN[0]\r\nSOLWIN=IN[1]\r\nSOLDOR=IN[2]\r\nNAMES=IN[3]\r\nRESULTS=[]\r\n#for a in MODULES:\r\nfor a,b in zip(MODULES,NAMES):\r\n\tRESULTS.append(LAYINGOUTC(a,SOLWIN,SOLDOR,b))\r\n         \r\nPDOORS=[]\r\nPWINS=[]\r\nPIDOORS=[]\r\nPIWINDS=[]\r\n\r\nfor a in RESULTS:\r\n\tPDOORS.append(a[3])\r\n\tPWINS.append(a[4])\r\n\r\nOUT = PDOORS,PWINS",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nimport math\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES=IN[0]\r\nSOLWIN=IN[1]\r\nSOLDOR=IN[2]\r\nNAMES=IN[3]\r\nRESULTS=[]\r\n#for a in MODULES:\r\nfor a,b in zip(MODULES,NAMES):\r\n\tRESULTS.append(LAYINGOUTC(a,SOLWIN,SOLDOR,b))\r\n         \r\nPDOORS=[]\r\nPWINS=[]\r\nPIDOORS=[]\r\nPIWINDS=[]\r\n\r\nfor a in RESULTS:\r\n\tPDOORS.append(a[3])\r\n\tPWINS.append(a[4])\r\n\r\nOUT = PDOORS,PWINS",
       "VariableInputPorts": true,
       "Id": "9caec1cc63f74e5e9d509f306594d1a3",
       "Inputs": [
@@ -2076,7 +2076,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.FamilyTypes, DSRevitNodesUI",
-      "SelectedIndex": 10,
+      "SelectedIndex": 4,
       "SelectedString": "CIRCULANT:CIRCULANT",
       "NodeType": "ExtensionNode",
       "Id": "d7d711bf2dab4cddafe2e2b412b50d86",
@@ -2128,7 +2128,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\t\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nROOFDECK=IN[0]\r\nUPPERDECK=IN[1]\r\nLOWERDECK=IN[2]\r\n\r\nPERLOW=solstoCurvesFS(MACROTOSOL(LOWERDECK),0)\r\nPERUPP=solstoCurvesFS(MACROTOSOL(UPPERDECK),12) \r\nPERROO=solstoCurvesFS(MACROTOSOL(ROOFDECK),24)\r\n\r\nLEV2WALLS=[]\r\nLLEV2W=[]\r\nfor a in PERROO:\r\n\tLowerLine=a.Translate(Vector.ByCoordinates(0,0,-12))\r\n\tUpperLine=a.Translate(Vector.ByCoordinates(0,0,2))\r\n\tLINES=[LowerLine,UpperLine]\r\n\tSUR1=Surface.ByLoft(LINES)\r\n\tWALL=SUR1.Thicken(0.25)\r\n\tLEV2WALLS.append(WALL)\r\n\tLLEV2W.append(LowerLine)\r\n\r\nLEV1WALLS=[]\r\nLLEV1W=[]\r\nfor a in PERLOW:\r\n\tLowerLine=a.Translate(Vector.ByCoordinates(0,0,0))\r\n\tUpperLine=a.Translate(Vector.ByCoordinates(0,0,12))\r\n\tfor a in LEV2WALLS:\r\n\t\tif not a.DoesIntersect(UpperLine):\r\n\t\t\tUpperLine.Translate(Vector.ByCoordinates(0,0,2))\r\n\tLINES=[LowerLine,UpperLine]\r\n\tSUR1=Surface.ByLoft(LINES)\r\n\tWALL=SUR1.Thicken(0.25)\r\n\tLEV1WALLS.append(WALL)\r\n\tLLEV1W.append(LowerLine)\r\n\r\nPOLYLOW=PolyCurve.ByJoinedCurves(PERLOW)\r\nPOLYUPP=PolyCurve.ByJoinedCurves(PERUPP)\r\nPOLYROO=PolyCurve.ByJoinedCurves(PERROO)\r\n\r\nPOLYCURVES=[POLYLOW,POLYUPP,POLYROO]\t\r\n\r\nALLCURVES=[]\r\nfor a in PERLOW:\r\n\tALLCURVES.append(a)\r\nfor a in PERROO:\r\n\tALLCURVES.append(a.Translate(Vector.ByCoordinates(0,0,-12)))\r\n\r\n# Moduled Families\r\nWALLMOD=MODULESFROMLINES(ALLCURVES,4)\r\n\r\n# Assign your output to the OUT variable. \r\nOUT = POLYCURVES,LEV2WALLS,LEV1WALLS,LLEV1W,LLEV2W,WALLMOD[0],WALLMOD[1],WALLMOD[2]",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\t\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nROOFDECK=IN[0]\r\nUPPERDECK=IN[1]\r\nLOWERDECK=IN[2]\r\n\r\nPERLOW=solstoCurvesFS(MACROTOSOL(LOWERDECK),0)\r\nPERUPP=solstoCurvesFS(MACROTOSOL(UPPERDECK),12) \r\nPERROO=solstoCurvesFS(MACROTOSOL(ROOFDECK),24)\r\n\r\nLEV2WALLS=[]\r\nLLEV2W=[]\r\nfor a in PERROO:\r\n\tLowerLine=a.Translate(Vector.ByCoordinates(0,0,-12))\r\n\tUpperLine=a.Translate(Vector.ByCoordinates(0,0,2))\r\n\tLINES=[LowerLine,UpperLine]\r\n\tSUR1=Surface.ByLoft(LINES)\r\n\tWALL=SUR1.Thicken(0.25)\r\n\tLEV2WALLS.append(WALL)\r\n\tLLEV2W.append(LowerLine)\r\n\r\nLEV1WALLS=[]\r\nLLEV1W=[]\r\nfor a in PERLOW:\r\n\tLowerLine=a.Translate(Vector.ByCoordinates(0,0,0))\r\n\tUpperLine=a.Translate(Vector.ByCoordinates(0,0,12))\r\n\tfor a in LEV2WALLS:\r\n\t\tif not a.DoesIntersect(UpperLine):\r\n\t\t\tUpperLine.Translate(Vector.ByCoordinates(0,0,2))\r\n\tLINES=[LowerLine,UpperLine]\r\n\tSUR1=Surface.ByLoft(LINES)\r\n\tWALL=SUR1.Thicken(0.25)\r\n\tLEV1WALLS.append(WALL)\r\n\tLLEV1W.append(LowerLine)\r\n\r\nPOLYLOW=PolyCurve.ByJoinedCurves(PERLOW)\r\nPOLYUPP=PolyCurve.ByJoinedCurves(PERUPP)\r\nPOLYROO=PolyCurve.ByJoinedCurves(PERROO)\r\n\r\nPOLYCURVES=[POLYLOW,POLYUPP,POLYROO]\t\r\n\r\nALLCURVES=[]\r\nfor a in PERLOW:\r\n\tALLCURVES.append(a)\r\nfor a in PERROO:\r\n\tALLCURVES.append(a.Translate(Vector.ByCoordinates(0,0,-12)))\r\n\r\n# Moduled Families\r\nWALLMOD=MODULESFROMLINES(ALLCURVES,4)\r\n\r\n# Assign your output to the OUT variable. \r\nOUT = POLYCURVES,LEV2WALLS,LEV1WALLS,LLEV1W,LLEV2W,WALLMOD[0],WALLMOD[1],WALLMOD[2]",
       "VariableInputPorts": true,
       "Id": "4e121050ec324076885181887d07b7e2",
       "Inputs": [
@@ -2238,7 +2238,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES = IN[0]\r\nCIRLINES=shortline(IN[1])\r\nXVEC=Vector.ByCoordinates(1,0,0)\r\nYVEC=Vector.ByCoordinates(0,1,0)\r\nMICROS=[]\r\n#CREATING THE MICROUNIVERSE\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") : \r\n\t\tLXGRID=MACTOGRIDS(a)[0]\r\n\t\tLYGRID=MACTOGRIDS(a)[1]\r\n\t\tCREATEMICROS(LXGRID,LYGRID,a,XVEC,YVEC,MICROS)\r\n#CREATING THE INDEXDATABASE\r\nindices=[]\r\nfor a in MICROS:\r\n\tindices.append(str(a.MIOF)+\"_\"+str(a.IOF)) \r\n \r\nSELIND=[]\r\nCIRC=[]\r\n#NLCI=extendLine(CIRLINES,2.5) \r\nfor a in MICROS:\r\n\tfor b in CIRLINES:\r\n\t\tLINN=b.Translate(Vector.ByCoordinates(0,0,-1))\r\n\t\tCIL=Cylinder.ByPointsRadius(LINN.StartPoint,LINN.EndPoint,0.5)\r\n\t\tif CIL.DoesIntersect(a.SOL):\r\n\t\t\tSELIND.append(str(a.MIOF)+\"_\"+str(a.IOF))\t\r\n\t\t\tCIRC.append(a.SOL)\t\r\n#\tSELIND.append(\"JALO\")\r\nSELIND=list(set(SELIND))\r\n\r\nfor a in SELIND:\r\n\tindices.remove(a)\r\n\t\r\nREMANENT=[]\t\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tREMANENT.append(a)\r\n\t\r\nREMAINF=[]\r\nMODULENAME=[]\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") :\r\n\t\tREMAIN=[]\r\n\t\tfor b in REMANENT:\r\n\t\t\tif b.SOL.DoesIntersect(Cuboid.ByLengths(a.CSYS,a.WID-2,a.LEN-2,a.HEI)):\r\n\t\t\t\tREMAIN.append(b.SOL)\r\n\t\tREMAINF.append(REMAIN)\r\n\t\tMODULENAME.append(a.NAM)\r\nSELIND=list(set(SELIND))\t\r\n\r\nGEOMS=[]\r\nINDICES=[]\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tGEOMS.append(a.SOL)\r\n\t\tINDICES.append(str(a.MIOF)+\"_\"+str(a.IOF))\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = MICROS,GEOMS,indices,CIRC,SELIND,REMAINF,CIRLINES,LXGRID,LYGRID,MODULENAME",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES = IN[0]\r\nCIRLINES=shortline(IN[1])\r\nXVEC=Vector.ByCoordinates(1,0,0)\r\nYVEC=Vector.ByCoordinates(0,1,0)\r\nMICROS=[]\r\n#CREATING THE MICROUNIVERSE\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") : \r\n\t\tLXGRID=MACTOGRIDS(a)[0]\r\n\t\tLYGRID=MACTOGRIDS(a)[1]\r\n\t\tCREATEMICROS(LXGRID,LYGRID,a,XVEC,YVEC,MICROS)\r\n#CREATING THE INDEXDATABASE\r\nindices=[]\r\nfor a in MICROS:\r\n\tindices.append(str(a.MIOF)+\"_\"+str(a.IOF)) \r\n \r\nSELIND=[]\r\nCIRC=[]\r\n#NLCI=extendLine(CIRLINES,2.5) \r\nfor a in MICROS:\r\n\tfor b in CIRLINES:\r\n\t\tLINN=b.Translate(Vector.ByCoordinates(0,0,-1))\r\n\t\tCIL=Cylinder.ByPointsRadius(LINN.StartPoint,LINN.EndPoint,0.5)\r\n\t\tif CIL.DoesIntersect(a.SOL):\r\n\t\t\tSELIND.append(str(a.MIOF)+\"_\"+str(a.IOF))\t\r\n\t\t\tCIRC.append(a.SOL)\t\r\n#\tSELIND.append(\"JALO\")\r\nSELIND=list(set(SELIND))\r\n\r\nfor a in SELIND:\r\n\tindices.remove(a)\r\n\t\r\nREMANENT=[]\t\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tREMANENT.append(a)\r\n\t\r\nREMAINF=[]\r\nMODULENAME=[]\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") :\r\n\t\tREMAIN=[]\r\n\t\tfor b in REMANENT:\r\n\t\t\tif b.SOL.DoesIntersect(Cuboid.ByLengths(a.CSYS,a.WID-2,a.LEN-2,a.HEI)):\r\n\t\t\t\tREMAIN.append(b.SOL)\r\n\t\tREMAINF.append(REMAIN)\r\n\t\tMODULENAME.append(a.NAM)\r\nSELIND=list(set(SELIND))\t\r\n\r\nGEOMS=[]\r\nINDICES=[]\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tGEOMS.append(a.SOL)\r\n\t\tINDICES.append(str(a.MIOF)+\"_\"+str(a.IOF))\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = MICROS,GEOMS,indices,CIRC,SELIND,REMAINF,CIRLINES,LXGRID,LYGRID,MODULENAME",
       "VariableInputPorts": true,
       "Id": "dcaa5597345d427c8298ff6359be0776",
       "Inputs": [
@@ -2278,7 +2278,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES = IN[0]\r\nCIRLINES=shortline(IN[1])\r\nXVEC=Vector.ByCoordinates(1,0,0)\r\nYVEC=Vector.ByCoordinates(0,1,0)\r\nMICROS=[]\r\n#CREATING THE MICROUNIVERSE\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") : \r\n\t\tLXGRID=MACTOGRIDS(a)[0]\r\n\t\tLYGRID=MACTOGRIDS(a)[1]\r\n\t\tCREATEMICROS(LXGRID,LYGRID,a,XVEC,YVEC,MICROS)\r\n#CREATING THE INDEXDATABASE\r\nindices=[]\r\nfor a in MICROS:\r\n\tindices.append(str(a.MIOF)+\"_\"+str(a.IOF)) \r\n \r\nSELIND=[]\r\nCIRC=[]\r\n#NLCI=extendLine(CIRLINES,2.5) \r\nfor a in MICROS:\r\n\tfor b in CIRLINES:\r\n\t\tLINN=b.Translate(Vector.ByCoordinates(0,0,0))\r\n\t\tCIL=Cylinder.ByPointsRadius(LINN.StartPoint,LINN.EndPoint,0.5)\r\n\t\tif CIL.DoesIntersect(a.SOL):\r\n\t\t\tSELIND.append(str(a.MIOF)+\"_\"+str(a.IOF))\t\r\n\t\t\tCIRC.append(a.SOL)\t\r\n#\tSELIND.append(\"JALO\")\r\nSELIND=list(set(SELIND))\r\n\r\nfor a in SELIND:\r\n\tindices.remove(a)\r\n\t\r\nREMANENT=[]\t\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tREMANENT.append(a)\r\n\t\r\nREMAINF=[]\r\nMODULENAME=[]\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") :\r\n\t\tREMAIN=[]\r\n\t\tfor b in REMANENT:\r\n\t\t\tif b.SOL.DoesIntersect(Cuboid.ByLengths(a.CSYS,a.WID-2,a.LEN-2,a.HEI)):\r\n\t\t\t\tREMAIN.append(b.SOL)\r\n\t\tREMAINF.append(REMAIN)\r\n\t\tMODULENAME.append(a.NAM)\r\nSELIND=list(set(SELIND))\t\r\n\r\nGEOMS=[]\r\nINDICES=[]\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tGEOMS.append(a.SOL)\r\n\t\tINDICES.append(str(a.MIOF)+\"_\"+str(a.IOF))\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = MICROS,GEOMS,indices,CIRC,SELIND,REMAINF,CIRLINES,LXGRID,LYGRID,MODULENAME",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\nMODULES = IN[0]\r\nCIRLINES=shortline(IN[1])\r\nXVEC=Vector.ByCoordinates(1,0,0)\r\nYVEC=Vector.ByCoordinates(0,1,0)\r\nMICROS=[]\r\n#CREATING THE MICROUNIVERSE\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") : \r\n\t\tLXGRID=MACTOGRIDS(a)[0]\r\n\t\tLYGRID=MACTOGRIDS(a)[1]\r\n\t\tCREATEMICROS(LXGRID,LYGRID,a,XVEC,YVEC,MICROS)\r\n#CREATING THE INDEXDATABASE\r\nindices=[]\r\nfor a in MICROS:\r\n\tindices.append(str(a.MIOF)+\"_\"+str(a.IOF)) \r\n \r\nSELIND=[]\r\nCIRC=[]\r\n#NLCI=extendLine(CIRLINES,2.5) \r\nfor a in MICROS:\r\n\tfor b in CIRLINES:\r\n\t\tLINN=b.Translate(Vector.ByCoordinates(0,0,0))\r\n\t\tCIL=Cylinder.ByPointsRadius(LINN.StartPoint,LINN.EndPoint,0.5)\r\n\t\tif CIL.DoesIntersect(a.SOL):\r\n\t\t\tSELIND.append(str(a.MIOF)+\"_\"+str(a.IOF))\t\r\n\t\t\tCIRC.append(a.SOL)\t\r\n#\tSELIND.append(\"JALO\")\r\nSELIND=list(set(SELIND))\r\n\r\nfor a in SELIND:\r\n\tindices.remove(a)\r\n\t\r\nREMANENT=[]\t\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tREMANENT.append(a)\r\n\t\r\nREMAINF=[]\r\nMODULENAME=[]\r\nfor a in MODULES:\r\n\tif not (a.NAM == \"VOID\" or a.NAM== \"BALCONY\" or a.NAM == \"TERRACE\") :\r\n\t\tREMAIN=[]\r\n\t\tfor b in REMANENT:\r\n\t\t\tif b.SOL.DoesIntersect(Cuboid.ByLengths(a.CSYS,a.WID-2,a.LEN-2,a.HEI)):\r\n\t\t\t\tREMAIN.append(b.SOL)\r\n\t\tREMAINF.append(REMAIN)\r\n\t\tMODULENAME.append(a.NAM)\r\nSELIND=list(set(SELIND))\t\r\n\r\nGEOMS=[]\r\nINDICES=[]\r\nfor a in MICROS:\r\n\tif (str(a.MIOF)+\"_\"+str(a.IOF)) in indices:\t\r\n\t\tGEOMS.append(a.SOL)\r\n\t\tINDICES.append(str(a.MIOF)+\"_\"+str(a.IOF))\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = MICROS,GEOMS,indices,CIRC,SELIND,REMAINF,CIRLINES,LXGRID,LYGRID,MODULENAME",
       "VariableInputPorts": true,
       "Id": "2136884239954da1a72adfc4dc792538",
       "Inputs": [
@@ -3053,7 +3053,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nVECL = IN[0]\r\n\r\nVECS=[]\r\nfor a in VECL:\r\n\tVECS.append(getangleofvector(a))\r\n# Assign your output to the OUT variable.\r\nOUT = VECS",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nVECL = IN[0]\r\n\r\nVECS=[]\r\nfor a in VECL:\r\n\tVECS.append(getangleofvector(a))\r\n# Assign your output to the OUT variable.\r\nOUT = VECS",
       "VariableInputPorts": true,
       "Id": "2cfaa28e73844f9babf4eecf7133144b",
       "Inputs": [
@@ -3631,7 +3631,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nVECL = IN[0]\r\n\r\nVECS=[]\r\nfor a in VECL:\r\n\tVECS.append(getangleofvector(a))\r\n# Assign your output to the OUT variable.\r\nOUT = VECS",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nVECL = IN[0]\r\n\r\nVECS=[]\r\nfor a in VECL:\r\n\tVECS.append(getangleofvector(a))\r\n# Assign your output to the OUT variable.\r\nOUT = VECS",
       "VariableInputPorts": true,
       "Id": "8b89d5afddc242e2b219c6d89afa6c5c",
       "Inputs": [
@@ -4001,7 +4001,7 @@
     {
       "Start": "afbbec6374264e0784bebdaec608fe20",
       "End": "6ad4980c4afe46cb8b47a7b159da4292",
-      "Id": "7d14c5ec12814eeea606ec9f1e056aa5"
+      "Id": "a0d75ae43c4e48e191a75c95734e633e"
     },
     {
       "Start": "a82dfc2f8acf4d7aac24ee2db78b8720",
@@ -4256,22 +4256,22 @@
     {
       "Start": "929cc9b2906a45e3a9ad1ca9fe06af6b",
       "End": "e8ef3f29eae54e17951870a65de9ad36",
-      "Id": "6dbe483ada73493b9ad597a8afbfd32f"
-    },
-    {
-      "Start": "a10ec11caa7e45fd8d8c1addb9208777",
-      "End": "91c51ab1a4284967b42eb4fe0930f5d1",
-      "Id": "8d052ca986a742589b7d25bd3b559e46"
-    },
-    {
-      "Start": "a10ec11caa7e45fd8d8c1addb9208777",
-      "End": "1f5f26682c4d4b19b3455530d79e7ef1",
-      "Id": "b6864d76f65e4ced80aeac861eea4f92"
+      "Id": "28d02384efc9431cbf0c027c8deaecb2"
     },
     {
       "Start": "a10ec11caa7e45fd8d8c1addb9208777",
       "End": "3015eef2cd29445c95d344c38ea4f104",
-      "Id": "9b167a7fc8e54f9cb44bdb7f8641bcdd"
+      "Id": "a22af4dbb3ab4a008578c8fe29ecaf1e"
+    },
+    {
+      "Start": "a10ec11caa7e45fd8d8c1addb9208777",
+      "End": "91c51ab1a4284967b42eb4fe0930f5d1",
+      "Id": "d89b7d15945b417da126941eb6749e5a"
+    },
+    {
+      "Start": "a10ec11caa7e45fd8d8c1addb9208777",
+      "End": "1f5f26682c4d4b19b3455530d79e7ef1",
+      "Id": "20bada4116134f22a5030cb75b7bbd8e"
     },
     {
       "Start": "00876da19f4f4ab3846597fc95a1c520",
@@ -4587,7 +4587,7 @@
       "ScaleFactor": 10000.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.6.1.8786",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -5102,7 +5102,7 @@
         "IsSetAsOutput": false,
         "Excluded": false,
         "X": 3874.7151495463445,
-        "Y": 1111.5267177579483
+        "Y": 1185.6715333305729
       },
       {
         "ShowGeometry": false,
@@ -5823,8 +5823,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -1039.8463602997076,
-    "Y": -373.99995213416355,
-    "Zoom": 0.50408205149048579
+    "X": 223.15155507362908,
+    "Y": 371.9605729285675,
+    "Zoom": 0.20893425061468654
   }
 }

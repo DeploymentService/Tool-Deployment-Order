@@ -117,7 +117,7 @@
     },
     {
       "ConcreteType": "DSRevitNodesUI.Categories, DSRevitNodesUI",
-      "SelectedIndex": 506,
+      "SelectedIndex": 466,
       "SelectedString": "OST_SpecialityEquipment",
       "NodeType": "ExtensionNode",
       "Id": "6494e2bb27ad4466bcdae81ecfc42d3d",
@@ -569,12 +569,12 @@
     {
       "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
       "NodeType": "CodeBlockNode",
-      "Code": "\"ROOMS\";",
+      "Code": "\"ROOM\";",
       "Id": "470850d88a5841f4957b453be7d7f3b3",
       "Inputs": [],
       "Outputs": [
         {
-          "Id": "07551c5c395244978478dda51cc3f6c8",
+          "Id": "ea6946b470a04916a31d805604f0007b",
           "Name": "",
           "Description": "Value of expression at line 1",
           "UsingDefaultValue": false,
@@ -697,7 +697,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nPOIS = IN[0]\r\nW=IN[1]\r\nL=IN[2]\r\nSOL=[]\r\nfor a,b,c in zip(POIS,W,L):\r\n\tif len(a)==1:\r\n\t\tSOL.append(a[0])\r\n\telse:\r\n\t\tX=0\r\n\t\tY=0\r\n\t\tZ=0\r\n\t\tTX=0\r\n\t\tTY=0\r\n\t\tfor d,e,f in zip(a,b,c):\t\r\n\t\t\tX+=d.X*e\r\n\t\t\tY+=d.Y*f\r\n\t\t\tZ+=d.Z\r\n\t\t\tTX+=e\r\n\t\t\tTY+=f\r\n\t\tXR=X/TX\r\n\t\tYR=Y/TY\r\n\t\tZR=Z/len(a)\r\n\t\tSOL.append(Point.ByCoordinates(XR,YR,ZR))\r\n# Place your code below this line\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = SOL",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\nPOIS = IN[0]\r\nW=IN[1]\r\nL=IN[2]\r\nSOL=[]\r\nfor a,b,c in zip(POIS,W,L):\r\n\tif len(a)==1:\r\n\t\tSOL.append(a[0])\r\n\telse:\r\n\t\tX=0\r\n\t\tY=0\r\n\t\tZ=0\r\n\t\tTX=0\r\n\t\tTY=0\r\n\t\tfor d,e,f in zip(a,b,c):\t\r\n\t\t\tX+=d.X*e\r\n\t\t\tY+=d.Y*f\r\n\t\t\tZ+=d.Z\r\n\t\t\tTX+=e\r\n\t\t\tTY+=f\r\n\t\tXR=X/TX\r\n\t\tYR=Y/TY\r\n\t\tZR=Z/len(a)\r\n\t\tSOL.append(Point.ByCoordinates(XR,YR,ZR))\r\n# Place your code below this line\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = SOL",
       "VariableInputPorts": true,
       "Id": "4e4e5c00b1dd415fb5dcdfe6d293d52d",
       "Inputs": [
@@ -1443,7 +1443,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\ngroups = IN[0]\r\noriginpoints=IN[1]\r\n\r\nW=[]\r\nL=[]\r\nfor a,b in zip(groups,originpoints):\r\n\tCUR=solstoCurvesFS(a,b.Z)\r\n\tif CUR[0].StartPoint.X==CUR[0].EndPoint.X:\r\n\t\tW.append(round(CUR[0].Length,0))\r\n\t\tL.append(round(CUR[1].Length,0))\r\n\telse:\r\n\t\tW.append(round(CUR[1].Length,0))\r\n\t\tL.append(round(CUR[0].Length,0))\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = W,L,CUR",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\ngroups = IN[0]\r\noriginpoints=IN[1]\r\n\r\nW=[]\r\nL=[]\r\nfor a,b in zip(groups,originpoints):\r\n\tCUR=solstoCurvesFS(a,b.Z)\r\n\tif CUR[0].StartPoint.X==CUR[0].EndPoint.X:\r\n\t\tW.append(round(CUR[0].Length,0))\r\n\t\tL.append(round(CUR[1].Length,0))\r\n\telse:\r\n\t\tW.append(round(CUR[1].Length,0))\r\n\t\tL.append(round(CUR[0].Length,0))\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = W,L,CUR",
       "VariableInputPorts": true,
       "Id": "f93314a1977e4be6b8cfb54f3a1e5b30",
       "Inputs": [
@@ -1543,7 +1543,7 @@
     {
       "ConcreteType": "PythonNodeModels.PythonNode, PythonNodeModels",
       "NodeType": "PythonScriptNode",
-      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%LOCALAPPDATA%\\Programs\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\ngroups = IN[0]\r\noriginpoints=IN[1]\r\n\r\nW=[]\r\nL=[]\r\nfor a,b in zip(groups,originpoints):\r\n\tWT=[]\r\n\tLT=[]\r\n\tfor c,d in zip(a,b):\r\n\t\tCUR=soltoCurves(c,d.Z)\r\n\t\tif CUR[0].StartPoint.X==CUR[0].EndPoint.X:\r\n\t\t\tWT.append(round(CUR[0].Length,0))\r\n\t\t\tLT.append(round(CUR[1].Length,0))\r\n\t\telse:\r\n\t\t\tWT.append(round(CUR[1].Length,0))\r\n\t\t\tLT.append(round(CUR[0].Length,0))\r\n\tW.append(WT)\r\n\tL.append(LT)\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = W,L",
+      "Code": "# Load the Python Standard and DesignScript Libraries\r\nimport sys,os\r\nfrom os import path\r\ndumps_dir = path.expandvars(r'%ProgramW6432%\\Dynamo\\RA\\BIMRA')\r\nsys.path.append(dumps_dir)\r\nfrom ModClass import *\r\nfrom RAForms import *\r\nfrom LayFit import *\r\nimport clr\r\nclr.AddReference('ProtoGeometry')\r\nfrom Autodesk.DesignScript.Geometry import *\r\n\r\n# The inputs to this node will be stored as a list in the IN variables.\r\ngroups = IN[0]\r\noriginpoints=IN[1]\r\n\r\nW=[]\r\nL=[]\r\nfor a,b in zip(groups,originpoints):\r\n\tWT=[]\r\n\tLT=[]\r\n\tfor c,d in zip(a,b):\r\n\t\tCUR=soltoCurves(c,d.Z)\r\n\t\tif CUR[0].StartPoint.X==CUR[0].EndPoint.X:\r\n\t\t\tWT.append(round(CUR[0].Length,0))\r\n\t\t\tLT.append(round(CUR[1].Length,0))\r\n\t\telse:\r\n\t\t\tWT.append(round(CUR[1].Length,0))\r\n\t\t\tLT.append(round(CUR[0].Length,0))\r\n\tW.append(WT)\r\n\tL.append(LT)\r\n\r\n# Assign your output to the OUT variable.\r\nOUT = W,L",
       "VariableInputPorts": true,
       "Id": "4672104c097941e48f7747ddfa521db5",
       "Inputs": [
@@ -1773,9 +1773,9 @@
       "Id": "13a8452d09d54e049753f41ac04e1dcc"
     },
     {
-      "Start": "07551c5c395244978478dda51cc3f6c8",
+      "Start": "ea6946b470a04916a31d805604f0007b",
       "End": "4d28832f23d24dce8e5f202e472e61c5",
-      "Id": "fb2b88a04cf2444fb7e6db1beaef046f"
+      "Id": "87fc9c1161614d70bba7f5ddd28f7a41"
     },
     {
       "Start": "18484a8b1ff04dc1b3fd44007d301893",
@@ -1991,7 +1991,7 @@
       "ScaleFactor": 10000.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.6.1.8786",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
@@ -2145,8 +2145,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 1837.4201584141751,
-        "Y": 1715.9379212591973
+        "X": 1842.0334825655375,
+        "Y": 1740.8498716765544
       },
       {
         "ShowGeometry": true,
@@ -2275,8 +2275,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2759.460142057168,
-        "Y": 1775.1039386953862
+        "X": 2740.7380810019927,
+        "Y": 1726.1385482433902
       },
       {
         "ShowGeometry": true,
@@ -2435,8 +2435,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 3580.5267325871819,
-        "Y": 1155.3207910461829
+        "X": 3573.9618518513062,
+        "Y": 876.31335977145909
       },
       {
         "ShowGeometry": true,
@@ -2450,8 +2450,8 @@
       }
     ],
     "Annotations": [],
-    "X": -2630.0046506298117,
-    "Y": -790.40054801785027,
-    "Zoom": 0.80189701188853324
+    "X": -2692.4948061789282,
+    "Y": -710.90402755847936,
+    "Zoom": 0.91395415109540545
   }
 }

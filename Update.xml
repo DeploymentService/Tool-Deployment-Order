@@ -481,8 +481,24 @@
     </Exist>
     <Exist>
       <version>1.0.0.1</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/TesfitLayout/setbacks.xlsx?raw=true</url>
-      <filePath>%ProgramW6432%\Dynamo\RA\setbacks.xlsx</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/TesfitLayout/20_TestFitLayout.rvt?raw=true</url>
+      <filePath>%ProgramW6432%\Dynamo\RA\20_TestFitLayout.rvt</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Set the File Template</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.1</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/TesfitLayout/21_TestFitLayout.rvt?raw=true</url>
+      <filePath>%ProgramW6432%\Dynamo\RA\21_TestFitLayout.rvt</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Set the File Template</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.1</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/TesfitLayout/setbacks.csv?raw=true</url>
+      <filePath>%ProgramW6432%\Dynamo\RA\setbacks.csv</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>setbacks for elements</description>
       <launchArgs></launchArgs>
