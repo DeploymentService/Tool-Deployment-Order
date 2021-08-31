@@ -159,10 +159,10 @@
       "ConcreteType": "Dynamo.Nodes.DSModelElementsSelection, DSRevitNodesUI",
       "NodeType": "ExtensionNode",
       "InstanceId": [
-        "3ab2b554-f234-4638-b769-d8d78519102d-00089467",
-        "3ab2b554-f234-4638-b769-d8d78519102d-00089468",
-        "3ab2b554-f234-4638-b769-d8d78519102d-00089469",
-        "3ab2b554-f234-4638-b769-d8d78519102d-0008946a"
+        "6c522468-f444-49bf-a937-5c8a89960b23-000792ea",
+        "6c522468-f444-49bf-a937-5c8a89960b23-000792eb",
+        "6c522468-f444-49bf-a937-5c8a89960b23-000792ec",
+        "6c522468-f444-49bf-a937-5c8a89960b23-000792ed"
       ],
       "Id": "33e9b820413b401ab2c064edec4b8ccd",
       "Inputs": [],
@@ -905,66 +905,9 @@
       "Description": "Runs an embedded IronPython script."
     },
     {
-      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
-      "NodeType": "FunctionNode",
-      "FunctionSignature": "DSOffice.Data.ImportExcel@var,string,bool,bool",
-      "Id": "2d953d6df8f542c4800f4b9daf3f2158",
-      "Inputs": [
-        {
-          "Id": "a7d242151a324d059f0ae9b0202cc9ab",
-          "Name": "file",
-          "Description": "File representing the Microsoft Excel spreadsheet.\n\nvar",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "aca786b44d894928a55517a9b0a63993",
-          "Name": "sheetName",
-          "Description": "Name of the worksheet containing the data.\n\nstring",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "372fdf756da040269e8b8c7e84df1773",
-          "Name": "readAsStrings",
-          "Description": "Toggle to switch between reading Excel file as strings.\n\nbool\nDefault value : false",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        },
-        {
-          "Id": "7cb70755b59b4baa926b5f727a9d04b0",
-          "Name": "showExcel",
-          "Description": "Toggle to switch between showing and hiding the main Excel window.\n\nbool\nDefault value : true",
-          "UsingDefaultValue": true,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "533d89846c974a6daccc747daae089b2",
-          "Name": "data",
-          "Description": "Rows of data from the Excel worksheet.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Auto",
-      "Description": "Read data from a Microsoft Excel spreadsheet. Data is read by row and returned in a series of lists by row. Rows and columns are zero-indexed; for example, the value in cell A1 will appear in the data list at [0,0]. This node requires Microsoft Excel to be installed.\n\nData.ImportExcel (file: var, sheetName: string, readAsStrings: bool = false, showExcel: bool = true): var[][]"
-    },
-    {
       "ConcreteType": "CoreNodeModels.Input.Filename, CoreNodeModels",
-      "HintPath": "C:\\Users\\matie\\AppData\\Local\\Programs\\RA\\setbacks.xlsx",
-      "InputValue": ".\\setbacks.xlsx",
+      "HintPath": "C:\\Users\\e2133\\Documents\\GitHub\\Tool-Deployment-Order\\TesfitLayout\\setbacks.csv",
+      "InputValue": ".\\setbacks.csv",
       "NodeType": "ExtensionNode",
       "Id": "8cf2f38dfcfb4e758656fd18b81da793",
       "Inputs": [],
@@ -981,75 +924,6 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows you to select a file on the system to get its filename"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
-      "NodeType": "CodeBlockNode",
-      "Code": "\"Hoja1\";",
-      "Id": "39ed1c8dfe19418babe34de715c708c3",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "45e94d10b73d4bfe8552cb0375f087a5",
-          "Name": "",
-          "Description": "Value of expression at line 1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
-      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
-      "NodeType": "CodeBlockNode",
-      "Code": "false;",
-      "Id": "cbe0cf110a7d4464b388d88f969fedd7",
-      "Inputs": [],
-      "Outputs": [
-        {
-          "Id": "db116068a0ed4cb68b3c4a26e34649ff",
-          "Name": "",
-          "Description": "Value of expression at line 1",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Allows for DesignScript code to be authored directly"
-    },
-    {
-      "ConcreteType": "CoreNodeModels.Input.FileObject, CoreNodeModels",
-      "NodeType": "ExtensionNode",
-      "Id": "242cc421d2ff4efb82572f0162166596",
-      "Inputs": [
-        {
-          "Id": "55b266f0cd56448f8141ef0083fa19c6",
-          "Name": "path",
-          "Description": "Path to the file.",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Outputs": [
-        {
-          "Id": "a9f3441a6f8c4bbcbd8862420886b415",
-          "Name": "file",
-          "Description": "File object",
-          "UsingDefaultValue": false,
-          "Level": 2,
-          "UseLevels": false,
-          "KeepListStructure": false
-        }
-      ],
-      "Replication": "Disabled",
-      "Description": "Creates a file object from a path."
     },
     {
       "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
@@ -1962,13 +1836,72 @@
       ],
       "Replication": "Disabled",
       "Description": "Allows for DesignScript code to be authored directly"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSOffice.Data.ImportCSV@string,bool",
+      "Id": "5e366d2d4fcd46f7a2c40ba7188e7d26",
+      "Inputs": [
+        {
+          "Id": "ae57aa99ace04e4ab29f9fb9ad91b6a0",
+          "Name": "filePath",
+          "Description": "The CSV file to be converted into a list.\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "064708612b2c41ab991b091db7d4b9e5",
+          "Name": "transpose",
+          "Description": "Whether the resulting list should be transposed.\n\nbool\nDefault value : false",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "d6b4bc03c03a45c9b0ada952f5314cd0",
+          "Name": "list",
+          "Description": "The list containing the items in the CSV file.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Imports data from a CSV (comma separated values) file, put the items into a list and transpose it if needed.\n\nData.ImportCSV (filePath: string, transpose: bool = false): var[]..[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.CodeBlockNodeModel, DynamoCore",
+      "NodeType": "CodeBlockNode",
+      "Code": "true;",
+      "Id": "6bb573646ef54819a27d0a82d20cee5b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a0af62cc327047f1a3cc7cd3d29e05d4",
+          "Name": "",
+          "Description": "Value of expression at line 1",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Allows for DesignScript code to be authored directly"
     }
   ],
   "Connectors": [
     {
       "Start": "b70eed5495b3408ea648e9a230c18f14",
       "End": "376073a2d7a04d93804590624524c632",
-      "Id": "ff4b6b21fb144a578fe7a120ccd905a6"
+      "Id": "00c15a4aab5a4bb08ef320389a79edf3"
     },
     {
       "Start": "f887d9d042e14d83a3fbb67b9d4276da",
@@ -2136,34 +2069,9 @@
       "Id": "efcb25402e214527baf2d285af39f45b"
     },
     {
-      "Start": "533d89846c974a6daccc747daae089b2",
-      "End": "3dc6661154bb4e6e8ee58a972f476175",
-      "Id": "63f6e408da0e435d90d458bb4a4e7d74"
-    },
-    {
       "Start": "1d1850e612554ac88e365e49bd4061af",
-      "End": "55b266f0cd56448f8141ef0083fa19c6",
-      "Id": "de6ef054496c40d1be01e5881ef8d54e"
-    },
-    {
-      "Start": "45e94d10b73d4bfe8552cb0375f087a5",
-      "End": "aca786b44d894928a55517a9b0a63993",
-      "Id": "a6ac9ee16010400fa2437017aaf90f2c"
-    },
-    {
-      "Start": "db116068a0ed4cb68b3c4a26e34649ff",
-      "End": "372fdf756da040269e8b8c7e84df1773",
-      "Id": "3575910747004aa98e0b6b8dda2233ae"
-    },
-    {
-      "Start": "db116068a0ed4cb68b3c4a26e34649ff",
-      "End": "7cb70755b59b4baa926b5f727a9d04b0",
-      "Id": "8b8e6b74b1114999af474117b5b2b21b"
-    },
-    {
-      "Start": "a9f3441a6f8c4bbcbd8862420886b415",
-      "End": "a7d242151a324d059f0ae9b0202cc9ab",
-      "Id": "48cbf78b70bd42cda841d603304bd825"
+      "End": "ae57aa99ace04e4ab29f9fb9ad91b6a0",
+      "Id": "242c5d0cd59e42c3a562b93610c9bdb0"
     },
     {
       "Start": "9b83bdf757d447e0bfd92db669877c49",
@@ -2324,28 +2232,45 @@
       "Start": "4639e8bf6c79491d9f232457bf26cc4a",
       "End": "c9748fee934149c0a09b8b97265966b2",
       "Id": "b15d9addad864d6bbd33838bb21d084a"
+    },
+    {
+      "Start": "d6b4bc03c03a45c9b0ada952f5314cd0",
+      "End": "3dc6661154bb4e6e8ee58a972f476175",
+      "Id": "d609b0ec9a6a4663ad071e4772cdd1cd"
+    },
+    {
+      "Start": "a0af62cc327047f1a3cc7cd3d29e05d4",
+      "End": "064708612b2c41ab991b091db7d4b9e5",
+      "Id": "0528ac7973974521811477a28ec53f57"
     }
   ],
   "Dependencies": [],
   "NodeLibraryDependencies": [],
-  "Bindings": [],
+  "Bindings": [
+    {
+      "NodeId": "8ce1b4c0-7390-42b0-abf5-a197640aae5e",
+      "Binding": {
+        "ByCurve_InClassDecl-1_InFunctionScope-1_Instance0_8ce1b4c0-7390-42b0-abf5-a197640aae5e": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMy4wLjU4ODUlMkMlMjBDdWx0dXJlJTNEbmV1dHJhbCUyQyUyMFB1YmxpY0tleVRva2VuJTNEbnVsbCI+DQo8TnVtYmVyT2ZFbGVtZW50cz4xPC9OdW1iZXJPZkVsZW1lbnRzPg0KPEJhc2UtMF9IYXNEYXRhPmZhbHNlPC9CYXNlLTBfSGFzRGF0YT4NCjxCYXNlLTBfSGFzTmVzdGVkRGF0YT50cnVlPC9CYXNlLTBfSGFzTmVzdGVkRGF0YT4NCjxCYXNlLTBfTmVzdGVkRGF0YUNvdW50PjQ8L0Jhc2UtMF9OZXN0ZWREYXRhQ291bnQ+DQo8QmFzZS0wLTBfSGFzRGF0YT50cnVlPC9CYXNlLTAtMF9IYXNEYXRhPg0KPEJhc2UtMC0wX0RhdGEgaWQ9InJlZi0zIj5QRk5QUVZBdFJVNVdPa1Z1ZG1Wc2IzQmxJSGh0Ykc1ek9uaHphVDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRXRhVzV6ZEdGdVkyVWlJSGh0Ykc1ek9uaHpaRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRWlJSGh0Ykc1ek9sTlBRVkF0UlU1RFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJZ2VHMXNibk02VTA5QlVDMUZUbFk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbmh0YkhOdllYQXViM0puTDNOdllYQXZaVzUyWld4dmNHVXZJaUI0Yld4dWN6cGpiSEk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbTFwWTNKdmMyOW1kQzVqYjIwdmMyOWhjQzlsYm1OdlpHbHVaeTlqYkhJdk1TNHdJaUJUVDBGUUxVVk9WanBsYm1OdlpHbHVaMU4wZVd4bFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJK0RRbzhVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqeGhNVHBUWlhKcFlXeHBlbUZpYkdWSlpDQnBaRDBpY21WbUxURWlJSGh0Ykc1ek9tRXhQU0pvZEhSd09pOHZjMk5vWlcxaGN5NXRhV055YjNOdlpuUXVZMjl0TDJOc2NpOXVjMkZ6YzJWdEwxSmxkbWwwVTJWeWRtbGpaWE11VUdWeWMybHpkR1Z1WTJVdlVtVjJhWFJUWlhKMmFXTmxjeVV5UXlVeU1GWmxjbk5wYjI0bE0wUXlMak11TUM0M05qWXhKVEpESlRJd1EzVnNkSFZ5WlNVelJHNWxkWFJ5WVd3bE1rTWxNakJRZFdKc2FXTkxaWGxVYjJ0bGJpVXpSRzUxYkd3aVBnMEtQSE4wY21sdVowbEVJR2xrUFNKeVpXWXRNeUkrWXpOak5Ea3daVFV0TTJFeFpDMDBNalpoTFRneVpHTXRZalk1WXpGalpqWTRaamszTFRBd01EZGlaREl4UEM5emRISnBibWRKUkQ0TkNqeHBiblJKUkQ0MU1EY3hOams4TDJsdWRFbEVQZzBLUEM5aE1UcFRaWEpwWVd4cGVtRmliR1ZKWkQ0TkNqd3ZVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqd3ZVMDlCVUMxRlRsWTZSVzUyWld4dmNHVStEUW89PC9CYXNlLTAtMF9EYXRhPg0KPEJhc2UtMC0wX0hhc05lc3RlZERhdGE+ZmFsc2U8L0Jhc2UtMC0wX0hhc05lc3RlZERhdGE+DQo8QmFzZS0wLTFfSGFzRGF0YT50cnVlPC9CYXNlLTAtMV9IYXNEYXRhPg0KPEJhc2UtMC0xX0RhdGEgaWQ9InJlZi00Ij5QRk5QUVZBdFJVNVdPa1Z1ZG1Wc2IzQmxJSGh0Ykc1ek9uaHphVDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRXRhVzV6ZEdGdVkyVWlJSGh0Ykc1ek9uaHpaRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRWlJSGh0Ykc1ek9sTlBRVkF0UlU1RFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJZ2VHMXNibk02VTA5QlVDMUZUbFk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbmh0YkhOdllYQXViM0puTDNOdllYQXZaVzUyWld4dmNHVXZJaUI0Yld4dWN6cGpiSEk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbTFwWTNKdmMyOW1kQzVqYjIwdmMyOWhjQzlsYm1OdlpHbHVaeTlqYkhJdk1TNHdJaUJUVDBGUUxVVk9WanBsYm1OdlpHbHVaMU4wZVd4bFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJK0RRbzhVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqeGhNVHBUWlhKcFlXeHBlbUZpYkdWSlpDQnBaRDBpY21WbUxURWlJSGh0Ykc1ek9tRXhQU0pvZEhSd09pOHZjMk5vWlcxaGN5NXRhV055YjNOdlpuUXVZMjl0TDJOc2NpOXVjMkZ6YzJWdEwxSmxkbWwwVTJWeWRtbGpaWE11VUdWeWMybHpkR1Z1WTJVdlVtVjJhWFJUWlhKMmFXTmxjeVV5UXlVeU1GWmxjbk5wYjI0bE0wUXlMak11TUM0M05qWXhKVEpESlRJd1EzVnNkSFZ5WlNVelJHNWxkWFJ5WVd3bE1rTWxNakJRZFdKc2FXTkxaWGxVYjJ0bGJpVXpSRzUxYkd3aVBnMEtQSE4wY21sdVowbEVJR2xrUFNKeVpXWXRNeUkrWXpOak5Ea3daVFV0TTJFeFpDMDBNalpoTFRneVpHTXRZalk1WXpGalpqWTRaamszTFRBd01EZGlaREl6UEM5emRISnBibWRKUkQ0TkNqeHBiblJKUkQ0MU1EY3hOekU4TDJsdWRFbEVQZzBLUEM5aE1UcFRaWEpwWVd4cGVtRmliR1ZKWkQ0TkNqd3ZVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqd3ZVMDlCVUMxRlRsWTZSVzUyWld4dmNHVStEUW89PC9CYXNlLTAtMV9EYXRhPg0KPEJhc2UtMC0xX0hhc05lc3RlZERhdGE+ZmFsc2U8L0Jhc2UtMC0xX0hhc05lc3RlZERhdGE+DQo8QmFzZS0wLTJfSGFzRGF0YT50cnVlPC9CYXNlLTAtMl9IYXNEYXRhPg0KPEJhc2UtMC0yX0RhdGEgaWQ9InJlZi01Ij5QRk5QUVZBdFJVNVdPa1Z1ZG1Wc2IzQmxJSGh0Ykc1ek9uaHphVDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRXRhVzV6ZEdGdVkyVWlJSGh0Ykc1ek9uaHpaRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRWlJSGh0Ykc1ek9sTlBRVkF0UlU1RFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJZ2VHMXNibk02VTA5QlVDMUZUbFk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbmh0YkhOdllYQXViM0puTDNOdllYQXZaVzUyWld4dmNHVXZJaUI0Yld4dWN6cGpiSEk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbTFwWTNKdmMyOW1kQzVqYjIwdmMyOWhjQzlsYm1OdlpHbHVaeTlqYkhJdk1TNHdJaUJUVDBGUUxVVk9WanBsYm1OdlpHbHVaMU4wZVd4bFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJK0RRbzhVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqeGhNVHBUWlhKcFlXeHBlbUZpYkdWSlpDQnBaRDBpY21WbUxURWlJSGh0Ykc1ek9tRXhQU0pvZEhSd09pOHZjMk5vWlcxaGN5NXRhV055YjNOdlpuUXVZMjl0TDJOc2NpOXVjMkZ6YzJWdEwxSmxkbWwwVTJWeWRtbGpaWE11VUdWeWMybHpkR1Z1WTJVdlVtVjJhWFJUWlhKMmFXTmxjeVV5UXlVeU1GWmxjbk5wYjI0bE0wUXlMak11TUM0M05qWXhKVEpESlRJd1EzVnNkSFZ5WlNVelJHNWxkWFJ5WVd3bE1rTWxNakJRZFdKc2FXTkxaWGxVYjJ0bGJpVXpSRzUxYkd3aVBnMEtQSE4wY21sdVowbEVJR2xrUFNKeVpXWXRNeUkrWXpOak5Ea3daVFV0TTJFeFpDMDBNalpoTFRneVpHTXRZalk1WXpGalpqWTRaamszTFRBd01EZGlaREkxUEM5emRISnBibWRKUkQ0TkNqeHBiblJKUkQ0MU1EY3hOek04TDJsdWRFbEVQZzBLUEM5aE1UcFRaWEpwWVd4cGVtRmliR1ZKWkQ0TkNqd3ZVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqd3ZVMDlCVUMxRlRsWTZSVzUyWld4dmNHVStEUW89PC9CYXNlLTAtMl9EYXRhPg0KPEJhc2UtMC0yX0hhc05lc3RlZERhdGE+ZmFsc2U8L0Jhc2UtMC0yX0hhc05lc3RlZERhdGE+DQo8QmFzZS0wLTNfSGFzRGF0YT50cnVlPC9CYXNlLTAtM19IYXNEYXRhPg0KPEJhc2UtMC0zX0RhdGEgaWQ9InJlZi02Ij5QRk5QUVZBdFJVNVdPa1Z1ZG1Wc2IzQmxJSGh0Ykc1ek9uaHphVDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRXRhVzV6ZEdGdVkyVWlJSGh0Ykc1ek9uaHpaRDBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01TOVlUVXhUWTJobGJXRWlJSGh0Ykc1ek9sTlBRVkF0UlU1RFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJZ2VHMXNibk02VTA5QlVDMUZUbFk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbmh0YkhOdllYQXViM0puTDNOdllYQXZaVzUyWld4dmNHVXZJaUI0Yld4dWN6cGpiSEk5SW1oMGRIQTZMeTl6WTJobGJXRnpMbTFwWTNKdmMyOW1kQzVqYjIwdmMyOWhjQzlsYm1OdlpHbHVaeTlqYkhJdk1TNHdJaUJUVDBGUUxVVk9WanBsYm1OdlpHbHVaMU4wZVd4bFBTSm9kSFJ3T2k4dmMyTm9aVzFoY3k1NGJXeHpiMkZ3TG05eVp5OXpiMkZ3TDJWdVkyOWthVzVuTHlJK0RRbzhVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqeGhNVHBUWlhKcFlXeHBlbUZpYkdWSlpDQnBaRDBpY21WbUxURWlJSGh0Ykc1ek9tRXhQU0pvZEhSd09pOHZjMk5vWlcxaGN5NXRhV055YjNOdlpuUXVZMjl0TDJOc2NpOXVjMkZ6YzJWdEwxSmxkbWwwVTJWeWRtbGpaWE11VUdWeWMybHpkR1Z1WTJVdlVtVjJhWFJUWlhKMmFXTmxjeVV5UXlVeU1GWmxjbk5wYjI0bE0wUXlMak11TUM0M05qWXhKVEpESlRJd1EzVnNkSFZ5WlNVelJHNWxkWFJ5WVd3bE1rTWxNakJRZFdKc2FXTkxaWGxVYjJ0bGJpVXpSRzUxYkd3aVBnMEtQSE4wY21sdVowbEVJR2xrUFNKeVpXWXRNeUkrWXpOak5Ea3daVFV0TTJFeFpDMDBNalpoTFRneVpHTXRZalk1WXpGalpqWTRaamszTFRBd01EZGlaREkzUEM5emRISnBibWRKUkQ0TkNqeHBiblJKUkQ0MU1EY3hOelU4TDJsdWRFbEVQZzBLUEM5aE1UcFRaWEpwWVd4cGVtRmliR1ZKWkQ0TkNqd3ZVMDlCVUMxRlRsWTZRbTlrZVQ0TkNqd3ZVMDlCVUMxRlRsWTZSVzUyWld4dmNHVStEUW89PC9CYXNlLTAtM19EYXRhPg0KPEJhc2UtMC0zX0hhc05lc3RlZERhdGE+ZmFsc2U8L0Jhc2UtMC0zX0hhc05lc3RlZERhdGE+DQo8L2ExOkNhbGxTaXRlX3gwMDJCX1RyYWNlU2VyaWFsaXNlckhlbHBlcj4NCjwvU09BUC1FTlY6Qm9keT4NCjwvU09BUC1FTlY6RW52ZWxvcGU+DQo="
+      }
+    }
+  ],
   "View": {
     "Dynamo": {
       "ScaleFactor": 10000.0,
       "HasRunWithoutCrash": true,
       "IsVisibleInDynamoLibrary": true,
-      "Version": "2.6.1.8786",
+      "Version": "2.3.0.5885",
       "RunType": "Manual",
       "RunPeriod": "1000"
     },
     "Camera": {
       "Name": "Background Preview",
-      "EyeX": -8.1007139003638429,
-      "EyeY": 64.096516896237247,
-      "EyeZ": 25.964227284250057,
-      "LookX": 34.049979507030862,
-      "LookY": -62.207847044818863,
-      "LookZ": -69.23111848415607,
+      "EyeX": -808.72201715111612,
+      "EyeY": 1526.7971791143234,
+      "EyeZ": 1653.8039237764947,
+      "LookX": 834.67128275778316,
+      "LookY": -1524.908509262905,
+      "LookZ": -1697.0708149764007,
       "UpX": 0.19692465962783465,
       "UpY": 0.89493436160213757,
       "UpZ": -0.40039126720556167
@@ -2438,8 +2363,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -192.328128463829,
-        "Y": 1242.7798264984967
+        "X": -183.92791314309284,
+        "Y": 1174.5280770175154
       },
       {
         "ShowGeometry": false,
@@ -2448,8 +2373,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 62.479821396086209,
-        "Y": 1250.0870275918842
+        "X": 85.580413528110512,
+        "Y": 1195.4856280070992
       },
       {
         "ShowGeometry": false,
@@ -2592,54 +2517,14 @@
         "Y": 1383.7595638331272
       },
       {
-        "ShowGeometry": true,
-        "Name": "Data.ImportExcel",
-        "Id": "2d953d6df8f542c4800f4b9daf3f2158",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -35.624647379332714,
-        "Y": 1517.4689181342
-      },
-      {
         "ShowGeometry": false,
         "Name": "File Path",
         "Id": "8cf2f38dfcfb4e758656fd18b81da793",
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": -424.33776303455227,
-        "Y": 1485.7312556584973
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Code Block",
-        "Id": "39ed1c8dfe19418babe34de715c708c3",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -184.79454288496493,
-        "Y": 1565.1969502062389
-      },
-      {
-        "ShowGeometry": true,
-        "Name": "Code Block",
-        "Id": "cbe0cf110a7d4464b388d88f969fedd7",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -181.99537242363192,
-        "Y": 1644.7786248683626
-      },
-      {
-        "ShowGeometry": false,
-        "Name": "File From Path",
-        "Id": "242cc421d2ff4efb82572f0162166596",
-        "IsSetAsInput": false,
-        "IsSetAsOutput": false,
-        "Excluded": false,
-        "X": -183.9390358425411,
-        "Y": 1480.6595525531804
+        "X": -123.10275502595903,
+        "Y": 1563.0597826185576
       },
       {
         "ShowGeometry": true,
@@ -2648,8 +2533,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 216.41357545617018,
-        "Y": 1522.6702798488657
+        "X": 296.05041665384408,
+        "Y": 1633.4693632543251
       },
       {
         "ShowGeometry": true,
@@ -2658,8 +2543,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 473.81229029643885,
-        "Y": 1551.1213503216891
+        "X": 473.03289727653271,
+        "Y": 1551.9007433415954
       },
       {
         "ShowGeometry": false,
@@ -2678,8 +2563,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2231.5199530881632,
-        "Y": 1307.6087719809643
+        "X": 2106.5324210041117,
+        "Y": 1340.1759458338511
       },
       {
         "ShowGeometry": false,
@@ -2698,8 +2583,8 @@
         "IsSetAsInput": false,
         "IsSetAsOutput": false,
         "Excluded": false,
-        "X": 2332.3596314914444,
-        "Y": 1468.800008878128
+        "X": 2339.2330242216358,
+        "Y": 1440.5440775533732
       },
       {
         "ShowGeometry": false,
@@ -2920,6 +2805,26 @@
         "Excluded": false,
         "X": 2188.9839232333616,
         "Y": 1090.7280657999754
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Data.ImportCSV",
+        "Id": "5e366d2d4fcd46f7a2c40ba7188e7d26",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 55.600412242467655,
+        "Y": 1543.5936457933235
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Code Block",
+        "Id": "6bb573646ef54819a27d0a82d20cee5b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -120.66567943731206,
+        "Y": 1667.0225042087977
       }
     ],
     "Annotations": [
@@ -2932,7 +2837,7 @@
         ],
         "Left": -1587.0128371122878,
         "Top": 1286.7147881299461,
-        "Width": 396.84049120942996,
+        "Width": 368.84049120942996,
         "Height": 216.04477570318113,
         "FontSize": 36.0,
         "InitialTop": 1339.7147881299461,
@@ -2947,13 +2852,13 @@
           "33e9b820413b401ab2c064edec4b8ccd"
         ],
         "Left": -1904.0661168937474,
-        "Top": 1274.0256756722963,
-        "Width": 195.0,
-        "Height": 215.0,
+        "Top": 1317.0256756722963,
+        "Width": 289.0,
+        "Height": 189.0,
         "FontSize": 36.0,
         "InitialTop": 1370.0256756722963,
         "InitialHeight": 145.0,
-        "TextblockHeight": 86.0,
+        "TextblockHeight": 43.0,
         "Background": "#FF48B9FF"
       },
       {
@@ -2970,12 +2875,12 @@
           "422c2f2216884dc1a72c8a5b7f6acf7c"
         ],
         "Left": -1167.1165135417577,
-        "Top": 1189.7798264984967,
-        "Width": 1764.8516018012979,
-        "Height": 279.60357268227131,
+        "Top": 1121.5280770175154,
+        "Width": 1765.8516018012979,
+        "Height": 347.85532216325259,
         "FontSize": 36.0,
-        "InitialTop": 1242.7798264984967,
-        "InitialHeight": 278.60357268227131,
+        "InitialTop": 1174.5280770175154,
+        "InitialHeight": 346.85532216325259,
         "TextblockHeight": 43.0,
         "Background": "#FFC1D676"
       },
@@ -3010,8 +2915,8 @@
         "Background": "#FFC1D676"
       }
     ],
-    "X": -245.21871795871675,
-    "Y": -469.94963355414507,
-    "Zoom": 0.55720072721158187
+    "X": -4670.9314948316887,
+    "Y": -3157.5259012975362,
+    "Zoom": 2.4492919120206698
   }
 }
