@@ -27,6 +27,8 @@
     <Programs>
       <Program>SmartDesignUpdate</Program>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -36,6 +38,8 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -54,6 +58,7 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
@@ -64,6 +69,8 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -73,6 +80,8 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -82,6 +91,8 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -91,6 +102,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
@@ -101,6 +113,7 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
@@ -111,6 +124,8 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -120,6 +135,8 @@
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>
@@ -129,6 +146,8 @@
     <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
     </Programs>
   </User>

@@ -271,6 +271,7 @@
       <launchArgs></launchArgs>
     </update>
   </DeployerTool>
+
   <CostEstimation>
      <Exist>
       <version>1.0.3.0</version>
@@ -360,7 +361,19 @@
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
-  </CostEstimation> 
+  </CostEstimation>
+
+  <Pyrevit>
+    <Exist>
+      <version>4.8.8</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Pyrevit/pyRevit_4.8.8_signed.exe?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\pyRevit_4.8.8_signed.exe</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Pyrevit</description>
+      <launchArgs></launchArgs>
+    </Exist>
+  </Pyrevit>
+
   <TestFitLayout>
     <Exist>
       <version>1.0.0.1</version>
