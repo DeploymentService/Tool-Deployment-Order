@@ -30,6 +30,7 @@
       <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
+      <Program>CPSAutomation</Program>
     </Programs>
   </User>
   <User>
@@ -83,6 +84,7 @@
       <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
+      <Program>CPSAutomation</Program>
     </Programs>
   </User>
   <User>
@@ -105,6 +107,7 @@
       <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
+      <Program>CPSAutomation</Program>
     </Programs>
   </User>
   <User>
@@ -116,6 +119,7 @@
       <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
+      <Program>CPSAutomation</Program>
     </Programs>
   </User>
   <User>
@@ -149,6 +153,19 @@
       <Program>Pyrevit</Program>
       <Program>CostEstimation</Program>
       <Program>TestFitLayout</Program>
+      <Program>CPSAutomation</Program>
+    </Programs>
+  </User>
+  <User>
+    <Mail>natalia.b@gmail.com</Mail>
+    <Password>1234</Password>
+    <FirstTime>true</FirstTime>
+    <Programs>
+      <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
+      <Program>TestFitLayout</Program>
+      <Program>CPSAutomation</Program>
     </Programs>
   </User>
 </Certificates>
