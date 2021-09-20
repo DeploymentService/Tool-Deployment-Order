@@ -16,7 +16,7 @@ def MODGRID3(LINE,OLINE,VEC):
 	VALUES = []
 	DIS=[]
 	if NALL>2:
-		X=12
+		
 		for a in range(int(NAL)):
 			VALUES.append(16)
 			DIS.append(X)
