@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>RA_QC_Automation</Name>
+    <Assembly>RA_QC_Automation.dll</Assembly>
+    <FullClassName>RA_QC_Automation.QC_Automation_ExtApp</FullClassName>
+    <AddInId>34682C28-6613-44A1-9CBF-760B9F27D0AB</AddInId>
+    <Description>QC_Automation updaters and event-driven scripts set</Description>
+    <VendorId>RA</VendorId>
+    <VendorDescription>ra.house</VendorDescription>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+  </AddIn>
+</RevitAddIns>
