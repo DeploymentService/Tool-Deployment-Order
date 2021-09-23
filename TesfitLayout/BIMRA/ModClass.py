@@ -333,9 +333,11 @@ def CREATEMICROS(LXGRID,LYGRID,mod,XVEC,YVEC,lst):
 			M1.IOF=X
 			M1.MIOF=mod.IOF
 			M1.ORI=a.Intersect(c)[0]
-			M1.CEN=M1.ORI.Translate(Vector.ByCoordinates(0,0,0.1))
-			M1.CSYS=CoordinateSystem.ByOriginVectors(M1.CEN,XVEC,YVEC,Vector.ByCoordinates(0,0,1))
-			M1.SOL=Cuboid.ByLengths(M1.CSYS,2,2,0.2)	
+			PT=M1.ORI.Translate(Vector.ByCoordinates(0,0,0.1))
+			M1.CEN=PT		
+			SYS=CoordinateSystem.ByOriginVectors(M1.CEN,XVEC,YVEC,Vector.ByCoordinates(0,0,1))
+			M1.CSYS=SYS
+			M1.SOL=Cuboid.ByLengths(SYS,2,2,0.2)	
 			M1.VEC=Vector.ByCoordinates(0,1,0)	
 			M1.LOC=mod.NAM		
 			lst.append(M1)
