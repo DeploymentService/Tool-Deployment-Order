@@ -635,6 +635,109 @@
     </Exist>
   </Pyrevit>
 
+  <RA_QC_Automation>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.addin?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_QC_Automation.addin</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.addin?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_QC_Automation.addin</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.addin?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_QC_Automation.addin</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.deps.json?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_QC_Automation.deps.json</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.deps.json?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_QC_Automation.deps.json</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.deps.json?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_QC_Automation.deps.json</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_QC_Automation.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_QC_Automation.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_QC_Automation.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_QC_Automation.pdb</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_QC_Automation.pdb</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_QC_Automation/RA_QC_Automation.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_QC_Automation.pdb</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>RA_QC_Automation</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    
+  </RA_QC_Automation>
+
   <TestFitLayout>
     <Exist>
       <version>1.0.0.1</version>
