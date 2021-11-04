@@ -59,9 +59,9 @@ def getposttype(LIST):
 	FLEN=[]
 	for a in range(len(LIST)):
 		if LIST[a]>10.66:
-			FLEN.append("PrimaryPost_DropHead_Universal_Rised_Extension")
+			FLEN.append("Fam1")
 		else:
-			FLEN.append("PrimaryPost_DropHead_Universal_Rised")
+			FLEN.append("Fam2")
 	return FLEN
 	
 def shortline(l1):
@@ -91,7 +91,7 @@ SELLINES=[]
 for item in collector:
 	ftype2 = item.Symbol
 	ftype = item.Symbol.Family
-	if ftype.Name=="Ledger":
+	if ftype.Name=="Fam3":
 		if item.LookupParameter("Used").AsInteger()==0:
 			SELLINES.append(item)
 			
