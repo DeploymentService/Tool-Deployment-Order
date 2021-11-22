@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>10_RA_DEVELOPMENT</Name>
+    <FullClassName>_10_RA_DEVELOPMENT.App</FullClassName>
+    <Text>RA_DEVELOPMENT</Text>
+    <Description>DESIGN DEVELOPMENT TOOLS</Description>
+    <VisibilityMode>AlwaysVisible</VisibilityMode>
+    <Assembly>10_RA_DEVELOPMENT.dll</Assembly>
+    <AddInId>604b1052-f742-4951-8576-c261d1993108</AddInId>    
+    <VendorId>RA</VendorId>
+    <VendorDescription>Ra House Development Team</VendorDescription>
+  </AddIn>
+</RevitAddIns>
