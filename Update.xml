@@ -909,5 +909,23 @@
     </Exist>
   
 </TestFitLayout>
+<RA_Tools>
+  <Exist>
+     <version>1.0.0.1</version>
+     <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_Tools/10_RA_DEVELOPMENT.dll?raw=true</url>
+     <filePath>%AppData%\Autodesk\Revit\Addins\2020\10_RA_DEVELOPMENT.dll</filePath>
+     <md5>5857188A507EAFC9414E6062180C8682</md5>
+     <description>RA_Tools_Ribbon</description>
+     <launchArgs></launchArgs>
+  </Exist>
+  <Exist>
+      <version>1.0.0.1</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/RA_Tools/10_RA_DEVELOPMENT_L.addin?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\10_RA_DEVELOPMENT_L.addin</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>RA_Tools_Ribbon</description>
+      <launchArgs></launchArgs>
+   </Exist>
+</RA_Tools>
   
 </Updates>
