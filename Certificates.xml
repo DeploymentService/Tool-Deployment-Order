@@ -21,7 +21,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>sam.williams@ra.house</Mail>
+    <Mail>sam.williams@rasanctuaries.com</Mail>
     <Password>Ciel2020</Password>
     <FirstTime>false</FirstTime>
     <Programs>
@@ -35,16 +35,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>matthew.varley@ra.house</Mail>
-    <Password>1234</Password>
-    <FirstTime>true</FirstTime>
-    <Programs>
-      <Program>DeployerTool</Program>
-      <Program>RA_QC_Automation</Program>
-    </Programs>
-  </User>
-  <User>
-    <Mail>hatem@ra.house</Mail>
+    <Mail>hatem@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -54,7 +45,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>sol.calcarami@ra.house</Mail>
+    <Mail>sol.calcarami@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -63,7 +54,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>jose.mossini@ra.house</Mail>
+    <Mail>jose.mossini@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -72,7 +63,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>lara.zenclussen@ra.house</Mail>
+    <Mail>lara.zenclussen@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -81,16 +72,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>mohamed.sabri@ra.house</Mail>
-    <Password>1234</Password>
-    <FirstTime>true</FirstTime>
-    <Programs>
-      <Program>DeployerTool</Program>
-      <Program>RA_QC_Automation</Program>
-    </Programs>
-  </User>
-  <User>
-    <Mail>enrique.galicia@ra.house</Mail>
+    <Mail>enrique.galicia@rasanctuaries.com</Mail>
     <Password>UvgjTeG4</Password>
     <FirstTime>false</FirstTime>
     <Programs>
@@ -103,7 +85,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>ricardo.salas@ra.house</Mail>
+    <Mail>ricardo.salas@rasanctuaries.com</Mail>
     <Password>CielRS2107</Password>
     <FirstTime>false</FirstTime>
     <Programs>
@@ -116,7 +98,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>anurag.saini@ra.house</Mail>
+    <Mail>anurag.saini@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -125,7 +107,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>safak@ra.house</Mail>
+    <Mail>safak@rasanctuaries.com</Mail>
     <Password>Kaido47BNC</Password>
     <FirstTime>false</FirstTime>
     <Programs>
@@ -134,7 +116,7 @@
     </Programs>
   </User>
   <User>
-    <Mail>justin.kathan@gmail.com</Mail>
+    <Mail>justin.kathan@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -147,7 +129,16 @@
     </Programs>
   </User>
   <User>
-    <Mail>natalia.b@gmail.com</Mail>
+    <Mail>natalia.b@rasanctuaries.com</Mail>
+    <Password>1234</Password>
+    <FirstTime>true</FirstTime>
+    <Programs>
+      <Program>DeployerTool</Program>
+      <Program>RA_QC_Automation</Program>
+    </Programs>
+  </User>
+  <User>
+    <Mail>parvashi.naik@rasanctuaries.com </Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
