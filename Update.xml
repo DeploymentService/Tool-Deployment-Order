@@ -359,14 +359,14 @@
       <launchArgs></launchArgs>
     </Update>
 
-    <Exist>
+    <Update>
       <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_FohlioIntegration.addin?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_FohlioIntegration.addin</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
-    </Exist>
+    </Update>
 
     <!-- 2021 -->
     <Update>
@@ -454,14 +454,14 @@
       <launchArgs></launchArgs>
     </Update>
 
-    <Exist>
+    <Update>
       <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_FohlioIntegration.addin?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_FohlioIntegration.addin</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
-    </Exist>
+    </Update>
 
     <!-- 2022 -->
     <Update>
@@ -549,14 +549,14 @@
       <launchArgs></launchArgs>
     </Update>
 
-    <Exist>
+    <Update>
       <version>1.0.3.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_FohlioIntegration.addin?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_FohlioIntegration.addin</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
-    </Exist>
+    </Update>
 
   </CostEstimation>
 
