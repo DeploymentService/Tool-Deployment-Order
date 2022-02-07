@@ -18,6 +18,7 @@
     <Programs>
       <Program>SmartDesignUpdate</Program>
       <Program>DeployerTool</Program>
+      <Program>CostEstimation</Program>
     </Programs>
   </User>
   <User>
@@ -42,6 +43,7 @@
       <Program>DeployerTool</Program>
       <Program>TestFitLayout</Program>
       <Program>RA_QC_Automation</Program>
+      <Program>CostEstimation</Program>
     </Programs>
   </User>
   <User>
@@ -51,19 +53,11 @@
     <Programs>
       <Program>DeployerTool</Program>
       <Program>RA_QC_Automation</Program>
+      <Program>CostEstimation</Program>
     </Programs>
   </User>
   <User>
     <Mail>jose.mossini@rasanctuaries.com</Mail>
-    <Password>1234</Password>
-    <FirstTime>true</FirstTime>
-    <Programs>
-      <Program>DeployerTool</Program>
-      <Program>RA_QC_Automation</Program>
-    </Programs>
-  </User>
-  <User>
-    <Mail>lara.zenclussen@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
     <Programs>
@@ -135,6 +129,7 @@
     <Programs>
       <Program>DeployerTool</Program>
       <Program>RA_QC_Automation</Program>
+      <Program>CostEstimation</Program>
     </Programs>
   </User>
   <User>

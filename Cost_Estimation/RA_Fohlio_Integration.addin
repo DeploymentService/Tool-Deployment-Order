@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+
+	<AddIn Type="Application">
+		<Name>RA Fohlio Integration</Name>
+		<Assembly>RA_Fohlio_Integration.dll</Assembly>
+		<FullClassName>RA_Fohlio_Integration.RAF_Integration_App</FullClassName>
+		<ClientId>376B5462-42C8-4CA9-9AD1-8385B582ABAF</ClientId>
+		<VendorId>RA</VendorId>
+	</AddIn>
+
+</RevitAddIns>

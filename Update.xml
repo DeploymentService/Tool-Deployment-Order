@@ -273,94 +273,291 @@
   </DeployerTool>
 
   <CostEstimation>
-     <Exist>
+    <!-- 2020 -->
+    <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/icon.png?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\icon.png</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/costEstimationApp.py?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\costEstimationApp.py</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Core.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_Core.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/costEstimationApp_Run_script.py?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\costEstimationApp_Run_script.py</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Core.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_Core.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Resourcers.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_Resourcers.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/forms.py?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\forms.py</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Resourcers.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_Resourcers.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_UI.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_UI.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/icon.png?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\icon.png</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_UI.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/icon_ExportData.png?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_UI.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/credentials/credentials.json?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\credentials\credentials.json</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/icon_Logout.png?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Cost_Estimation/RA_Fohlio_Integration.addin</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\RA_FohlioIntegration.addin</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <!-- 2021 -->
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/libraries/__init__.py?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\libraries\__init__.py</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Core.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_Core.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/libraries/CBCEstimatesTemplate.py?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\libraries\CBCEstimatesTemplate.py</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Core.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_Core.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Resourcers.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_Resourcers.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/resources/RAIcon.ico?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\resources\RAIcon.ico</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Resourcers.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_Resourcers.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_UI.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_UI.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/resources/RATitleIcon.ico?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\resources\RATitleIcon.ico</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_UI.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/icon_ExportData.png?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_UI.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
       <version>1.0.3.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/costEstimation.extension/RA.tab/Cost%20Estimation.panel/Export%20to%20GSheets.pushbutton/resources/RATitleIcon_old.ico?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\costEstimation.extension\RA.tab\Cost Estimation.panel\Export to GSheets.pushbutton\resources\RATitleIcon_old.ico</filePath>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/icon_Logout.png?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_Fohlio_Integration_UI.dll</filePath>
       <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
       <description>Cost Estimation App</description>
       <launchArgs></launchArgs>
     </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Cost_Estimation/RA_Fohlio_Integration.addin</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2021\RA_FohlioIntegration.addin</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <!-- 2022 -->
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Core.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_Core.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Core.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_Core.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Resourcers.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_Resourcers.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_Resourcers.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_Resourcers.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_UI.dll?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/RA_Fohlio_Integration_UI.pdb?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/icon_ExportData.png?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Cost_Estimation/icon_Logout.png?raw=true</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_Fohlio_Integration_UI.dll</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
+    <Exist>
+      <version>1.0.3.0</version>
+      <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Cost_Estimation/RA_Fohlio_Integration.addin</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2022\RA_FohlioIntegration.addin</filePath>
+      <md5>5479DFF32805417DAD1C477AEE23EF97</md5>
+      <description>Cost Estimation App</description>
+      <launchArgs></launchArgs>
+    </Exist>
+
   </CostEstimation>
 
   <CPSAutomation>
