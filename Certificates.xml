@@ -33,6 +33,8 @@
       <Program>TestFitLayout</Program>
       <Program>CPSAutomation</Program>
       <Program>RA_QC_Automation</Program>
+      <Program>ExteriorPlugin</Program>
+      <Program>ImportTemplate</Program>
     </Programs>
   </User>
   <User>
