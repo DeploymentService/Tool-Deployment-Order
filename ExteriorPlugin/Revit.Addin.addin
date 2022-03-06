@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application Revit.Addin</Name>
+    <Assembly>Revit.Addin.dll</Assembly>
+    <FullClassName>Revit.Addin.App</FullClassName>
+    <ClientId>570EF31A-0EA4-44EE-907D-2A31ADFC8E36</ClientId>
+    <Text>Exterior Automate</Text>
+    <VendorId>--</VendorId>
+    <VendorDescription>--</VendorDescription>
+  </AddIn>
+</RevitAddIns>
