@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application FramingAndQuantity</Name>
+    <Assembly>Framing Plugin/FramingAndQuantity.dll</Assembly>
+    <FullClassName>FramingAndQuantity.App</FullClassName>
+    <ClientId>378dda7f-9a0f-4a64-ae63-16c5adda3bec</ClientId>
+    <VendorId>---</VendorId>
+    <VendorDescription>---</VendorDescription>
+  </AddIn>
+</RevitAddIns>
