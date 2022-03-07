@@ -35,6 +35,7 @@
       <Program>RA_QC_Automation</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
+      <Program>Create_Foundation</Program>
     </Programs>
   </User>
   <User>
