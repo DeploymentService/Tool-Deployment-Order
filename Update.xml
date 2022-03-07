@@ -12,7 +12,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Import_Template/Template.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Template.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Import Template Plugin</description>
       <launchArgs></launchArgs>
