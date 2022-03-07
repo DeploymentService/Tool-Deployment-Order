@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application CreateFoundation</Name>
+    <Assembly>Foundation Plugin/CreateFoundation.dll</Assembly>
+    <FullClassName>CreateFoundation.App</FullClassName>
+    <ClientId>d3bdb395-fee0-41b9-b664-1fa20aafcd6d</ClientId>
+    <VendorId>---</VendorId>
+    <VendorDescription>---</VendorDescription>
+  </AddIn>
+</RevitAddIns>
