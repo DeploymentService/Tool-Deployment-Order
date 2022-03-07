@@ -1,5 +1,23 @@
 <?xml version="1.0"?>
 <Updates>
+   <Create_Foundation>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Create_Foundation/CreateFoundation.addin</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\CreateFoundation.addin</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Addin File</description>
+      <launchArgs></launchArgs>
+    </Exist>
+    <Exist>
+      <version>1.0.0.0</version>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Create_Foundation/CreateFoundation.dll</url>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Foundation Plugin\CreateFoundation.dll</filePath>
+      <md5>5857188A507EAFC9414E6062180C8682</md5>
+      <description>Create Foundation Plugin</description>
+      <launchArgs></launchArgs>
+    </Exist>
+  </Create_Foundation>
     <Framing_Plugin>
      <Exist>
       <version>1.0.0.0</version>
