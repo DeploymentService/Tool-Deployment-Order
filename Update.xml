@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Updates>
-   <Lowes_Product_Update>
+   <Products_Update>
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Lowes_Product_Update/Google.Apis.Auth.PlatformServices.dll</url>
@@ -129,7 +129,7 @@
       <description>Google.Apis.Auth</description>
       <launchArgs></launchArgs>
     </Exist>
-   </Lowes_Product_Update>
+   </Products_Update>
    <Import_Template>
     <Exist>
       <version>1.0.0.0</version>
