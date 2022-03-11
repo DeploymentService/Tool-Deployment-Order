@@ -43,8 +43,8 @@
   </User>
   <User>
     <Mail>tjd@bimquote.com</Mail>
-    <Password>B1mquote!</Password>
-    <FirstTime>true</FirstTime>
+    <Password>Aa1234</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
       <Program>Pyrevit</Program>
@@ -56,7 +56,7 @@
       <Program>Import_Template</Program>
       <Program>Products_Update</Program>
     </Programs>
-  </User>  
+  </User>
   <User>
     <Mail>hatem@rasanctuaries.com</Mail>
     <Password>1234</Password>
