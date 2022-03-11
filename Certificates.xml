@@ -44,7 +44,7 @@
   <User>
     <Mail>tjd@bimquote.com</Mail>
     <Password>B1mquote!</Password>
-    <FirstTime>false</FirstTime>
+    <FirstTime>true</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
       <Program>Pyrevit</Program>
