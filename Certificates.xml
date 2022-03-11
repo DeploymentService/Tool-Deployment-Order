@@ -42,6 +42,22 @@
     </Programs>
   </User>
   <User>
+    <Mail>tjd@bimquote.com</Mail>
+    <Password>B1mquote!</Password>
+    <FirstTime>false</FirstTime>
+    <Programs>
+      <Program>DeployerTool</Program>
+      <Program>Pyrevit</Program>
+      <Program>CostEstimation</Program>
+      <Program>ExteriorPlugin</Program>
+      <Program>Framing_Plugin</Program>
+      <Program>Create_Foundation</Program>
+      <Program>QTOCostEstimation</Program>
+      <Program>Import_Template</Program>
+      <Program>Products_Update</Program>
+    </Programs>
+  </User>  
+  <User>
     <Mail>hatem@rasanctuaries.com</Mail>
     <Password>1234</Password>
     <FirstTime>true</FirstTime>
