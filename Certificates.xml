@@ -1,6 +1,34 @@
 <?xml version="1.0"?>
 <Certificates>
   <User>
+    <Mail>faran@bimquote.com</Mail>
+    <Password>BIMQUOTE2022</Password>
+    <FirstTime>true</FirstTime>
+    <Programs>
+      <Program>DeployerTool</Program>
+      <Program>ExteriorPlugin</Program>
+      <Program>Framing_Plugin</Program>
+      <Program>Create_Foundation</Program>
+      <Program>QTOCostEstimation</Program>
+      <Program>Import_Template</Program>
+      <Program>Products_Update</Program>
+    </Programs>
+  </User>
+  <User>
+    <Mail>tehnietashraf@gmail.com</Mail>
+    <Password>BIMQUOTE2022</Password>
+    <FirstTime>true</FirstTime>
+    <Programs>
+      <Program>DeployerTool</Program>
+      <Program>ExteriorPlugin</Program>
+      <Program>Framing_Plugin</Program>
+      <Program>Create_Foundation</Program>
+      <Program>QTOCostEstimation</Program>
+      <Program>Import_Template</Program>
+      <Program>Products_Update</Program>
+    </Programs>
+  </User>
+  <User>
     <Mail>omararafa43@gmail.com</Mail>
     <Password>Arafa199637</Password>
     <FirstTime>false</FirstTime>
