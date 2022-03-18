@@ -132,7 +132,7 @@
    </Products_Update>
    <Import_Template>
     <Exist>
-      <version>1.0.0.0</version>
+      <version>2019.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Import_Template/Template.addin</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.addin</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -140,7 +140,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.0.1</version>
+      <version>2019.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Import_Template/Template.dll</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -148,7 +148,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <update>
-      <version>1.0.0.1</version>
+      <version>2019.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Import_Template/Template.dll</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
