@@ -442,7 +442,7 @@
 		<launchArgs></launchArgs>
 	</add>
 	<Exist>
-		<version>1.0.0.0</version>
+		<version>1.0.0.1</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Whitewood%20Lumber_.rfa?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Whitewood Lumber_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
