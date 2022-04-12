@@ -1,8 +1,5 @@
 <?xml version="1.0"?>
 <Updates>
-	<test>
-		
-	</test>
    <Products_Update>
     <Exist>
       <version>1.0.0.0</version>
@@ -316,22 +313,22 @@
       <description>Framing Plugin</description>
       <launchArgs></launchArgs>
     </Exist>
-    <Exist>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Floor%20Joists.rfa</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Floor Joists.rfa</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Floor Joists Family</description>
       <launchArgs></launchArgs>
-    </Exist>
-    <Exist>
+    </remove>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Footing-Circle.rfa</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Footing-Circle.rfa</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Footing Circle Family</description>
       <launchArgs></launchArgs>
-    </Exist>
+    </remove>
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Generic%20Model.rft</url>
@@ -340,38 +337,46 @@
       <description>Generic Model Family</description>
       <launchArgs></launchArgs>
     </Exist>
-    <Exist>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/HEADER.rfa</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\HEADER.rfa</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>HEADER Family</description>
       <launchArgs></launchArgs>
-    </Exist>
-    <Exist>
+    </remove>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/PLATES.rfa</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\PLATES.rfa</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>PLATES Family</description>
       <launchArgs></launchArgs>
-    </Exist>
-    <Exist>
+    </remove>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/RIM%20BOARD.rfa</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\RIM BOARD.rfa</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>RIM BOARD Family</description>
       <launchArgs></launchArgs>
-    </Exist>
-    <Exist>
+    </remove>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/STUDS.rfa</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\STUDS.rfa</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>STUDS Family</description>
       <launchArgs></launchArgs>
-    </Exist>
+    </remove>
+	<add>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Generic%20Model.rft</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Generic Model.rft</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Generic Model Family</description>
+		<launchArgs></launchArgs>
+	</add>
   </Framing_Plugin>
    <ExteriorPlugin>
      <Exist>
