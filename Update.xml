@@ -440,7 +440,7 @@
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Whitewood Lumber</description>
 		<launchArgs></launchArgs>
-	</add>
+	</update>
 	<Exist>
 		<version>1.0.0.1</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Whitewood%20Lumber_.rfa?raw=true</url>
