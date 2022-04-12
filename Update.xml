@@ -723,7 +723,7 @@
   </SmartDesignUpdate>
   <DeployerTool>
     <update>
-      <version>1.0.0.0</version>
+      <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Deployer%20Tool/Deployer.exe?raw=true</url>
       <filePath>%LocalAppData%\Programs\Deployer Tool\Deployer.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -731,7 +731,7 @@
       <launchArgs></launchArgs>
     </update>
     <update>
-      <version>1.0.0.0</version>
+      <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Deployer%20Tool/Updater.dll?raw=true</url>
       <filePath>%LocalAppData%\Programs\Deployer Tool\Updater.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -739,7 +739,7 @@
       <launchArgs></launchArgs>
     </update>
     <update>
-      <version>1.0.0.0</version>
+      <version>1.0.0.1</version>
       <url>https://github.com/DeploymentService/Deployment-Tool/blob/master/TestApp/bin/Debug/LoginWindow.exe?raw=true</url>
       <filePath>%LocalAppData%\Programs\Deployer Tool\LoginWindow.exe</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
