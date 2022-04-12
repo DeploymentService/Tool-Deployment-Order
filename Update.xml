@@ -433,7 +433,7 @@
 		<description>Spruce Pine Fir Lumber</description>
 		<launchArgs></launchArgs>
 	</Exist>
-	<add>
+	<update>
 		<version>1.0.0.1</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Whitewood%20Lumber_.rfa?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Whitewood Lumber_.rfa</filePath>
