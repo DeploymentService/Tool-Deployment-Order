@@ -14,6 +14,48 @@
       <Program>Products_Update</Program>
     </Programs>
   </User>
+    <User>
+	    <Mail>graveclay2010@gmail.com</Mail>
+	    <Password>PbDsPM9S7UWr0If4</Password>
+	    <FirstTime>true</FirstTime>
+	    <Programs>
+		    <Program>DeployerTool</Program>
+		    <Program>ExteriorPlugin</Program>
+		    <Program>Framing_Plugin</Program>
+		    <Program>Create_Foundation</Program>
+		    <Program>QTOCostEstimation</Program>
+		    <Program>Import_Template</Program>
+		    <Program>Products_Update</Program>
+	    </Programs>
+    </User>
+	<User>
+		<Mail>hristina@bimquote.com</Mail>
+		<Password>PbDsPM9S7UWr0If4</Password>
+		<FirstTime>true</FirstTime>
+		<Programs>
+			<Program>DeployerTool</Program>
+			<Program>ExteriorPlugin</Program>
+			<Program>Framing_Plugin</Program>
+			<Program>Create_Foundation</Program>
+			<Program>QTOCostEstimation</Program>
+			<Program>Import_Template</Program>
+			<Program>Products_Update</Program>
+		</Programs>
+	</User>
+	<User>
+		<Mail>desi@bimquote.com</Mail>
+		<Password>PbDsPM9S7UWr0If4</Password>
+		<FirstTime>true</FirstTime>
+		<Programs>
+			<Program>DeployerTool</Program>
+			<Program>ExteriorPlugin</Program>
+			<Program>Framing_Plugin</Program>
+			<Program>Create_Foundation</Program>
+			<Program>QTOCostEstimation</Program>
+			<Program>Import_Template</Program>
+			<Program>Products_Update</Program>
+		</Programs>
+	</User>
   <User>
     <Mail>omar@bimquote.com</Mail>
     <Password>SaNa1996</Password>
