@@ -167,7 +167,7 @@
     </Exist>
     <Exist>
       <version>2019.0.0.0</version>
-      <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/CostEstimation.dll</url>
+      <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Cost Estimation Plugin</description>
@@ -175,7 +175,7 @@
     </Exist>
 	<update>
 		<version>2019.0.0.1</version>
-		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/CostEstimation.dll</url>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Cost Estimation Plugin</description>
