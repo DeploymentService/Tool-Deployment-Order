@@ -269,14 +269,14 @@
       <description>Newtonsoft.Json</description>
       <launchArgs></launchArgs>
     </Exist>
-    <Exist>
+    <remove>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/interiorexteriorproducts-4f5510146b19.json</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\interiorexteriorproducts-4f5510146b19.json</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>interiorexteriorproducts</description>
       <launchArgs></launchArgs>
-    </Exist>
+    </remove>
   </QTOCostEstimation>
    <Create_Foundation>
     <Exist>
