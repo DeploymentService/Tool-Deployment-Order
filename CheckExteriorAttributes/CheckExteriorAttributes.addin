@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Application CheckExteriorAttributes</Name>
+    <Assembly>CheckExteriorAttributes.dll</Assembly>
+    <FullClassName>CheckExteriorAttributes.App</FullClassName>
+    <ClientId>c5831f40-0a36-414d-b463-b8dfbc41d3fb</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
