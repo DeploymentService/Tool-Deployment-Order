@@ -63,6 +63,7 @@
     <Password>SaNa1996</Password>
     <FirstTime>false</FirstTime>
     <Programs>
+      <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
