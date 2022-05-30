@@ -10,13 +10,21 @@
 		    <launchArgs></launchArgs>
 		</Exist>
 		<Exist>
-			<version>1.0.0.0</version>
+			<version>2022.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/CheckExteriorAttributes/CheckExteriorAttributes.dll?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\CheckExteriorAttributes.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>CheckExteriorAttributes.dll</description>
 			<launchArgs></launchArgs>
 		</Exist>
+		<update>
+			<version>2022.0.0.1</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/CheckExteriorAttributes/CheckExteriorAttributes.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\CheckExteriorAttributes.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>CheckExteriorAttributes.dll</description>
+			<launchArgs></launchArgs>
+		</update>
 		<Exist>
 			<version>1.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/CheckExteriorAttributes/CheckExteriorAttributes.pdb?raw=true</url>
