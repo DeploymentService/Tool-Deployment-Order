@@ -20,7 +20,6 @@
     <Password>PbDsPM9S7UWr0If4</Password>
     <FirstTime>true</FirstTime>
     <Programs>
-	  <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
@@ -78,6 +77,7 @@
     <Password>BIMQUOTE2022</Password>
     <FirstTime>true</FirstTime>
     <Programs>
+      <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
