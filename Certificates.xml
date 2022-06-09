@@ -5,7 +5,7 @@
     <Password>Faran12345</Password>
     <FirstTime>false</FirstTime>
     <Programs>
-	  <Program>CheckExteriorAttributes</Program>
+      <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
@@ -74,8 +74,8 @@
   </User>
   <User>
     <Mail>tehnietashraf@gmail.com</Mail>
-    <Password>BIMQUOTE2022</Password>
-    <FirstTime>true</FirstTime>
+    <Password>Redhood1</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
