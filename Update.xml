@@ -552,13 +552,21 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.0.0</version>
+      <version>2019.0.0.2</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template\Template.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Template Plugin</description>
       <launchArgs></launchArgs>
     </Exist>
+	  <update>
+		  <version>2019.0.0.2</version>
+		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.dll?raw=true</url>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template\Template.dll</filePath>
+		  <md5>5857188A507EAFC9414E6062180C8682</md5>
+		  <description>Template Plugin</description>
+		  <launchArgs></launchArgs>
+	  </update>
   </Template>
   <SmartDesignUpdate>
     <update>
