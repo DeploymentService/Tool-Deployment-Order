@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command ResCheckData</Text>
+    <Description>Some description for ResCheckData</Description>
+    <Assembly>ResCheckDataPluign/ResCheckData.dll</Assembly>
+    <FullClassName>ResCheckData.Command</FullClassName>
+    <ClientId>500074b9-ba97-41e5-9f11-20e723a47222</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application ResCheckData</Name>
+    <Assembly>ResCheckDataPluign/ResCheckData.dll</Assembly>
+    <FullClassName>ResCheckData.App</FullClassName>
+    <ClientId>652e669c-b8ba-41e3-b08c-c201ed022a8d</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
