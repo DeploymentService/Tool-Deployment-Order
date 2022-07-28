@@ -21,7 +21,9 @@
     <Password>BIMQuote2022</Password>
     <FirstTime>false</FirstTime>
     <Programs>
+      <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
+      <Program>Products_Update</Program>
     </Programs>
   </User>
   <User>
