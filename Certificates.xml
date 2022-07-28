@@ -13,17 +13,17 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
-        <Program>ResCheckDataPluign</Program>
+      <Program>ResCheckDataPluign</Program>
     </Programs>
   </User>
-    <User>
-	    <Mail>fariya@bimquote.com</Mail>
-	    <Password>BIMQuote2022</Password>
-	    <FirstTime>true</FirstTime>
-	    <Programs>
-		    <Program>Template</Program>
-	    </Programs>
-    </User>
+  <User>
+    <Mail>fariya@bimquote.com</Mail>
+    <Password>BIMQuote2022</Password>
+    <FirstTime>false</FirstTime>
+    <Programs>
+      <Program>Template</Program>
+    </Programs>
+  </User>
   <User>
     <Mail>graveclay2010@gmail.com</Mail>
     <Password>PbDsPM9S7UWr0If4</Password>
@@ -79,7 +79,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
-		<Program>ResCheckDataPluign</Program>
+      <Program>ResCheckDataPluign</Program>
     </Programs>
   </User>
   <User>
@@ -95,7 +95,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
-		<Program>ResCheckDataPluign</Program>
+      <Program>ResCheckDataPluign</Program>
     </Programs>
   </User>
   <User>
