@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>Application KitchenScript</Name>
+    <Assembly>KitchenPlugin/KitchenScript.dll</Assembly>
+    <FullClassName>KitchenScript.App</FullClassName>
+    <ClientId>df62293f-a49a-4411-8ade-a622aa05a9e6</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

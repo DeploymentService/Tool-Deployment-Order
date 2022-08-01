@@ -1,5 +1,23 @@
 <?xml version="1.0"?>
 <Updates>
+	<KitchenPlugin>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/ResCheckDataPluign/ResCheckData.addin</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\ResCheckData.addin</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>ResCheckData.addin</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/ResCheckDataPluign/ResCheckData.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\ResCheckDataPluign\ResCheckData.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>ResCheckData.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+	</KitchenPlugin>
 	<ResCheckDataPluign>
 		<Exist>
 			<version>1.0.0.0</version>
