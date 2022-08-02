@@ -372,7 +372,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>2019.0.0.2</version>
+      <version>2019.0.0.3</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
