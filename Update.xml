@@ -3,18 +3,106 @@
 	<KitchenPlugin>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/ResCheckDataPluign/ResCheckData.addin</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\ResCheckData.addin</filePath>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/KitchenPlugin/KitchenScript.addin</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenScript.addin</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
-			<description>ResCheckData.addin</description>
+			<description>KitchenScript.addin</description>
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/ResCheckDataPluign/ResCheckData.dll?raw=true</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\ResCheckDataPluign\ResCheckData.dll</filePath>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/KitchenScript.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\KitchenScript.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
-			<description>ResCheckData.dll</description>
+			<description>KitchenScript.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/KitchenScript.pdb?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\KitchenScript.pdb</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>KitchenScript.pdb</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/DropDownMenu.exe?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\DropDownMenu.exe</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>DropDownMenu.exe</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/KitchenPlugin/DropDownMenu.exe.config</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\DropDownMenu.exe.config</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>DropDownMenu.exe.config</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/DropDownMenu.pdb?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\DropDownMenu.pdb</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>DropDownMenu.pdb</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/Interior-Script.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\Interior-Script.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Interior-Script.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/MaterialDesignColors.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\MaterialDesignColors.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>MaterialDesignColors.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/MaterialDesignThemes.Wpf.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\MaterialDesignThemes.Wpf.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>MaterialDesignThemes.Wpf.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/MaterialDesignThemes.Wpf.pdb?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\MaterialDesignThemes.Wpf.pdb</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>MaterialDesignThemes.Wpf.pdb</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/KitchenPlugin/MaterialDesignThemes.Wpf.xml</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\MaterialDesignThemes.Wpf.xml</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>MaterialDesignThemes.Wpf.xml</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/KitchenPlugin/Newtonsoft.Json.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\Newtonsoft.Json.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Newtonsoft.Json.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/KitchenPlugin/Newtonsoft.Json.xml</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\KitchenPlugin\Newtonsoft.Json.xml</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Newtonsoft.Json.xml</description>
 			<launchArgs></launchArgs>
 		</Exist>
 	</KitchenPlugin>
