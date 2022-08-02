@@ -14,6 +14,7 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
+	  <Program>KitchenPlugin</Program>
     </Programs>
   </User>
   <User>
@@ -24,6 +25,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+      <Program>KitchenPlugin</Program>
     </Programs>
   </User>
   <User>
@@ -99,6 +101,7 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
+	  <Program>KitchenPlugin</Program>
     </Programs>
   </User>
   <User>
