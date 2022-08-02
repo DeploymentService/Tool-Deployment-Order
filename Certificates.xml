@@ -82,6 +82,7 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
+	  <Program>KitchenPlugin</Program>
     </Programs>
   </User>
   <User>
