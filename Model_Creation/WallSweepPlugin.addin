@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command WallSweepPlugin</Text>
+    <Description>Some description for WallSweepPlugin</Description>
+    <Assembly>WallSweepPlugin.dll</Assembly>
+    <FullClassName>WallSweepPlugin.Command</FullClassName>
+    <ClientId>ba583301-36d4-432b-9c4b-9a89b58665a1</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application ModelCreationPlugin</Name>
+    <Assembly>WallSweepPlugin.dll</Assembly>
+    <FullClassName>WallSweepPlugin.App</FullClassName>
+    <ClientId>5d11ac4b-e346-4518-8285-576828447ef5</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
