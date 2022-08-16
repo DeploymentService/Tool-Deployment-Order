@@ -12,7 +12,7 @@
 		<Exist>
 			<version>1.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/WallSweepPlugin.dll?raw=true</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\ResCheckDataPluign\WallSweepPlugin.dll</filePath>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>WallSweepPlugin.dll</description>
 			<launchArgs></launchArgs>
@@ -20,7 +20,7 @@
 		<Exist>
 			<version>2020.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/WallSweepPlugin.pdb?raw=true</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\ResCheckDataPluign\WallSweepPlugin.pdb</filePath>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.pdb</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>WallSweepPlugin.pdb</description>
 			<launchArgs></launchArgs>
