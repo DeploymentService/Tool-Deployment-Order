@@ -14,7 +14,8 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
-	  <Program>KitchenPlugin</Program>
+	<Program>KitchenPlugin</Program>
+	<Program>Model_Creation</Program>
     </Programs>
   </User>
   <User>
@@ -85,6 +86,7 @@
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
 	  <Program>KitchenPlugin</Program>
+	    <Program>Model_Creation</Program>
     </Programs>
   </User>
   <User>
@@ -102,6 +104,7 @@
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
 	  <Program>KitchenPlugin</Program>
+	    <Program>Model_Creation</Program>
     </Programs>
   </User>
   <User>
@@ -143,6 +146,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+      <Program>Model_Creation</Program>
     </Programs>
   </User>
   <User>
