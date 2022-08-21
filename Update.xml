@@ -3,26 +3,26 @@
 	<Nested_Parameters>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Model_Creation/WallSweepPlugin.addin</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.addin</filePath>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Nested_Parameters/GetNestedFamiliesParameters.addin</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\GetNestedFamiliesParameters.addin</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
-			<description>WallSweepPlugin.addin</description>
+			<description>GetNestedFamiliesParameters.addin</description>
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/WallSweepPlugin.dll?raw=true</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.dll</filePath>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Nested_Parameters/GetNestedFamiliesParameters.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\GetNestedFamiliesParameters.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
-			<description>WallSweepPlugin.dll</description>
+			<description>GetNestedFamiliesParameters.dll</description>
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
 			<version>2020.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/WallSweepPlugin.pdb?raw=true</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.pdb</filePath>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Nested_Parameters/GetNestedFamiliesParameters.pdb?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\GetNestedFamiliesParameters.pdb</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
-			<description>WallSweepPlugin.pdb</description>
+			<description>GetNestedFamiliesParameters.pdb</description>
 			<launchArgs></launchArgs>
 		</Exist>
 	</Nested_Parameters>
