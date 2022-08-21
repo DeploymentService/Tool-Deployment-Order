@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+
+  <AddIn Type="Application">
+    <Name>Application GetNestedFamiliesParameters</Name>
+    <Assembly>GetNestedFamiliesParameters.dll</Assembly>
+    <FullClassName>GetNestedFamiliesParameters.App</FullClassName>
+    <ClientId>8b8082c2-7ba9-48e8-8013-0b6ac4a04dbb</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
