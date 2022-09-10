@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command Area_Rules</Text>
+    <Description>Some description for Area_Rules</Description>
+    <Assembly>Area_Rules.dll</Assembly>
+    <FullClassName>Area_Rules.Command</FullClassName>
+    <ClientId>253922a7-c139-42c1-872f-777e1a738913</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application Area_Rules</Name>
+    <Assembly>Area_Rules.dll</Assembly>
+    <FullClassName>Area_Rules.App</FullClassName>
+    <ClientId>4aa8f88b-6b42-4662-9310-555fd3844d8f</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
