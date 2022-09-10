@@ -10,7 +10,7 @@
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
-			<version>2020.0.0.1</version>
+			<version>2020.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.dll?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -18,7 +18,7 @@
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
-			<version>2020.0.0.1</version>
+			<version>2020.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.pdb?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.pdb</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
