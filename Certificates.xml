@@ -17,6 +17,7 @@
 	<Program>KitchenPlugin</Program>
 	<Program>Model_Creation</Program>
 		<Program>Nested_Parameters</Program>
+		<Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
@@ -89,6 +90,7 @@
 	  <Program>KitchenPlugin</Program>
 	    <Program>Model_Creation</Program>
 		<Program>Nested_Parameters</Program>
+		<Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
@@ -108,6 +110,7 @@
 	  <Program>KitchenPlugin</Program>
 	    <Program>Model_Creation</Program>
 		<Program>Nested_Parameters</Program>
+		<Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
