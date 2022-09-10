@@ -1,5 +1,47 @@
 <?xml version="1.0"?>
 <Updates>
+	<Area_Rules>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Area_Rules/Area_Rules.addin</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.addin</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Area_Rules.addin</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>2020.0.0.1</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Area_Rules.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>2020.0.0.1</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.pdb?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.pdb</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Area_Rules.pdb</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>2020.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Aspose.Cells.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Aspose.Cells.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Aspose.Cells.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>2020.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Area_Rules/Aspose.Cells.xml</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Aspose.Cells.xml</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Aspose.Cells.xml</description>
+			<launchArgs></launchArgs>
+		</Exist>
+	</Area_Rules>
 	<Nested_Parameters>
 		<Exist>
 			<version>1.0.0.0</version>
