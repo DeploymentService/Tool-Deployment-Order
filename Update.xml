@@ -86,7 +86,7 @@
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
-			<version>2020.0.0.2</version>
+			<version>2020.0.0.3</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/WallSweepPlugin.dll?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -94,7 +94,7 @@
 			<launchArgs></launchArgs>
 		</Exist>
 		<update>
-			<version>2020.0.0.2</version>
+			<version>2020.0.0.3</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/WallSweepPlugin.dll?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\WallSweepPlugin.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -109,6 +109,46 @@
 			<description>WallSweepPlugin.pdb</description>
 			<launchArgs></launchArgs>
 		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Can%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Can Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Can Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Corner_Trim.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Corner_Trim.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Corner_Trim.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Motion%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Motion Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Motion Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Pendant%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Pendant Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Pendant Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Porch%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Porch Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Porch Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>	
 	</Model_Creation>
 	<KitchenPlugin>
 		<Exist>
