@@ -148,7 +148,47 @@
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>Porch Light.rfa</description>
 			<launchArgs></launchArgs>
-		</Exist>	
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Sconce%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Sconce Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Sconce Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Strip%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Strip Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Strip Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Switch%20Single.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Switch Single.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Switch Single.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Track%20Light.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Track Light.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Track Light.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Model_Creation/Transition_Strip.rfa?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Model Creation Plugin\Transition_Strip.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Transition_Strip.rfa</description>
+			<launchArgs></launchArgs>
+		</Exist>
 	</Model_Creation>
 	<KitchenPlugin>
 		<Exist>
