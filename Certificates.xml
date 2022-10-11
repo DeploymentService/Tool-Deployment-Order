@@ -2,7 +2,7 @@
 <Certificates>
   <User>
     <Mail>faran@bimquote.com</Mail>
-    <Password>Faran12345</Password>
+    <Password>(</Password>
     <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>

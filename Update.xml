@@ -10,15 +10,23 @@
 			<launchArgs></launchArgs>
 		</Exist>
 		<Exist>
-			<version>2020.0.0.0</version>
+			<version>2020.0.0.1</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.dll?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>Area_Rules.dll</description>
 			<launchArgs></launchArgs>
 		</Exist>
+		<update>
+			<version>2020.0.0.1</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>Area_Rules.dll</description>
+			<launchArgs></launchArgs>
+		</update>
 		<Exist>
-			<version>2020.0.0.0</version>
+			<version>2020.0.0.1</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Area_Rules/Area_Rules.pdb?raw=true</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\Area_Rules.pdb</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -718,13 +726,21 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>1.0.0.0</version>
+      <version>2019.0.0.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\FramingAndQuantity.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Framing Plugin</description>
       <launchArgs></launchArgs>
     </Exist>
+	<update>
+		<version>2019.0.0.1</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\FramingAndQuantity.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</update>
     <remove>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Floor%20Joists.rfa</url>
