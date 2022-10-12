@@ -62,8 +62,8 @@
   </User>
   <User>
     <Mail>desi@bimquote.com</Mail>
-    <Password>Pass2022</Password>
-    <FirstTime>true</FirstTime>
+    <Password>BIMquotedesi86</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
@@ -74,48 +74,6 @@
       <Program>Products_Update</Program>
     </Programs>
   </User>
-	<User>
-		<Mail>tanya@bimquote.com</Mail>
-		<Password>Pass2022</Password>
-		<FirstTime>true</FirstTime>
-		<Programs>
-			<Program>DeployerTool</Program>
-			<Program>ExteriorPlugin</Program>
-			<Program>Framing_Plugin</Program>
-			<Program>Create_Foundation</Program>
-			<Program>QTOCostEstimation</Program>
-			<Program>Template</Program>
-			<Program>Products_Update</Program>
-		</Programs>
-	</User>
-	<User>
-		<Mail>dimitar@bimquote.com</Mail>
-		<Password>Pass2022</Password>
-		<FirstTime>true</FirstTime>
-		<Programs>
-			<Program>DeployerTool</Program>
-			<Program>ExteriorPlugin</Program>
-			<Program>Framing_Plugin</Program>
-			<Program>Create_Foundation</Program>
-			<Program>QTOCostEstimation</Program>
-			<Program>Template</Program>
-			<Program>Products_Update</Program>
-		</Programs>
-	</User>
-	<User>
-		<Mail>jhonatan@bimquote.com</Mail>
-		<Password>Pass2022</Password>
-		<FirstTime>true</FirstTime>
-		<Programs>
-			<Program>DeployerTool</Program>
-			<Program>ExteriorPlugin</Program>
-			<Program>Framing_Plugin</Program>
-			<Program>Create_Foundation</Program>
-			<Program>QTOCostEstimation</Program>
-			<Program>Template</Program>
-			<Program>Products_Update</Program>
-		</Programs>
-	</User>
   <User>
     <Mail>omar@bimquote.com</Mail>
     <Password>SaNa1996</Password>
