@@ -14,10 +14,10 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
-	<Program>KitchenPlugin</Program>
-	<Program>Model_Creation</Program>
-		<Program>Nested_Parameters</Program>
-		<Program>Area_Rules</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
@@ -29,7 +29,7 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>KitchenPlugin</Program>
-		<Program>Area_Rules</Program>
+      <Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
@@ -48,8 +48,8 @@
   </User>
   <User>
     <Mail>hristina@bimquote.com</Mail>
-    <Password>PbDsPM9S7UWr0If4</Password>
-    <FirstTime>true</FirstTime>
+    <Password>Mishka29Kotka</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
@@ -88,10 +88,10 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
-	  <Program>KitchenPlugin</Program>
-	    <Program>Model_Creation</Program>
-		<Program>Nested_Parameters</Program>
-		<Program>Area_Rules</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
@@ -108,10 +108,10 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>ResCheckDataPluign</Program>
-	  <Program>KitchenPlugin</Program>
-	    <Program>Model_Creation</Program>
-		<Program>Nested_Parameters</Program>
-		<Program>Area_Rules</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
     </Programs>
   </User>
   <User>
