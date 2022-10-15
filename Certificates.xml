@@ -2,8 +2,8 @@
 <Certificates>
   <User>
     <Mail>faran@bimquote.com</Mail>
-    <Password>(</Password>
-    <FirstTime>false</FirstTime>
+    <Password>Pass2022</Password>
+    <FirstTime>true</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
