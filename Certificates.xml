@@ -104,8 +104,8 @@
   </User>
   <User>
     <Mail>jhonatan@bimquote.com</Mail>
-    <Password>Pass2022</Password>
-    <FirstTime>true</FirstTime>
+    <Password>Pass22</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
