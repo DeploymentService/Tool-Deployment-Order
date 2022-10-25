@@ -3,7 +3,7 @@
   <User>
     <Mail>faran@bimquote.com</Mail>
     <Password>Pass2022</Password>
-    <FirstTime>true</FirstTime>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
