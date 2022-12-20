@@ -30,8 +30,22 @@
       <Program>Products_Update</Program>
       <Program>KitchenPlugin</Program>
       <Program>Area_Rules</Program>
+	  <Program>ExteriorPlugin</Program>
     </Programs>
   </User>
+    <User>
+	    <Mail>mahnoor@bimquote.com</Mail>
+	    <Password>BIMQuote2022</Password>
+	    <FirstTime>true</FirstTime>
+	    <Programs>
+		    <Program>QTOCostEstimation</Program>
+		    <Program>Template</Program>
+		    <Program>Products_Update</Program>
+		    <Program>KitchenPlugin</Program>
+		    <Program>Area_Rules</Program>
+		    <Program>ExteriorPlugin</Program>
+	    </Programs>
+    </User>
   <User>
     <Mail>graveclay2010@gmail.com</Mail>
     <Password>PbDsPM9S7UWr0If4</Password>
