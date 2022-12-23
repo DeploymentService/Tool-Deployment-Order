@@ -726,7 +726,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>2019.0.1.1</version>
+      <version>2019.0.1.2</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\FramingAndQuantity.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -734,7 +734,7 @@
       <launchArgs></launchArgs>
     </Exist>
 	<update>
-		<version>2019.0.1.1</version>
+		<version>2019.0.1.2</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\FramingAndQuantity.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -798,7 +798,7 @@
       <launchArgs></launchArgs>
     </remove>
 	<add>
-		<version>1.0.0.0</version>
+		<version>1.0.0.1</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Egnineered%20Wood%20Product_.rfa?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Egnineered Wood Product_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -806,7 +806,7 @@
 		<launchArgs></launchArgs>
 	</add>
 	<Exist>
-		<version>1.0.0.0</version>
+		<version>1.0.0.1</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Egnineered%20Wood%20Product_.rfa?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Egnineered Wood Product_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
