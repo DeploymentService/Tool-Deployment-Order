@@ -1,0 +1,287 @@
+[
+  {
+    "CatName": "Plans (Soft Cost)",
+    "CostCode": "R-100100",
+    "DataSetName": "Plans (Soft Cost)"
+  },
+  {
+    "CatName": "Permits (Soft Costs)",
+    "CostCode": "R-100200",
+    "DataSetName": "Permits (Soft Costs)"
+  },
+  {
+    "CatName": "Surveying / Engineering (Soft Cost)",
+    "CostCode": "R-100300",
+    "DataSetName": "Surveying / Engineering (Soft Cost)"
+  },
+  {
+    "CatName": "Insurance (Soft Cost)",
+    "CostCode": "R-100400",
+    "DataSetName": "Insurance (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Water (Soft Cost)",
+    "CostCode": "R-100500",
+    "DataSetName": "Perm. Connection Fees Water (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Sewer (Soft Cost)",
+    "CostCode": "R-106000",
+    "DataSetName": "Perm. Connection Fees Sewer (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Electric (Soft Cost)",
+    "CostCode": "R-107000",
+    "DataSetName": "Perm. Connection Fees Electric (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Gas (Soft Cost)",
+    "CostCode": "R-100800",
+    "DataSetName": "Perm. Connection Fees Gas (Soft Cost)"
+  },
+  {
+    "CatName": "Temp. Toilet",
+    "CostCode": "R-100900",
+    "DataSetName": "Temp. Toilet"
+  },
+  {
+    "CatName": "Temp. Utilities",
+    "CostCode": "R-101000",
+    "DataSetName": "Temp. Utilities"
+  },
+  {
+    "CatName": "Construction Clean Up & Dumpster",
+    "CostCode": "R-101100",
+    "DataSetName": "Construction Clean Up & Dumpster"
+  },
+  {
+    "CatName": "Demolition / Clearing",
+    "CostCode": "R-101200",
+    "DataSetName": "Demolition / Clearing"
+  },
+  {
+    "CatName": "Excavation, Grade, Fill",
+    "CostCode": "R-101300",
+    "DataSetName": "Excavation, Grade, Fill"
+  },
+  {
+    "CatName": "Foundation Concrete",
+    "CostCode": "R-101400",
+    "DataSetName": "Foundation Concrete"
+  },
+  {
+    "CatName": "Foundation Labor",
+    "CostCode": "R-101500",
+    "DataSetName": "Foundation Labor"
+  },
+  {
+    "CatName": "Garage / Basement Concrete",
+    "CostCode": "R-101600",
+    "DataSetName": "Garage / Basement Concrete"
+  },
+  {
+    "CatName": "Framing Lumber & Hardware",
+    "CostCode": "R-101700",
+    "DataSetName": "Framing Lumber & Hardware"
+  },
+  {
+    "CatName": "Framing Labor",
+    "CostCode": "R-101800",
+    "DataSetName": "Framing Labor"
+  },
+  {
+    "CatName": "Trusses",
+    "CostCode": "R-101900",
+    "DataSetName": "Trusses"
+  },
+  {
+    "CatName": "Rough In Plumbing",
+    "CostCode": "R-102000",
+    "DataSetName": "Rough In Plumbing"
+  },
+  {
+    "CatName": "Rough In Electrical",
+    "CostCode": "R-102100",
+    "DataSetName": "Rough In Electrical"
+  },
+  {
+    "CatName": "Security System",
+    "CostCode": "R-102200",
+    "DataSetName": "Security System"
+  },
+  {
+    "CatName": "Sewer / Septic",
+    "CostCode": "R-102300",
+    "DataSetName": "Sewer / Septic"
+  },
+  {
+    "CatName": "Roofing",
+    "CostCode": "R-102400",
+    "DataSetName": "Roofing"
+  },
+  {
+    "CatName": "Fireplace / Chimney",
+    "CostCode": "R-102500",
+    "DataSetName": "Fireplace / Chimney"
+  },
+  {
+    "CatName": "HVAC",
+    "CostCode": "R-102600",
+    "DataSetName": "HVAC"
+  },
+  {
+    "CatName": "Windows / Sliders",
+    "CostCode": "R-102700",
+    "DataSetName": "Windows / Sliders"
+  },
+  {
+    "CatName": "Exterior Doors & Trim",
+    "CostCode": "R-102800",
+    "DataSetName": "Exterior Doors & Trim"
+  },
+  {
+    "CatName": "Garage Doors & Openers",
+    "CostCode": "R-102900",
+    "DataSetName": "Garage Doors & Openers"
+  },
+  {
+    "CatName": "Siding",
+    "CostCode": "R-103000",
+    "DataSetName": "Siding"
+  },
+  {
+    "CatName": "Masonry",
+    "CostCode": "R-103100",
+    "DataSetName": "Masonry"
+  },
+  {
+    "CatName": "Gutters & Downspouts",
+    "CostCode": "R-103200",
+    "DataSetName": "Gutters & Downspouts"
+  },
+  {
+    "CatName": "Exterior Paint",
+    "CostCode": "R-103300",
+    "DataSetName": "Exterior Paint"
+  },
+  {
+    "CatName": "Exterior Concrete (Steps, Walks, Driveway)",
+    "CostCode": "R-103400",
+    "DataSetName": "Exterior Concrete (Steps, Walks, Driveway)"
+  },
+  {
+    "CatName": "Insulation",
+    "CostCode": "R-103500",
+    "DataSetName": "Insulation"
+  },
+  {
+    "CatName": "Drywall",
+    "CostCode": "R-103600",
+    "DataSetName": "Drywall"
+  },
+  {
+    "CatName": "Interior Doors & Trim",
+    "CostCode": "R-103700",
+    "DataSetName": "Interior Doors & Trim"
+  },
+  {
+    "CatName": "Interior Paint (Wall, Trim, Door)",
+    "CostCode": "R-103800",
+    "DataSetName": "Interior Paint (Wall, Trim, Door)"
+  },
+  {
+    "CatName": "Stairs & Railings",
+    "CostCode": "R-103900",
+    "DataSetName": "Stairs & Railings"
+  },
+  {
+    "CatName": "Cabinets & Vanities",
+    "CostCode": "R-104000",
+    "DataSetName": "Cabinets & Vanities"
+  },
+  {
+    "CatName": "Countertops & Backsplashes",
+    "CostCode": "R-104100",
+    "DataSetName": "Countertops & Backsplashes"
+  },
+  {
+    "CatName": "Finish Plumbing",
+    "CostCode": "R-104200",
+    "DataSetName": "Finish Plumbing"
+  },
+  {
+    "CatName": "Finish Electrical & Light Fixtures",
+    "CostCode": "R-104300",
+    "DataSetName": "Finish Electrical & Light Fixtures"
+  },
+  {
+    "CatName": "Hardwood Flooring",
+    "CostCode": "R-104400",
+    "DataSetName": "Hardwood Flooring"
+  },
+  {
+    "CatName": "Vinyl / Tile",
+    "CostCode": "R-104500",
+    "DataSetName": "Vinyl / Tile"
+  },
+  {
+    "CatName": "Carpet",
+    "CostCode": "R-104600",
+    "DataSetName": "Carpet"
+  },
+  {
+    "CatName": "Finish Hardware",
+    "CostCode": "R-104700",
+    "DataSetName": "Finish Hardware"
+  },
+  {
+    "CatName": "Finish Labor",
+    "CostCode": "R-104800",
+    "DataSetName": "Finish Labor"
+  },
+  {
+    "CatName": "Mirrors & Shower Doors",
+    "CostCode": "R-104900",
+    "DataSetName": "Mirrors & Shower Doors"
+  },
+  {
+    "CatName": "Appliances",
+    "CostCode": "R-105000",
+    "DataSetName": "Appliances"
+  },
+  {
+    "CatName": "Final Cleaning",
+    "CostCode": "R-105100",
+    "DataSetName": "Final Cleaning"
+  },
+  {
+    "CatName": "Landscaping",
+    "CostCode": "R-105200",
+    "DataSetName": "Landscaping"
+  },
+  {
+    "CatName": "Fencing",
+    "CostCode": "R-105300",
+    "DataSetName": "Fencing"
+  },
+  {
+    "CatName": "Decks",
+    "CostCode": "R-105400",
+    "DataSetName": "Decks"
+  },
+  {
+    "CatName": "Contingency (Soft Cost)",
+    "CostCode": "R-105500",
+    "DataSetName": "Contingency (Soft Cost)"
+  },
+  {
+    "CatName": "Profit / Overhead (Soft Cost)",
+    "CostCode": "R-105600",
+    "DataSetName": "Profit / Overhead (Soft Cost)"
+  },
+  {
+    "CatName": "Feature - Specify (ie. Solar Panels, Etc.)",
+    "CostCode": "R-105700",
+    "DataSetName": "Feature - Specify (ie. Solar Panels, Etc.)"
+  }
+]

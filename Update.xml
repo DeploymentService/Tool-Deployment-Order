@@ -578,7 +578,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>2019.0.0.4</version>
+      <version>2019.0.0.7</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -586,7 +586,7 @@
       <launchArgs></launchArgs>
     </Exist>
 	<update>
-		<version>2019.0.0.4</version>
+		<version>2019.0.0.7</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -689,6 +689,102 @@
       <description>Newtonsoft.Json</description>
       <launchArgs></launchArgs>
     </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/BitMiracle.LibTiff.NET.dll</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\BitMiracle.LibTiff.NET.dll</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/EPPlus.dll</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\EPPlus.dll</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/EPPlus.Interfaces.dll</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\EPPlus.Interfaces.dll</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/EPPlus.System.Drawing.dll</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\EPPlus.System.Drawing.dll</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/OpenAI_API.dll</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\OpenAI_API.dll</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/CategoriesDictionary.json</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CategoriesDictionary.json</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/csfi-377400-3c5a1b0c4889.json</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\csfi-377400-3c5a1b0c4889.json</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/RiskManagementdata.json</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\RiskManagementdata.json</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Lot 13.xlsx</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Lot 13.xlsx</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Risk Management - Cost Per SQFT data.xlsx</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Risk Management - Cost Per SQFT data.xlsx</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
+	   <Exist>
+		   <version>1.0.0.0</version>
+		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/CFSI - Loan Document_Engineering Report - Straightline Construction & Development LLC.docx</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CFSI - Loan Document_Engineering Report - Straightline Construction & Development LLC.docx</filePath>
+		   <md5>5857188A507EAFC9414E6062180C8682</md5>
+		   <description>Newtonsoft.Json</description>
+		   <launchArgs></launchArgs>
+	   </Exist>
     <remove>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/interiorexteriorproducts-4f5510146b19.json</url>
