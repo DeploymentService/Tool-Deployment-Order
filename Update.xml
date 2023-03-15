@@ -761,6 +761,30 @@
 		<description>Lot 13.xlsx</description>
 		<launchArgs></launchArgs>
 	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/2022%20Budget%20Detail%20by%20State,%20Zip%20-%20SF%20-%20Budget%20Categories.xlsx?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/Risk%20Management%20-%20Cost%20Per%20SQFT%20data.xlsx?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Risk Management - Cost Per SQFT data.xlsx</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Risk Management - Cost Per SQFT data.xlsx</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CFSI%20-%20Loan%20Document_Engineering%20Report%20-%20Straightline%20Construction%20&%20Development%20LLC.docx?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CFSI - Loan Document_Engineering Report - Straightline Construction & Development LLC.docx</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>CFSI - Loan Document_Engineering Report - Straightline Construction & Development LLC.docx</description>
+		<launchArgs></launchArgs>
+	</Exist>
     <remove>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/interiorexteriorproducts-4f5510146b19.json</url>
