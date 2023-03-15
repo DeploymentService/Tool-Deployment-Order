@@ -580,7 +580,7 @@
     <Exist>
       <version>2019.0.0.7</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\CostEstimation.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Cost Estimation Plugin</description>
       <launchArgs></launchArgs>
@@ -588,7 +588,7 @@
 	<update>
 		<version>2019.0.0.7</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CostEstimation.dll</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\CostEstimation.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Cost Estimation Plugin</description>
 		<launchArgs></launchArgs>
@@ -596,7 +596,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.Auth.PlatformServices.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Auth.PlatformServices.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Auth.PlatformServices.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Auth.PlatformServices</description>
       <launchArgs></launchArgs>
@@ -604,7 +604,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.Auth.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Auth.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Auth.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Auth</description>
       <launchArgs></launchArgs>
@@ -612,7 +612,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Google.Apis.Auth.xml</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Auth.xml</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Auth.xml</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Auth</description>
       <launchArgs></launchArgs>
@@ -620,7 +620,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.Core.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Core.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Core.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Core</description>
       <launchArgs></launchArgs>
@@ -628,7 +628,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Google.Apis.Core.xml</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Core.xml</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Core.xml</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Core</description>
       <launchArgs></launchArgs>
@@ -636,7 +636,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.PlatformServices.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.PlatformServices.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.PlatformServices.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.PlatformServices</description>
       <launchArgs></launchArgs>
@@ -644,7 +644,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.Sheets.v4.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Sheets.v4.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Sheets.v4.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Sheets.v4</description>
       <launchArgs></launchArgs>
@@ -652,7 +652,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Google.Apis.Sheets.v4.xml</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.Sheets.v4.xml</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Sheets.v4.xml</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis.Sheets.v4</description>
       <launchArgs></launchArgs>
@@ -660,7 +660,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis</description>
       <launchArgs></launchArgs>
@@ -668,7 +668,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Google.Apis.xml</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Google.Apis.xml</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.xml</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Google.Apis</description>
       <launchArgs></launchArgs>
@@ -676,7 +676,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Newtonsoft.Json.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Newtonsoft.Json.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Newtonsoft.Json.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Newtonsoft.Json</description>
       <launchArgs></launchArgs>
@@ -684,47 +684,47 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Newtonsoft.Json.xml</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Newtonsoft.Json.xml</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Newtonsoft.Json.xml</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Newtonsoft.Json</description>
       <launchArgs></launchArgs>
     </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/BitMiracle.LibTiff.NET.dll</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\BitMiracle.LibTiff.NET.dll</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/BitMiracle.LibTiff.NET.dll?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\BitMiracle.LibTiff.NET.dll</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/EPPlus.dll</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\EPPlus.dll</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/EPPlus.dll?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\EPPlus.dll</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/EPPlus.Interfaces.dll</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\EPPlus.Interfaces.dll</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/EPPlus.Interfaces.dll?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\EPPlus.Interfaces.dll</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/EPPlus.System.Drawing.dll</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\EPPlus.System.Drawing.dll</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/EPPlus.System.Drawing.dll?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\EPPlus.System.Drawing.dll</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/OpenAI_API.dll</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\OpenAI_API.dll</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/OpenAI_API.dll?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\OpenAI_API.dll</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
@@ -732,7 +732,7 @@
 	   <Exist>
 		   <version>1.0.0.0</version>
 		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/CategoriesDictionary.json</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CategoriesDictionary.json</filePath>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\CategoriesDictionary.json</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
@@ -740,7 +740,7 @@
 	   <Exist>
 		   <version>1.0.0.0</version>
 		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/csfi-377400-3c5a1b0c4889.json</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\csfi-377400-3c5a1b0c4889.json</filePath>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\csfi-377400-3c5a1b0c4889.json</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
@@ -748,38 +748,38 @@
 	   <Exist>
 		   <version>1.0.0.0</version>
 		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/RiskManagementdata.json</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\RiskManagementdata.json</filePath>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\RiskManagementdata.json</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Lot 13.xlsx</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Lot 13.xlsx</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/Lot%2013.xlsx?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\Lot 13.xlsx</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/2022%20Budget%20Detail%20by%20State,%20Zip%20-%20SF%20-%20Budget%20Categories.xlsx?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Risk Management - Cost Per SQFT data.xlsx</url>
-		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\Risk Management - Cost Per SQFT data.xlsx</filePath>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/Risk%20Management%20-%20Cost%20Per%20SQFT%20data.xlsx?raw=true</url>
+		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\Risk Management - Cost Per SQFT data.xlsx</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
 		   <launchArgs></launchArgs>
 	   </Exist>
 	   <Exist>
 		   <version>1.0.0.0</version>
-		   <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/CFSI - Loan Document_Engineering Report - Straightline Construction & Development LLC.docx</url>
+		   <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CFSI%20-%20Loan%20Document_Engineering%20Report%20-%20Straightline%20Construction%20&%20Development%20LLC.docx?raw=true</url>
 		   <filePath>%AppData%\Autodesk\Revit\Addins\2020\QTOCostEstimation\CFSI - Loan Document_Engineering Report - Straightline Construction & Development LLC.docx</filePath>
 		   <md5>5857188A507EAFC9414E6062180C8682</md5>
 		   <description>Newtonsoft.Json</description>
