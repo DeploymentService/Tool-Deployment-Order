@@ -713,6 +713,54 @@
 		<description>EPPlus.Interfaces.dll</description>
 		<launchArgs></launchArgs>
 	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/EPPlus.System.Drawing.dll?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\EPPlus.System.Drawing.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>EPPlus.System.Drawing.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/OpenAI_API.dll?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\OpenAI_API.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>OpenAI_API.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/CategoriesDictionary.json</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\CategoriesDictionary.json</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>CategoriesDictionary.json</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/csfi-377400-3c5a1b0c4889.json</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\csfi-377400-3c5a1b0c4889.json</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>csfi-377400-3c5a1b0c4889.json</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/RiskManagementdata.json</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\RiskManagementdata.json</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>RiskManagementdata.json</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/Lot%2013.xlsx?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Lot 13.xlsx</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Lot 13.xlsx</description>
+		<launchArgs></launchArgs>
+	</Exist>
     <remove>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/interiorexteriorproducts-4f5510146b19.json</url>
