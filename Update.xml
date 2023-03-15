@@ -689,7 +689,30 @@
       <description>Newtonsoft.Json</description>
       <launchArgs></launchArgs>
     </Exist>
-
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/BitMiracle.LibTiff.NET.dll?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\BitMiracle.LibTiff.NET.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>BitMiracle.LibTiff.NET.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/EPPlus.dll?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\EPPlus.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>EPPlus.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/EPPlus.Interfaces.dll?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\EPPlus.Interfaces.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>EPPlus.Interfaces.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
     <remove>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/interiorexteriorproducts-4f5510146b19.json</url>
