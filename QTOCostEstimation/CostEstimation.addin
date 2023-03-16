@@ -2,7 +2,7 @@
 <RevitAddIns>
   <AddIn Type="Application">
     <Name>Application CostEstimation</Name>
-    <Assembly>QTOCostEstimation/CostEstimation.dll</Assembly>
+    <Assembly>CostEstimation.dll</Assembly>
     <FullClassName>CostEstimation.App</FullClassName>
     <ClientId>40a0e4c0-1cd8-40b9-b37c-c8eb9f3f38e9</ClientId>
     <VendorId>com.typepad.thebuildingcoder</VendorId>
