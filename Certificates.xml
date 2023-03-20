@@ -223,8 +223,8 @@
   </User>
   <User>
     <Mail>ivan@bimquote.com</Mail>
-    <Password>BIMQuote2023</Password>
-    <FirstTime>true</FirstTime>
+    <Password>BIMquote1992</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
