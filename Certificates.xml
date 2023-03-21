@@ -18,28 +18,29 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+        <Program>QA_Plugin</Program>
     </Programs>
   </User>
-  <User>
-    <Mail>travis.dodge@builders-capital.com</Mail>
-    <Password>BIMQuote2023</Password>
-    <FirstTime>true</FirstTime>
-    <Programs>
-      <Program>CheckExteriorAttributes</Program>
-      <Program>DeployerTool</Program>
-      <Program>ExteriorPlugin</Program>
-      <Program>Framing_Plugin</Program>
-      <Program>Create_Foundation</Program>
-      <Program>QTOCostEstimation</Program>
-      <Program>Template</Program>
-      <Program>Products_Update</Program>
-      <Program>ResCheckDataPluign</Program>
-      <Program>KitchenPlugin</Program>
-      <Program>Model_Creation</Program>
-      <Program>Nested_Parameters</Program>
-      <Program>Area_Rules</Program>
-    </Programs>
-  </User>
+	<User>
+		<Mail>travis.dodge@builders-capital.com</Mail>
+		<Password>BIMQuote2023</Password>
+		<FirstTime>true</FirstTime>
+		<Programs>
+			<Program>CheckExteriorAttributes</Program>
+			<Program>DeployerTool</Program>
+			<Program>ExteriorPlugin</Program>
+			<Program>Framing_Plugin</Program>
+			<Program>Create_Foundation</Program>
+			<Program>QTOCostEstimation</Program>
+			<Program>Template</Program>
+			<Program>Products_Update</Program>
+			<Program>ResCheckDataPluign</Program>
+			<Program>KitchenPlugin</Program>
+			<Program>Model_Creation</Program>
+			<Program>Nested_Parameters</Program>
+			<Program>Area_Rules</Program>
+		</Programs>
+	</User>
   <User>
     <Mail>fariya@bimquote.com</Mail>
     <Password>BIMQuote2022</Password>
@@ -58,6 +59,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -78,6 +80,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -98,6 +101,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -118,6 +122,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -138,6 +143,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -158,6 +164,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -199,48 +206,49 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
-  <User>
-    <Mail>yoana@bimquote.com</Mail>
-    <Password>BIMQuote2023</Password>
-    <FirstTime>true</FirstTime>
-    <Programs>
-      <Program>CheckExteriorAttributes</Program>
-      <Program>DeployerTool</Program>
-      <Program>ExteriorPlugin</Program>
-      <Program>Framing_Plugin</Program>
-      <Program>Create_Foundation</Program>
-      <Program>QTOCostEstimation</Program>
-      <Program>Template</Program>
-      <Program>Products_Update</Program>
-      <Program>ResCheckDataPluign</Program>
-      <Program>KitchenPlugin</Program>
-      <Program>Model_Creation</Program>
-      <Program>Nested_Parameters</Program>
-      <Program>Area_Rules</Program>
-    </Programs>
-  </User>
-  <User>
-    <Mail>ivan@bimquote.com</Mail>
-    <Password>BIMquote1992</Password>
-    <FirstTime>false</FirstTime>
-    <Programs>
-      <Program>CheckExteriorAttributes</Program>
-      <Program>DeployerTool</Program>
-      <Program>ExteriorPlugin</Program>
-      <Program>Framing_Plugin</Program>
-      <Program>Create_Foundation</Program>
-      <Program>QTOCostEstimation</Program>
-      <Program>Template</Program>
-      <Program>Products_Update</Program>
-      <Program>ResCheckDataPluign</Program>
-      <Program>KitchenPlugin</Program>
-      <Program>Model_Creation</Program>
-      <Program>Nested_Parameters</Program>
-      <Program>Area_Rules</Program>
-    </Programs>
-  </User>
+	<User>
+		<Mail>yoana@bimquote.com</Mail>
+		<Password>BIMQuote2023</Password>
+		<FirstTime>true</FirstTime>
+		<Programs>
+			<Program>CheckExteriorAttributes</Program>
+			<Program>DeployerTool</Program>
+			<Program>ExteriorPlugin</Program>
+			<Program>Framing_Plugin</Program>
+			<Program>Create_Foundation</Program>
+			<Program>QTOCostEstimation</Program>
+			<Program>Template</Program>
+			<Program>Products_Update</Program>
+			<Program>ResCheckDataPluign</Program>
+			<Program>KitchenPlugin</Program>
+			<Program>Model_Creation</Program>
+			<Program>Nested_Parameters</Program>
+			<Program>Area_Rules</Program>
+		</Programs>
+	</User>
+	<User>
+		<Mail>ivan@bimquote.com</Mail>
+		<Password>BIMQuote2023</Password>
+		<FirstTime>true</FirstTime>
+		<Programs>
+			<Program>CheckExteriorAttributes</Program>
+			<Program>DeployerTool</Program>
+			<Program>ExteriorPlugin</Program>
+			<Program>Framing_Plugin</Program>
+			<Program>Create_Foundation</Program>
+			<Program>QTOCostEstimation</Program>
+			<Program>Template</Program>
+			<Program>Products_Update</Program>
+			<Program>ResCheckDataPluign</Program>
+			<Program>KitchenPlugin</Program>
+			<Program>Model_Creation</Program>
+			<Program>Nested_Parameters</Program>
+			<Program>Area_Rules</Program>
+		</Programs>
+	</User>
   <User>
     <Mail>desi@bimquote.com</Mail>
     <Password>BIMquotedesi86</Password>
@@ -253,6 +261,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -267,6 +276,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -281,6 +291,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -295,6 +306,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -315,6 +327,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -326,6 +339,7 @@
       <Program>SmartDesignUpdate</Program>
       <Program>Template</Program>
       <Program>TestFitLayout</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -336,6 +350,7 @@
       <Program>SmartDesignUpdate</Program>
       <Program>DeployerTool</Program>
       <Program>CostEstimation</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -357,6 +372,7 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>Model_Creation</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -373,6 +389,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
