@@ -39,6 +39,7 @@
 			<Program>Model_Creation</Program>
 			<Program>Nested_Parameters</Program>
 			<Program>Area_Rules</Program>
+			<Program>QA_Plugin</Program>
 		</Programs>
 	</User>
   <User>
@@ -227,6 +228,7 @@
 			<Program>Model_Creation</Program>
 			<Program>Nested_Parameters</Program>
 			<Program>Area_Rules</Program>
+			<Program>QA_Plugin</Program>
 		</Programs>
 	</User>
 	<User>
@@ -247,6 +249,7 @@
 			<Program>Model_Creation</Program>
 			<Program>Nested_Parameters</Program>
 			<Program>Area_Rules</Program>
+			<Program>QA_Plugin</Program>
 		</Programs>
 	</User>
   <User>
