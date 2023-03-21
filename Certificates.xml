@@ -18,6 +18,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+        <Program>QA_Plugin</Program>
     </Programs>
   </User>
 	<User>
@@ -38,6 +39,7 @@
 			<Program>Model_Creation</Program>
 			<Program>Nested_Parameters</Program>
 			<Program>Area_Rules</Program>
+			<Program>QA_Plugin</Program>
 		</Programs>
 	</User>
   <User>
@@ -58,6 +60,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -78,6 +81,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -98,6 +102,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -118,6 +123,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -138,6 +144,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -158,6 +165,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -199,6 +207,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
 	<User>
@@ -219,6 +228,7 @@
 			<Program>Model_Creation</Program>
 			<Program>Nested_Parameters</Program>
 			<Program>Area_Rules</Program>
+			<Program>QA_Plugin</Program>
 		</Programs>
 	</User>
 	<User>
@@ -239,6 +249,7 @@
 			<Program>Model_Creation</Program>
 			<Program>Nested_Parameters</Program>
 			<Program>Area_Rules</Program>
+			<Program>QA_Plugin</Program>
 		</Programs>
 	</User>
   <User>
@@ -253,6 +264,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -267,6 +279,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -281,6 +294,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -295,6 +309,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -315,6 +330,7 @@
       <Program>Model_Creation</Program>
       <Program>Nested_Parameters</Program>
       <Program>Area_Rules</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -326,6 +342,7 @@
       <Program>SmartDesignUpdate</Program>
       <Program>Template</Program>
       <Program>TestFitLayout</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -336,6 +353,7 @@
       <Program>SmartDesignUpdate</Program>
       <Program>DeployerTool</Program>
       <Program>CostEstimation</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -357,6 +375,7 @@
       <Program>Template</Program>
       <Program>Products_Update</Program>
       <Program>Model_Creation</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>
@@ -373,6 +392,7 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+		<Program>QA_Plugin</Program>
     </Programs>
   </User>
   <User>

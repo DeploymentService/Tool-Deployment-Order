@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command QAPlugin</Text>
+    <Description>Some description for QAPlugin</Description>
+    <Assembly>QAPlugin.dll</Assembly>
+    <FullClassName>QAPlugin.Command</FullClassName>
+    <ClientId>bbc0d35b-82f6-47cd-96b4-4dc55c2733d7</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application QAPlugin</Name>
+    <Assembly>QAPlugin.dll</Assembly>
+    <FullClassName>QAPlugin.App</FullClassName>
+    <ClientId>0de6ae35-40ed-4706-bb02-b5836679fb55</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
