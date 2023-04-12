@@ -152,6 +152,9 @@
     "EntryDoorBell-T": "RingSmartDoorbell",
     "EntryRearDoor-T": "French 1 Lite",
     "EntryGarageDoor-T": "4 Lite",
+    "GarageDoorWindow_T": "Windsor_Monticello Insert",
+    "GarageDoorColor_T": "Windsor_Brown Single",
+    "GarageDoorProfile_T": "Windsor_LP Purpose Built Profile ST5",
     "EntryGarageMotionLighting-T": "MotionLight1",
     "EntryDriveway-T": "Permeable_Brick",
     "EntryWalkway-T": "Permeable_Brick",
@@ -170,6 +173,7 @@
     "DatumSplTopProfile-T": "Medium2",
     "DatumSplBaseProfile-T": "Medium2",
     "ColumnStyle-T": "Column Square_Regal",
-    "ColumnPlinthHeight-T": "42"
+    "ColumnPlinthHeight-T": "42",
+    "YardFence_T": "Freedom_Wellington 6 ft H White Vinyl Lattice top Fence"
   }
 }
