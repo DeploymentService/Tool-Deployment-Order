@@ -3,7 +3,7 @@
 	<PDF_To_Revit>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QA_Plugin/QAPlugin.addin</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/70%20Series%20Picture1.rfa</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\70 Series Picture1.rfa</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.addin</description>
@@ -11,7 +11,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/Garage_Door.rfa</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Garage_Door.rfa</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -21,7 +21,7 @@
 	<QA_Plugin>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QA_Plugin/QAPlugin.addin</url>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/PDF_To_Revit/PDFToRevitPlugin.addin</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPlugin.addin</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.addin</description>
@@ -29,7 +29,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/PDFToRevitPlugin.dll</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\PDFToRevitPlugin.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -37,7 +37,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/PDF_To_Revit/Plotter.deps.json</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.deps.json</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -45,7 +45,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/Plotter.dll</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.dll</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -53,7 +53,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/Plotter.exe</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.exe</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -61,7 +61,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/Plotter.pdb</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.pdb</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -69,7 +69,7 @@
 		</Exist>
 				<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/PDF_To_Revit/Plotter.runtimeconfig.json</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.runtimeconfig.json</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
@@ -77,7 +77,7 @@
 		</Exist>
 		<Exist>
 			<version>1.0.0.0</version>
-			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/PDF_To_Revit/Swing_Door.rfa</url>
 			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Swing_Door.rfa</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
