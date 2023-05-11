@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <Updates>
-	<QA_Plugin>
+	<PDF_To_Revit>
 		<Exist>
 			<version>1.0.0.0</version>
 			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QA_Plugin/QAPlugin.addin</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\QAPlugin.addin</filePath>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\70 Series Picture1.rfa</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.addin</description>
 			<launchArgs></launchArgs>
@@ -12,7 +12,73 @@
 		<Exist>
 			<version>1.0.0.0</version>
 			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
-			<filePath>%AppData%\Autodesk\Revit\Addins\2020\QAPlugin.dll</filePath>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Garage_Door.rfa</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+	</PDF_To_Revit>
+	<QA_Plugin>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QA_Plugin/QAPlugin.addin</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPlugin.addin</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.addin</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\PDFToRevitPlugin.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.deps.json</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.dll</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.exe</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.pdb</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+				<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Plotter.runtimeconfig.json</filePath>
+			<md5>5857188A507EAFC9414E6062180C8682</md5>
+			<description>QAPlugin.dll</description>
+			<launchArgs></launchArgs>
+		</Exist>
+		<Exist>
+			<version>1.0.0.0</version>
+			<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QA_Plugin/QAPlugin.dll?raw=true</url>
+			<filePath>%AppData%\Autodesk\Revit\Addins\2020\PDFToRevitPluginFolder\Swing_Door.rfa</filePath>
 			<md5>5857188A507EAFC9414E6062180C8682</md5>
 			<description>QAPlugin.dll</description>
 			<launchArgs></launchArgs>

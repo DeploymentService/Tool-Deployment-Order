@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command PDFToRevitPlugin</Text>
+    <Description>Some description for PDFToRevitPlugin</Description>
+    <Assembly>PDFToRevitPluginFolder\PDFToRevitPlugin.dll</Assembly>
+    <FullClassName>PDFToRevitPlugin.Command</FullClassName>
+    <ClientId>4c440e12-7cd1-449c-978e-14fcc570f194</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application PDFToRevitPlugin</Name>
+    <Assembly>PDFToRevitPluginFolder\PDFToRevitPlugin.dll</Assembly>
+    <FullClassName>PDFToRevitPlugin.App</FullClassName>
+    <ClientId>7ea9fd74-4cd2-40f7-b41d-7aa5509f13dd</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
