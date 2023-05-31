@@ -170,8 +170,8 @@
   </User>
   <User>
     <Mail>sonja@bimquote.com</Mail>
-    <Password>BIMQUOTE2023</Password>
-    <FirstTime>true</FirstTime>
+    <Password>BIMSONJA2023</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
