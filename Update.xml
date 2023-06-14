@@ -662,7 +662,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>2019.0.0.9</version>
+      <version>2019.0.1.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2020\CostEstimation.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -670,7 +670,7 @@
       <launchArgs></launchArgs>
     </Exist>
 	<update>
-		<version>2019.0.0.9</version>
+		<version>2019.0.1.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/CostEstimation.dll?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\CostEstimation.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -847,6 +847,14 @@
 	</Exist>
 	<Exist>
 		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/Lot%2013.xlsx?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Lot 13_Comparison.xlsx</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Lot 13.xlsx</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/2022%20Budget%20Detail%20by%20State,%20Zip%20-%20SF%20-%20Budget%20Categories.xlsx?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\2022 Budget Detail by State, Zip - SF - Budget Categories.xlsx</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -865,6 +873,14 @@
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/BQFA.docx?raw=true</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\BQFA.docx</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>BQFA.docx</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/BQFA.docx?raw=true</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\BQFA_Comparison.docx</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>BQFA.docx</description>
 		<launchArgs></launchArgs>
