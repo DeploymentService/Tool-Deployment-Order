@@ -847,7 +847,7 @@
 	</Exist>
 	<Exist>
 		<version>1.0.0.0</version>
-		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/Lot%2013.xlsx?raw=true</url>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Lot%2013_Comparison.xlsx</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Lot 13_Comparison.xlsx</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Lot 13.xlsx</description>
@@ -879,7 +879,7 @@
 	</Exist>
 	<Exist>
 		<version>1.0.0.0</version>
-		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/QTOCostEstimation/BQFA.docx?raw=true</url>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/BQFA_Comparison.docx</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2020\BQFA_Comparison.docx</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>BQFA.docx</description>
