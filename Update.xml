@@ -711,6 +711,14 @@
 	</Exist>
 	<Exist>
 		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.Drive.v3.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Google.Apis.Drive.v3.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Google.Apis.Drive.v3.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
 		<url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/QTOCostEstimation/Google.Apis.Core.xml</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Google.Apis.Core.xml</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -1069,6 +1077,14 @@
       <description>Google.Apis</description>
       <launchArgs></launchArgs>
     </Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Google.Apis.Drive.v3.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Google.Apis.Drive.v3.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Google.Apis.Drive.v3.dll</description>
+		<launchArgs></launchArgs>
+	</Exist>
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/QTOCostEstimation/Newtonsoft.Json.dll</url>
