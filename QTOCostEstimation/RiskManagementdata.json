@@ -6900,21 +6900,6 @@
     "AvgPropCostPerSqft": "$314.69"
   },
   {
-    "LoanNumber": 72105,
-    "LoanPhase": "Production",
-    "LoanProgram": "New Construction",
-    "LoanSubType": "Refi-External",
-    "State": "California",
-    "City": "Elk Grove",
-    "County": "Sacramento",
-    "Zip": 95757,
-    "PropertyCount": 1,
-    "UnitCount": 55,
-    "Sqft": "660,000",
-    "MedianSqft": "12,000",
-    "AvgPropCostPerSqft": "$2.73"
-  },
-  {
     "LoanNumber": 72103,
     "LoanPhase": "Servicing",
     "LoanProgram": "All In One",
