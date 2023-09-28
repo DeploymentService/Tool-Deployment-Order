@@ -1,0 +1,357 @@
+[
+  {
+    "CatName": "Plans (Soft Cost)",
+    "CostCode": "M-100100",
+    "DataSetName": "Plans (Soft Cost)"
+  },
+  {
+    "CatName": "Permits (Soft Costs)",
+    "CostCode": "M-100200",
+    "DataSetName": "Permits (Soft Costs)"
+  },
+  {
+    "CatName": "Surveying / Engineering (Soft Cost)",
+    "CostCode": "M-100300",
+    "DataSetName": "Surveying / Engineering (Soft Cost)"
+  },
+  {
+    "CatName": "Insurance (Soft Cost)",
+    "CostCode": "M-100400",
+    "DataSetName": "Insurance (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Water (Soft Cost)",
+    "CostCode": "M-100500",
+    "DataSetName": "Perm. Connection Fees Water (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Sewer (Soft Cost)",
+    "CostCode": "M-106000",
+    "DataSetName": "Perm. Connection Fees Sewer (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Electric (Soft Cost)",
+    "CostCode": "M-107000",
+    "DataSetName": "Perm. Connection Fees Electric (Soft Cost)"
+  },
+  {
+    "CatName": "Perm. Connection Fees Gas (Soft Cost)",
+    "CostCode": "M-100800",
+    "DataSetName": "Perm. Connection Fees Gas (Soft Cost)"
+  },
+  {
+    "CatName": "Temp. Toilet",
+    "CostCode": "M-100900",
+    "DataSetName": "Temp. Toilet"
+  },
+  {
+    "CatName": "Temp. Utilities",
+    "CostCode": "M-101000",
+    "DataSetName": "Temp. Utilities"
+  },
+  {
+    "CatName": "Construction Clean Up & Dumpster",
+    "CostCode": "M-101100",
+    "DataSetName": "Construction Clean Up & Dumpster"
+  },
+  {
+    "CatName": "Mobilization",
+    "CostCode": "M-101200",
+    "DataSetName": "Mobilization"
+  },
+  {
+    "CatName": "Erosion Control",
+    "CostCode": "M-101300",
+    "DataSetName": "Erosion Control"
+  },
+  {
+    "CatName": "Temp Fencing & Job Shack",
+    "CostCode": "M-101400",
+    "DataSetName": "Temp Fencing & Job Shack"
+  },
+  {
+    "CatName": "Rental Equipment (Scaffolding & Heavy Equipment)",
+    "CostCode": "M-101500",
+    "DataSetName": "Rental Equipment (Scaffolding & Heavy Equipment)"
+  },
+  {
+    "CatName": "Demolition / Clearing",
+    "CostCode": "M-101600",
+    "DataSetName": "Demolition / Clearing"
+  },
+  {
+    "CatName": "Excavation, Grade, Fill",
+    "CostCode": "M-101700",
+    "DataSetName": "Excavation, Grade, Fill"
+  },
+  {
+    "CatName": "Foundation Concrete",
+    "CostCode": "M-101800",
+    "DataSetName": "Foundation Concrete"
+  },
+  {
+    "CatName": "Foundation Labor",
+    "CostCode": "M-101900",
+    "DataSetName": "Foundation Labor"
+  },
+  {
+    "CatName": "Garage / Basement Concrete",
+    "CostCode": "M-102000",
+    "DataSetName": "Garage / Basement Concrete"
+  },
+  {
+    "CatName": "Structural Steel",
+    "CostCode": "M-102100",
+    "DataSetName": "Structural Steel"
+  },
+  {
+    "CatName": "Framing Lumber & Hardware",
+    "CostCode": "M-102200",
+    "DataSetName": "Framing Lumber & Hardware"
+  },
+  {
+    "CatName": "Framing Labor",
+    "CostCode": "M-102300",
+    "DataSetName": "Framing Labor"
+  },
+  {
+    "CatName": "Trusses",
+    "CostCode": "M-102400",
+    "DataSetName": "Trusses"
+  },
+  {
+    "CatName": "Rough In Plumbing",
+    "CostCode": "M-102500",
+    "DataSetName": "Rough In Plumbing"
+  },
+  {
+    "CatName": "Rough In Electrical",
+    "CostCode": "M-102600",
+    "DataSetName": "Rough In Electrical"
+  },
+  {
+    "CatName": "Security System",
+    "CostCode": "M-102700",
+    "DataSetName": "Security System"
+  },
+  {
+    "CatName": "Sewer / Septic",
+    "CostCode": "M-102800",
+    "DataSetName": "Sewer / Septic"
+  },
+  {
+    "CatName": "Roofing",
+    "CostCode": "M-102900",
+    "DataSetName": "Roofing"
+  },
+  {
+    "CatName": "Fireplace / Chimney",
+    "CostCode": "M-103000",
+    "DataSetName": "Fireplace / Chimney"
+  },
+  {
+    "CatName": "HVAC",
+    "CostCode": "M-103100",
+    "DataSetName": "HVAC"
+  },
+  {
+    "CatName": "Fire Sprinklers",
+    "CostCode": "M-103200",
+    "DataSetName": "Fire Sprinklers"
+  },
+  {
+    "CatName": "Elevators",
+    "CostCode": "M-103300",
+    "DataSetName": "Elevators"
+  },
+  {
+    "CatName": "Windows / Sliders",
+    "CostCode": "M-103400",
+    "DataSetName": "Windows / Sliders"
+  },
+  {
+    "CatName": "Exterior Doors & Trim",
+    "CostCode": "M-103500",
+    "DataSetName": "Exterior Doors & Trim"
+  },
+  {
+    "CatName": "Garage Doors & Openers",
+    "CostCode": "M-103600",
+    "DataSetName": "Garage Doors & Openers"
+  },
+  {
+    "CatName": "Siding",
+    "CostCode": "M-103700",
+    "DataSetName": "Siding"
+  },
+  {
+    "CatName": "Masonry",
+    "CostCode": "M-103800",
+    "DataSetName": "Masonry"
+  },
+  {
+    "CatName": "Gutters & Downspouts",
+    "CostCode": "M-103900",
+    "DataSetName": "Gutters & Downspouts"
+  },
+  {
+    "CatName": "Exterior Paint",
+    "CostCode": "M-104000",
+    "DataSetName": "Exterior Paint"
+  },
+  {
+    "CatName": "Exterior Concrete (Steps, Walks, Driveway)",
+    "CostCode": "M-104100",
+    "DataSetName": "Exterior Concrete (Steps, Walks, Driveway)"
+  },
+  {
+    "CatName": "Insulation",
+    "CostCode": "M-104200",
+    "DataSetName": "Insulation"
+  },
+  {
+    "CatName": "Drywall",
+    "CostCode": "M-104300",
+    "DataSetName": "Drywall"
+  },
+  {
+    "CatName": "Interior Doors & Trim",
+    "CostCode": "M-104400",
+    "DataSetName": "Interior Doors & Trim"
+  },
+  {
+    "CatName": "Interior Paint (Wall, Trim, Door)",
+    "CostCode": "M-104500",
+    "DataSetName": "Interior Paint (Wall, Trim, Door)"
+  },
+  {
+    "CatName": "Stairs & Railings",
+    "CostCode": "M-104600",
+    "DataSetName": "Stairs & Railings"
+  },
+  {
+    "CatName": "Cabinets & Vanities",
+    "CostCode": "M-104700",
+    "DataSetName": "Cabinets & Vanities"
+  },
+  {
+    "CatName": "Countertops & Backsplashes",
+    "CostCode": "M-104800",
+    "DataSetName": "Countertops & Backsplashes"
+  },
+  {
+    "CatName": "Finish Plumbing",
+    "CostCode": "M-104900",
+    "DataSetName": "Finish Plumbing"
+  },
+  {
+    "CatName": "Finish Electrical & Light Fixtures",
+    "CostCode": "M-105000",
+    "DataSetName": "Finish Electrical & Light Fixtures"
+  },
+  {
+    "CatName": "Hardwood Flooring",
+    "CostCode": "M-105100",
+    "DataSetName": "Hardwood Flooring"
+  },
+  {
+    "CatName": "Vinyl / Tile",
+    "CostCode": "M-105200",
+    "DataSetName": "Vinyl / Tile"
+  },
+  {
+    "CatName": "Carpet",
+    "CostCode": "M-105300",
+    "DataSetName": "Carpet"
+  },
+  {
+    "CatName": "Fire Extinguishers & Housing",
+    "CostCode": "M-105400",
+    "DataSetName": "Fire Extinguishers & Housing"
+  },
+  {
+    "CatName": "Finish Hardware",
+    "CostCode": "M-105500",
+    "DataSetName": "Finish Hardware"
+  },
+  {
+    "CatName": "Finish Labor",
+    "CostCode": "M-105600",
+    "DataSetName": "Finish Labor"
+  },
+  {
+    "CatName": "Mirrors & Shower Doors",
+    "CostCode": "M-105700",
+    "DataSetName": "Mirrors & Shower Doors"
+  },
+  {
+    "CatName": "Appliances",
+    "CostCode": "M-105800",
+    "DataSetName": "Appliances"
+  },
+  {
+    "CatName": "Final Cleaning",
+    "CostCode": "M-105900",
+    "DataSetName": "Final Cleaning"
+  },
+  {
+    "CatName": "Landscaping",
+    "CostCode": "M-106000",
+    "DataSetName": "Landscaping"
+  },
+  {
+    "CatName": "Fencing",
+    "CostCode": "M-106100",
+    "DataSetName": "Fencing"
+  },
+  {
+    "CatName": "Decks",
+    "CostCode": "M-106200",
+    "DataSetName": "Decks"
+  },
+  {
+    "CatName": "Parks",
+    "CostCode": "M-106300",
+    "DataSetName": "Parks"
+  },
+  {
+    "CatName": "Pools",
+    "CostCode": "M-106400",
+    "DataSetName": "Pools"
+  },
+  {
+    "CatName": "Mailboxes",
+    "CostCode": "M-106500",
+    "DataSetName": "Mailboxes"
+  },
+  {
+    "CatName": "Bike Racks",
+    "CostCode": "M-106600",
+    "DataSetName": "Bike Racks"
+  },
+  {
+    "CatName": "Trash Enclosures",
+    "CostCode": "M-106700",
+    "DataSetName": "Trash Enclosures"
+  },
+  {
+    "CatName": "Monument Signage",
+    "CostCode": "M-106800",
+    "DataSetName": "Monument Signage"
+  },
+  {
+    "CatName": "Contingency (Soft Cost)",
+    "CostCode": "M-106900",
+    "DataSetName": "Contingency (Soft Cost)"
+  },
+  {
+    "CatName": "Profit / Overhead (Soft Cost)",
+    "CostCode": "M-107000",
+    "DataSetName": "Profit / Overhead (Soft Cost)"
+  },
+  {
+    "CatName": "Feature - Specify (Solar Panels, Etc)",
+    "CostCode": "M-107100",
+    "DataSetName": "Feature - Specify (Solar Panels, Etc)"
+  }
+]
