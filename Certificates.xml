@@ -84,27 +84,27 @@
       <Program>QA_Plugin</Program>
     </Programs>
   </User>
-	<User>
-		<Mail>sadaf@bimquote.com</Mail>
-		<Password>BIMQuote2022</Password>
-		<FirstTime>true</FirstTime>
-		<Programs>
-			<Program>CheckExteriorAttributes</Program>
-			<Program>DeployerTool</Program>
-			<Program>ExteriorPlugin</Program>
-			<Program>Framing_Plugin</Program>
-			<Program>Create_Foundation</Program>
-			<Program>QTOCostEstimation</Program>
-			<Program>Template</Program>
-			<Program>Products_Update</Program>
-			<Program>ResCheckDataPluign</Program>
-			<Program>KitchenPlugin</Program>
-			<Program>Model_Creation</Program>
-			<Program>Nested_Parameters</Program>
-			<Program>Area_Rules</Program>
-			<Program>QA_Plugin</Program>
-		</Programs>
-	</User>
+  <User>
+    <Mail>sadaf@bimquote.com</Mail>
+    <Password>BIMQuote2022</Password>
+    <FirstTime>true</FirstTime>
+    <Programs>
+      <Program>CheckExteriorAttributes</Program>
+      <Program>DeployerTool</Program>
+      <Program>ExteriorPlugin</Program>
+      <Program>Framing_Plugin</Program>
+      <Program>Create_Foundation</Program>
+      <Program>QTOCostEstimation</Program>
+      <Program>Template</Program>
+      <Program>Products_Update</Program>
+      <Program>ResCheckDataPluign</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
+      <Program>QA_Plugin</Program>
+    </Programs>
+  </User>
   <User>
     <Mail>safura@bimquote.com</Mail>
     <Password>Pakistan5303845</Password>
@@ -255,7 +255,7 @@
   <User>
     <Mail>ivan@bimquote.com</Mail>
     <Password>BIMQuote2023</Password>
-    <FirstTime>true</FirstTime>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
