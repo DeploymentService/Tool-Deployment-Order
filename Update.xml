@@ -1464,7 +1464,7 @@
      <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Template/Template.addin</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.addin</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2023\Template.addin</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Addin File</description>
       <launchArgs></launchArgs>
@@ -1472,7 +1472,7 @@
     <Exist>
       <version>2019.0.1.2</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.dll?raw=true</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2023\Template.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Template Plugin</description>
       <launchArgs></launchArgs>
@@ -1480,7 +1480,7 @@
 	  <update>
 		  <version>2019.0.1.2</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.dll?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.dll</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Template.dll</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1488,7 +1488,7 @@
 	  <Exist>
 		  <version>2019.0.0.9</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.pdb?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.pdb</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Template.pdb</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1496,7 +1496,7 @@
 	  <add>
 		  <version>2019.0.0.9</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Template.pdb?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Template.pdb</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Template.pdb</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1504,7 +1504,7 @@
 	  <Exist>
 		  <version>2019.0.0.9</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Newtonsoft.Json.dll?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Newtonsoft.Json.dll</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Newtonsoft.Json.dll</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1512,7 +1512,7 @@
 	  <add>
 		  <version>2019.0.0.9</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/Newtonsoft.Json.dll?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Newtonsoft.Json.dll</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Newtonsoft.Json.dll</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1520,7 +1520,7 @@
 	  <Exist>
 		  <version>2019.0.0.9</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/WindowsBase.dll?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\WindowsBase.dll</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\WindowsBase.dll</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1528,7 +1528,7 @@
 	  <add>
 		  <version>2019.0.0.9</version>
 		  <url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Template/WindowsBase.dll?raw=true</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\WindowsBase.dll</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\WindowsBase.dll</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1536,7 +1536,7 @@
 	  <Exist>
 		  <version>2019.0.0.9</version>
 		  <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Template/Newtonsoft.Json.xml</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Newtonsoft.Json.xml</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Newtonsoft.Json.xml</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
@@ -1544,7 +1544,7 @@
 	  <add>
 		  <version>2019.0.0.9</version>
 		  <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Template/Newtonsoft.Json.xml</url>
-		  <filePath>%AppData%\Autodesk\Revit\Addins\2020\Newtonsoft.Json.xml</filePath>
+		  <filePath>%AppData%\Autodesk\Revit\Addins\2023\Newtonsoft.Json.xml</filePath>
 		  <md5>5857188A507EAFC9414E6062180C8682</md5>
 		  <description>Template Plugin</description>
 		  <launchArgs></launchArgs>
