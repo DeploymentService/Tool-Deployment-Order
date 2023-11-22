@@ -278,6 +278,7 @@
     <Password>BIMquotedesi86</Password>
     <FirstTime>false</FirstTime>
     <Programs>
+      <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
@@ -285,6 +286,11 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+      <Program>ResCheckDataPluign</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
       <Program>QA_Plugin</Program>
     </Programs>
   </User>
@@ -308,6 +314,7 @@
     <Password>Ufudufd1</Password>
     <FirstTime>false</FirstTime>
     <Programs>
+      <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
       <Program>ExteriorPlugin</Program>
       <Program>Framing_Plugin</Program>
@@ -315,6 +322,11 @@
       <Program>QTOCostEstimation</Program>
       <Program>Template</Program>
       <Program>Products_Update</Program>
+      <Program>ResCheckDataPluign</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
       <Program>QA_Plugin</Program>
     </Programs>
   </User>
