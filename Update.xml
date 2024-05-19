@@ -1316,7 +1316,7 @@
      <Exist>
       <version>1.0.0.0</version>
       <url>https://raw.githubusercontent.com/DeploymentService/Tool-Deployment-Order/main/Framing_Plugin/FramingAndQuantity.addin</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\FramingAndQuantity.addin</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2023\FramingAndQuantity.addin</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Addin File</description>
       <launchArgs></launchArgs>
@@ -1324,7 +1324,7 @@
     <Exist>
       <version>2019.0.1.7</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\FramingAndQuantity.dll</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\FramingAndQuantity.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Framing Plugin</description>
       <launchArgs></launchArgs>
@@ -1332,7 +1332,7 @@
 	<update>
 		<version>2019.0.1.7</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\FramingAndQuantity.dll</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\FramingAndQuantity.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Framing Plugin</description>
 		<launchArgs></launchArgs>
@@ -1340,7 +1340,7 @@
     <Exist>
       <version>1.0.0.0</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Generic%20Model.rft</url>
-      <filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Generic Model.rft</filePath>
+      <filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Generic Model.rft</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
       <description>Generic Model Family</description>
       <launchArgs></launchArgs>
@@ -1348,7 +1348,7 @@
 	<add>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Egnineered%20Wood%20Product_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Egnineered Wood Product_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Egnineered Wood Product_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Egnineered Wood</description>
 		<launchArgs></launchArgs>
@@ -1356,7 +1356,7 @@
 	<Exist>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Egnineered%20Wood%20Product_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Egnineered Wood Product_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Egnineered Wood Product_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Egnineered Wood</description>
 		<launchArgs></launchArgs>
@@ -1364,7 +1364,7 @@
 	<add>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/I_Joist_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\I_Joist_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\I_Joist_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>I_Joist</description>
 		<launchArgs></launchArgs>
@@ -1372,7 +1372,7 @@
 	<Exist>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/I_Joist_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\I_Joist_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\I_Joist_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>I_Joist</description>
 		<launchArgs></launchArgs>
@@ -1380,7 +1380,7 @@
 	<add>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Joist%20Egnineered%20Wood%20Product_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Joist Egnineered Wood Product_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Joist Egnineered Wood Product_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Joist Egnineered Wood Product</description>
 		<launchArgs></launchArgs>
@@ -1388,7 +1388,7 @@
 	<Exist>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Joist%20Egnineered%20Wood%20Product_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Joist Egnineered Wood Product_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Joist Egnineered Wood Product_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Joist Egnineered Wood Product</description>
 		<launchArgs></launchArgs>
@@ -1396,7 +1396,7 @@
 	<add>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Spruce%20Pine%20Fir%20Lumber_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Spruce Pine Fir Lumber_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Spruce Pine Fir Lumber_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Spruce Pine Fir Lumber</description>
 		<launchArgs></launchArgs>
@@ -1404,7 +1404,7 @@
 	<Exist>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Spruce%20Pine%20Fir%20Lumber_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Spruce Pine Fir Lumber_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Spruce Pine Fir Lumber_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Spruce Pine Fir Lumber</description>
 		<launchArgs></launchArgs>
@@ -1412,7 +1412,7 @@
 	<add>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Whitewood%20Lumber_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Whitewood Lumber_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Whitewood Lumber_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Whitewood Lumber</description>
 		<launchArgs></launchArgs>
@@ -1420,7 +1420,7 @@
 	<Exist>
 		<version>1.0.0.0</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/blob/main/Framing_Plugin/Whitewood%20Lumber_.rfa?raw=true</url>
-		<filePath>%AppData%\Autodesk\Revit\Addins\2020\Framing Plugin\Whitewood Lumber_.rfa</filePath>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Whitewood Lumber_.rfa</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
 		<description>Whitewood Lumber</description>
 		<launchArgs></launchArgs>
