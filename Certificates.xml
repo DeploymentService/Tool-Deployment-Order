@@ -296,8 +296,8 @@
   </User>
   <User>
     <Mail>tanya@bimquote.com</Mail>
-    <Password>BIMquote2024</Password>
-    <FirstTime>true</FirstTime>
+    <Password>BIMquote2024Tanya</Password>
+    <FirstTime>false</FirstTime>
     <Programs>
       <Program>CheckExteriorAttributes</Program>
       <Program>DeployerTool</Program>
