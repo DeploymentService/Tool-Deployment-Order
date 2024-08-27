@@ -295,6 +295,27 @@
     </Programs>
   </User>
   <User>
+    <Mail>tanya@bimquote.com</Mail>
+    <Password>BIMquote2024Tanya</Password>
+    <FirstTime>false</FirstTime>
+    <Programs>
+      <Program>CheckExteriorAttributes</Program>
+      <Program>DeployerTool</Program>
+      <Program>ExteriorPlugin</Program>
+      <Program>Framing_Plugin</Program>
+      <Program>Create_Foundation</Program>
+      <Program>QTOCostEstimation</Program>
+      <Program>Template</Program>
+      <Program>Products_Update</Program>
+      <Program>ResCheckDataPluign</Program>
+      <Program>KitchenPlugin</Program>
+      <Program>Model_Creation</Program>
+      <Program>Nested_Parameters</Program>
+      <Program>Area_Rules</Program>
+      <Program>QA_Plugin</Program>
+    </Programs>
+  </User>
+  <User>
     <Mail>naim@bimquote.com</Mail>
     <Password>Naim54585652</Password>
     <FirstTime>false</FirstTime>
