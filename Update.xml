@@ -1322,7 +1322,7 @@
       <launchArgs></launchArgs>
     </Exist>
     <Exist>
-      <version>2019.0.1.7</version>
+      <version>2019.0.1.9</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\FramingAndQuantity.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -1330,7 +1330,7 @@
       <launchArgs></launchArgs>
     </Exist>
 	<update>
-		<version>2019.0.1.7</version>
+		<version>2019.0.1.9</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\FramingAndQuantity.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
