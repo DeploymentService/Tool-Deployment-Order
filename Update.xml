@@ -1321,8 +1321,105 @@
       <description>Addin File</description>
       <launchArgs></launchArgs>
     </Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Microsoft.Bcl.AsyncInterfaces.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Microsoft.Bcl.AsyncInterfaces.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/CommunityToolkit.Mvvm.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\CommunityToolkit.Mvvm.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Wpf.Ui.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<Exist>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Wpf.Ui.xml</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Wpf.Ui.xml</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</Exist>
+	<add>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Microsoft.Bcl.AsyncInterfaces.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Microsoft.Bcl.AsyncInterfaces.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</add>
+		<add>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/CommunityToolkit.Mvvm.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\CommunityToolkit.Mvvm.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</add>
+		<add>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Wpf.Ui.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</add>
+		<add>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Wpf.Ui.xml</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Wpf.Ui.xml</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</add>
+	<update>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Microsoft.Bcl.AsyncInterfaces.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Microsoft.Bcl.AsyncInterfaces.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</update>
+		<update>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/CommunityToolkit.Mvvm.dll</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\CommunityToolkit.Mvvm.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</update>
+		<update>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Wpf.Ui.dll</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</update>
+		<update>
+		<version>1.0.0.0</version>
+		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/Wpf.Ui.xml</url>
+		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\Wpf.Ui.xml</filePath>
+		<md5>5857188A507EAFC9414E6062180C8682</md5>
+		<description>Framing Plugin</description>
+		<launchArgs></launchArgs>
+	</update>
+		
     <Exist>
-      <version>2019.0.1.9</version>
+      <version>2019.0.2.1</version>
       <url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
       <filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\FramingAndQuantity.dll</filePath>
       <md5>5857188A507EAFC9414E6062180C8682</md5>
@@ -1330,7 +1427,7 @@
       <launchArgs></launchArgs>
     </Exist>
 	<update>
-		<version>2019.0.2.0</version>
+		<version>2019.0.2.1</version>
 		<url>https://github.com/DeploymentService/Tool-Deployment-Order/raw/main/Framing_Plugin/FramingAndQuantity.dll</url>
 		<filePath>%AppData%\Autodesk\Revit\Addins\2023\Framing Plugin\FramingAndQuantity.dll</filePath>
 		<md5>5857188A507EAFC9414E6062180C8682</md5>
